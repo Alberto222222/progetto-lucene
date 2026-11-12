@@ -1,0 +1,226 @@
+I Pixar Animation Studios, noti semplicemente come Pixar, sono una casa di produzione cinematografica statunitense specializzata in animazione digitale (CGI), con sede a Emeryville, in California. 
+Fondata originariamente nel 1979 come Computer Graphics Project (una divisione della Lucasfilm di George Lucas), l'azienda è stata rinominata "Pixar" nel 1986 dopo l'acquisizione da parte di Steve Jobs, per poi essere rilevata dalla The Walt Disney Company nel 2006.
+La Pixar è universalmente riconosciuta per aver rivoluzionato l'industria cinematografica globale: nel 1995 ha realizzato Toy Story - Il mondo dei giocattoli, il primo lungometraggio interamente sviluppato in computer grafica della storia del cinema. Per lo sviluppo tecnico delle sue opere, lo studio ha creato e brevettato importanti innovazioni tecnologiche, tra cui RenderMan, un software di rendering standard del settore per la generazione di immagini tridimensionali ad alta qualità.
+Nel corso della sua storia, lo studio ha prodotto numerosi successi commerciali e di critica, tra cui Monsters & Co., Alla ricerca di Nemo, Gli Incredibili, Ratatouille, WALL-E, Up, Inside Out e Coco. Inoltre è specializzato anche nella realizzazione di cortometraggi e speciali televisivi animati di successo. 
+Al 2026, i film Pixar hanno incassato complessivamente oltre 15 miliardi di dollari al botteghino mondiale e lo studio ha collezionato decine di prestigiosi riconoscimenti, tra cui 23 Premi Oscar, 11 Golden Globe e 11 Grammy Award.
+
+Storia
+Origini e primi anni di attività
+La compagnia nacque nel 1979 inizialmente come una divisione della Lucasfilm di George Lucas. Nel 1982 la divisione creò la prima sequenza realizzata interamente al computer per il film Star Trek II - L'ira di Khan, durante la quale un pianeta interamente deserto viene riempito di vegetazione. Fu acquisita da Steve Jobs (cofondatore della Apple Computer) per dieci milioni di dollari nel 1986. Jobs la rese indipendente e la rinominò Pixar Animation Studios. In quel periodo la società si occupava di grafica al computer dal punto di vista software e hardware e il suo principale prodotto era una workstation grafica sviluppata per gestire ed elaborare immagini di grandi dimensioni. I progetti hardware della società non ebbero molto successo mentre i cortometraggi e lo sviluppo di software per la computer grafica si dimostrarono una strada più produttiva. Nel 1986 Jobs fondò la nuova compagnia indipendente con Edwin Catmull, che rimane membro del team esecutivo. La divisione della Lucasfilm contattò un ex animatore della Disney, John Lasseter, regista e animatore due volte vincitore dell'Oscar, proponendogli di realizzare un'animazione in computer grafica. Lasseter aveva già acquisito esperienza con quella tecnica alla Disney, pur non essendo un esperto di computer né di informatica, e il suo obiettivo a lungo termine era la realizzazione di un lungometraggio animato interamente in CGI. Lasseter supervisiona tutti i progetti dello studio come vicepresidente esecutivo del Creative Department. Altri membri degni di nota del team esecutivo sono Sarah McArthur (vicecapitano esecutivo della produzione), Simon Bax (vicepresidente esecutivo e tesoriere) e Lois Scali (vicepresidente esecutivo e consigliere generale).
+
+I primi film
+Nel 1984 nacque Le avventure di André & Wally B. Oltre ad essere il primo cortometraggio in CGI ad avere una trama e dei personaggi, The Adventures of André and Wally B. introduceva anche delle importanti innovazioni tecniche. Comparivano infatti per la prima volta il sistema a particelle (che consentiva di animare migliaia di piccoli oggetti contemporaneamente, qui fu utilizzato per le foglie) e il motion blur, ossia l'effetto mosso che faceva sì che gli oggetti che si muovevano velocemente si sfocassero seguendo la direzione del movimento. In più, John Lasseter, nel realizzare i personaggi si trovò di fronte a un grosso problema: si potevano utilizzare soltanto semplici forme geometriche (come cilindri o sfere), che non gli consentivano di dare al corpo dei personaggi la flessibilità e morbidezza che avrebbe dato loro la maggior parte dell'espressività. Sottopose il problema ai tecnici della Pixar, che in risposta introdussero una primitiva geometrica chiamata teardrop (forma a goccia) e una chiamata bound. Queste nuove forme, unite alle possibilità dello squash and stretch, tecnica di deformazione delle forme tipica dell'animazione classica, mostrarono a tutti le grandi potenzialità dell'animazione al computer.
+Presentato al SIGGRAPH del 1984, il corto ebbe un grandissimo successo. In seguito alla fama ottenuta, la computer division della Lucasfilm fu acquistata da Steve Jobs, diventando la Pixar.
+Tuttavia non si trattava ancora di uno studio di animazione, in quanto lo scopo principale dell'azienda era vendere hardware, e i cortometraggi animati avevano lo scopo di pubblicizzare i computer mostrando le prestazioni che potevano raggiungere, oltre che essere un mezzo per lo sviluppo di nuovi software.
+Nel 1985 lo studio si occupò di animare il cavaliere di vetro del film Piramide di paura.
+Nel 1986, ispirandosi alla lampada appoggiata sulla sua scrivania (una struttura piuttosto semplice), Lasseter creò il personaggio di Luxo. Ne modificò poi le proporzioni, per creare una lampada "bambina", Luxo Junior, che sarà il protagonista del cortometraggio omonimo, oltre a diventare successivamente il logo della Pixar. In Luxo Junior le due lampade, genitore e figlio, sono animate in una scena di vita quotidiana. Dal punto di vista tecnico è notevole l'algoritmo usato per le ombreggiature, con le lampade che sono esse stesse la fonte della luce che le illumina. I dettagli tecnici passarono però in secondo piano al SIGGRAPH di fronte all'umanità impressa nelle lampade dall'animatore.
+È dell'anno successivo Il sogno di Red, in cui i tecnici della Pixar si impegnano nella realizzazione di una scena di pioggia e della prima figura "antropomorfa" realizzata in CGI (un clown). Dal punto di vista dell'animazione, Lasseter inserisce un notevole pathos, realizzando un finale triste.
+Ma quello che forse è il più importante cortometraggio realizzato dalla Pixar è Tin Toy del 1988, che fu il primo cortometraggio in CGI a vincere il premio Oscar. In questo cortometraggio compare per la prima volta una figura umana, un bambino, che terrorizza i giocattoli, che sono dotati di una volontà propria e scappano a nascondersi. Il cortometraggio è molto importante anche perché contiene in embrione l'idea da cui nascerà Toy Story - Il mondo dei giocattoli.
+In questo periodo Steve Jobs effettua una riorganizzazione dell'azienda, eliminando la parte hardware e concentrandosi totalmente sull'animazione. Nascono ufficialmente i Pixar Animation Studios.
+L'ultimo cortometraggio realizzato da Lasseter come regista è Knick Knack del 1989. Realizzato con forme semplici e geometriche e senza figure umane, contiene diverse innovazioni tecniche, soprattutto nel fluttuare della neve all'interno della sfera.
+Nell'ambito del suo obiettivo di realizzare un lungometraggio animato in CGI il gruppo della Pixar incominciò a dedicarsi alla televisione, realizzando pubblicità e altre sequenze. L'obiettivo intermedio era quello di realizzare uno speciale per la TV di mezz'ora.
+
+Dagli anni '90 al 2017
+Nel frattempo, la Disney aveva tentato più volte di firmare un contratto con Lasseter, che però aveva sempre rifiutato. Gli propose a questo punto un posto come direttore di un lungometraggio animato, proponendogli così di realizzare il suo obiettivo iniziale. Lasseter rifiutò ancora, ma suggerì alla Disney di realizzare il lungometraggio con la Pixar. La Disney accettò il suggerimento e propose alla Pixar un accordo, affermando che, se fossero stati in grado di realizzare una sequenza animata di mezz'ora, allora sarebbero riusciti a realizzarne una di un'ora e mezza. Lasseter e il gruppo della Pixar abbandonarono quindi momentaneamente i cortometraggi per dedicarsi alla realizzazione di Toy Story del 1995, ricordato per essere stato il primo lungometraggio animato interamente digitale. Dalla pellicola, che ottenne tre Oscar, prenderanno le mosse molti altri film dello studio di animazione. Il film, diretto da Lasseter, registrò un incasso di 361 milioni di dollari a fronte dei 30 milioni di dollari di budget (e per la prima volta un film d'animazione ricevette una candidatura all'Oscar nella categoria miglior sceneggiatura originale).
+Sin dal primo lungometraggio, quasi tutti i lungometraggi della Pixar sono prodotti in collaborazione con la Walt Disney Pictures. Le compagnie, come parte dell'accordo per la realizzazione di Toy Story avevano siglato un contratto da 10 anni e 5 film, nei quali si dividevano i costi di produzione ed i profitti, con la Disney che riceveva il 12,5% del reddito ed i diritti del film (compresi quelli per il merchandising). In questo periodo, la Pixar decise di interrompere la produzione delle pubblicità per "focalizzarsi sui lungometraggi e l'intrattenimento interattivo".
+I primi sei lungometraggi della Pixar incassarono più di 2,5 miliardi di dollari, rendendola, film dopo film, la casa di produzione con il maggior successo di tutti i tempi. Dal 1995 al 2004 infatti uscirono, oltre a Toy Story, A Bug's Life - Megaminimondo (1998) di John Lasseter, che incassò 363 milioni di dollari contro i 120 milioni di budget, Toy Story 2 - Woody e Buzz alla riscossa (1999) di nuovo diretto da John Lasseter che fece 485 milioni di dollari d'incasso a fronte dei 90 milioni di budget, Monsters & Co. (2001) di Pete Docter che fece 562 milioni di dollari a fronte dei 115 milioni di budget e diventando uno dei primi film ad essere nominato agli Oscar nella categoria di miglior film d'animazione assieme a Jimmy Neutron - Ragazzo Prodigio di Paramount e Nickelodeon, ma venne sconfitto da Shrek della DreamWorks, Alla ricerca di Nemo (2003) di Andrew Stanton che fece 936 milioni d'incasso contro i suoi 94 milioni di budget e vincendo anche il premio Oscar come miglior film d'animazione, Gli Incredibili - Una "normale" famiglia di supereroi (2004) di Brad Bird che incassò 633 milioni di dollari contro i 93 milioni di dollari di budget e vinse l'Oscar come miglior film d'animazione. Ben presto però il CEO della Disney, Michael Eisner, e quello della Pixar, Steve Jobs, entrarono in contrasto a causa del fatto che il primo aveva considerato Toy Story 2 fuori dall'accordo dei cinque film in quanto inizialmente previsto come film direct-to-video.
+Nel frattempo, nel 1997, la Pixar aveva ricominciato a realizzare dei cortometraggi con Il gioco di Geri, che vinse l'Oscar come miglior cortometraggio animato. Da allora, continua ininterrotta la produzione di cortometraggi animati, anche allo scopo di far emergere nuovi talenti e di sviluppare ulteriori innovazioni tecniche. Spesso i nuovi corti vengono realizzati come spin off dei lungometraggi.
+All'inizio del 2004 ci fu un tentativo di rinnovo del patto. Per il nuovo affare, la Pixar avrebbe voluto pagare solamente per la distribuzione, senza la divisione dei profitti e dei diritti commerciali. L'offerta non fu accettata e la Pixar rifiutò ogni altra concessione. La Disney, forte del fatto di detenere i diritti sui personaggi di tutti i film fino ad allora prodotti e quelli di creare i rispettivi seguiti, anche senza il coinvolgimento della Pixar, mise in piedi lo studio di animazione digitale Circle 7 Animation, con l'intento di produrre film e serie televisive con i personaggi Pixar. Eisner era convinto che Circle 7 avrebbe rotto definitivamente gli accordi con la Pixar, e in quel caso la Disney sarebbe andata avanti a produrre film con personaggi Pixar a budget più contenuti, o avrebbe convinto Jobs a ridimensionare le loro richieste. Il regista Andrew Stanton commentò dicendo: «Non ci hanno mai fatto credere che Circle 7 non fosse la moneta di scambio più costosa mai realizzata. Ma sapevamo anche che, merce di scambio o no, sarebbero davvero andati fino in fondo».
+Alla fine del 2004, lo studio contava di assumere 170 persone, tra artisti, sceneggiatori, registi e produttori ed era evidente che la Disney stava investendo milioni nella neonata Circle 7. La prima produzione messa in cantiere fu proprio Toy Story 3, che sarebbe stata diretta da Badley Raymond, regista di Il re leone 3 - Hakuna Matata, mentre altri progetti in fase iniziale stavano prendendo forma (i sequel di Monsters & Co. e Alla ricerca di Nemo). Tim Allen affermò che sarebbe stato disponibile a prestare nuovamente la sua voce per il personaggio di Buzz Lightyear, grazie ai rapporti cordiali che aveva con la Disney (produttrice della serie Quell'uragano di papà), mentre Tom Hanks non si era sbilanciato al riguardo, ma la proposta avanzata dai produttori era quella di legare Hanks ad un ricco contratto multi-film. Alla fine del 2005, Jim Herzfeld, già autore di Ti presento i miei e Mi presenti i tuoi?, fu assunto per scrivere la sceneggiatura del film. La storia creata per questa prima incarnazione del film partiva da premesse diverse rispetto alla versione della Pixar. A causa di un malfunzionamento, Buzz Lightyear ferisce accidentalmente il suo proprietario, Andy. Contro il suo volere, i giocattoli decidono di spedirlo al centro d'assistenza di Taipei. In realtà, Hamm scopre su internet che molti altri Buzz nel mondo sono stati mandati a Taipei, in quanto parte di un massiccio ritiro del giocattolo voluto dalla fabbrica produttrice, costringendo Woody e gli altri a intraprendere il viaggio per salvare Buzz, il quale nel frattempo ha fatto amicizia con altri giocattoli difettosi, tra cui Cindy Scissors, un giocattolo-forbice, Cozy Rosey, una bambola con parti facilmente infiammabili, e Jujubee Bee, un distributore di caramelline Pez. La bozza venne poi riscritta da Bob Hilgenberg e Rob Muir, coppia che all'epoca stava lavorando alla sceneggiatura di un altro progetto della Circle 7, Monsters & Co. 2. I due inserirono una sequenza d'apertura simile a quella che si vede nella pellicola prodotta dalla Pixar.
+Herzfeld disse al riguardo che: «La Circle 7 si rivelò essere una pistola puntata alla testa dei "figli" della Pixar. Il gruppo di lavoro una volta mi disse "Noi eravamo lì solo per far paura alla Pixar al tavolo dei negoziati". Posso capire che siano amareggiati. Qualcuno ha preso i loro figli e gli ha affibbiato dei vestiti che non approvavano. Ma questo non significa che fossero dei brutti vestiti». La mossa, tuttavia, si rivelò controproducente quando Eisner lasciò la Disney nell'ottobre 2005. Nel 2006 la Disney acquistò la Pixar con un'operazione da 7,4 miliardi di dollari (contro i 10 milioni pagati da Jobs nel 1986), diventando così il più grande studio d'animazione del mondo. Steve Jobs entrò nel consiglio di amministrazione della Disney, mentre Lasseter e Ed Catmull erano ora a capo del reparto animazione. Il rimpiazzo di Eisner Bob Iger affidò le sorti dello studio a Lasseter e Catmull, che fecero chiudere lo studio e tutti i progetti in via di sviluppo, compreso Toy Story 3. Dovettero anche decidere come utilizzare tutti i dipendenti della Circle 7. 140 artisti vennero ricollocati in altri reparti mentre i restanti trenta vennero lasciati senza lavoro. Nel mese di maggio, Iger annunciò che Toy Story 3 sarebbe ripartito sotto la guida della Pixar.
+Nel 2006 uscì Cars - Motori ruggenti di John Lasseter, primo film della Pixar dopo l'acquisizione dalla Walt Disney Company. Il film uscì in estate e rispetto ai suoi predecessori venne accolto in modo un po' meno caloroso da parte della critica statunitense. Tuttavia a fronte di un budget di 120 milioni di dollari, il film si rivelò un successo commerciale (soprattutto nel merchandising) incassando 462 milioni di dollari in tutto il mondo e venne nominato all'Oscar come miglior film d'animazione. Questa volta però venne battuto da Happy Feet di George Miller e prodotto dalla Warner Bros. Animation.
+Nel 2007 uscì Ratatouille di Brad Bird; il film incassò ben 623 milioni di dollari in tutto il mondo contro i 150 milioni di dollari di budget e vinse l'Oscar come miglior film d'animazione.
+Nel 2008 fu la volta di WALL•E di Andrew Stanton, da molti considerato il miglior film Pixar, che con un costo di 180 milioni di dollari e 533 milioni di dollari d'incasso delude le aspettative, ma grazie alla qualità del film, la Pixar vinse un altro Oscar come miglior film d'animazione e per la seconda volta un film d'animazione ricevette una candidatura nella categoria miglior sceneggiatura originale.
+Nel 2009, con l'uscita di Up di Pete Docter, che a fronte di 175 milioni di dollari di budget ottenne un incasso di 735 milioni di dollari, la Pixar vinse per la prima volta due Oscar: uno per la miglior colonna sonora e un altro come miglior film animato e, per la prima volta dai tempi di La bella e la bestia, un film d'animazione riceve la candidatura agli Oscar come miglior film.
+Nel 2010 uscì Toy Story 3 - La grande fuga di Lee Unkrich, che, a fronte dei 200 milioni di dollari di budget, incassa ben 1,066 miliardi di dollari in tutto il mondo, diventando il primo Lungometraggio Pixar a superare il miliardo di dollari, e viene riconosciuto dalla stampa come il miglior film della trilogia tant'è che vince l'Oscar come miglior film d'animazione e riceve le nomination agli Oscar come miglior film e miglior sceneggiatura non originale. Vince anche l'Oscar per la migliore canzone originale, il che ne fa il secondo film Pixar a vincere due Oscar. Questo è il film Pixar che ha ottenuto più riconoscimenti.
+Nel 2011 uscì Cars 2, sempre diretto da John Lasseter e primo lungometraggio Pixar bocciato dalla critica americana. Il film tuttavia di fronte ai suoi 200 milioni di dollari di budget, si rivelò nuovamente un buon successo al box office incassando 562 milioni di dollari in tutto il mondo, mentre il merchandising delle macchine giocattolo supera i 10 miliardi di dollari di vendite.
+Nel 2012 uscì Ribelle - The Brave di Mark Andrews e Brenda Chapman, che incassò 538 milioni di dollari a fronte dei suoi 185 milioni di budget. La pellicola venne lodata dalla stampa soprattutto per la qualità grafica e vinse l'Oscar come miglior film d'animazione nel 2013.
+Nel 2013 uscì Monsters University di Dan Scanlon, primo e per ora unico prequel di un'opera prodotta dallo studio (Monsters & Co.), che ricevette critiche positive e incassò 743 milioni di dollari a fronte dei 200 milioni di dollari di budget. Tuttavia il film non ricevette alcuna candidatura agli Oscar.
+Nel 2015 dopo un anno di assenza la Pixar torna al cinema con due film: Inside Out di Pete Docter, presentato al Festival di Cannes 2015 e lodato dalla stampa, a fronte dei 175 milioni di dollari di budget incassa 857 milioni di dollari e vinse l'Oscar come miglior film d'animazione; e Il viaggio di Arlo di Peter Sohn, che si rivelò il primo flop della Pixar dato che, costato 200 milioni di dollari, la pellicola incassa appena 333 milioni di dollari in tutto il mondo.
+Nel 2016 uscì Alla ricerca di Dory, diretto nuovamente da Andrew Stanton, che ricevette il plauso della critica e che, costato 200 milioni di dollari, si rivelò essere campione di incassi con 1,028 miliardi di dollari in tutto il mondo, diventando il secondo Lungometraggio Pixar a superare il miliardo di incassi dopo Toy Story 3 - La grande fuga nel 2010.
+Nel 2017 la Pixar pubblica altri due film: Cars 3 di Brian Fee, che ha ricevuto critiche abbastanza positive dalla stampa e un incasso di 383 milioni di dollari a fronte dei 150 milioni di dollari di budget; e Coco di Lee Unkrich che è stato acclamato dalla critica e dal pubblico. Il film incassa ben 807 milioni di dollari in tutto il mondo a fronte dei 150 milioni di dollari di budget e vince numerosi premi e riconoscimenti, tra i quali il Golden Globe e successivamente l'Oscar come miglior film d'animazione e miglior canzone con "Remember Me", il che lo rende il quarto film Pixar a ricevere due Oscar.
+
+Dal 2018
+Nel 2018, dopo più di venticinque anni, lo studio vede un cambio di guardia nella direzione artistica. A fine 2017, infatti, John Lasseter annunciò un periodo di pausa di sei mesi dallo studio (per alcuni propri comportamenti scorretti), durante il quale venne sostituito da Pete Docter, confermato poi sul ruolo dopo le dimissioni definitive di Lasseter durante il 2018.
+Nel 2018 esce Gli Incredibili 2, sempre diretto da Brad Bird, che a fronte di un budget di 200 milioni di dollari ne incassò 1 miliardo e 242 milioni, diventando il terzo lungometraggio Pixar a superare il miliardo di dollari dopo Alla ricerca di Dory e Toy Story 3 - La grande fuga, e superando il record di quest'ultimo film diventò il film Pixar che ha incassato di più nella storia. Il film ricevette anche una nomination ai Golden Globe e all'Oscar come miglior film d'animazione.
+Nel 2019 esce Toy Story 4 di Josh Cooley, che venne lodato dalla critica e incassò in tutto il mondo 1,073 miliardi di dollari di fronte ad un budget di 200 milioni di dollari, diventando il quarto lungometraggio Pixar a superare il miliardo di dollari dopo Gli Incredibili 2, Alla ricerca di Dory e Toy Story 3 - La grande fuga. Il film vince numerosi riconoscimenti tra cui l'Oscar per il miglior film d'animazione, rendendo Toy Story l'unico franchise a vincere due premi Oscar per il miglior film d'animazione grazie alla precedente vittoria di Toy Story 3. Nello stesso anno, dopo Lasseter, un altro dei fondatori dello studio, Lee Unkrich lascia la Pixar (in questo caso per concentrarsi sulla propria famiglia).
+Nel 2020 la Pixar pubblicò altri due film: Onward - Oltre la magia di Dan Scanlon, che a causa della pandemia di COVID-19, incassò in tutto il mondo soltanto 141 milioni di dollari di fronte a un budget di circa 175-200, ma che in compenso ricevette ottimi voti da parte della critica; e Soul di Pete Docter che, sempre a causa della pandemia, venne distribuito sulla piattaforma streaming Disney+. Quest'ultimo è il quarto film Pixar a ricevere due Oscar: uno per l'animazione e uno per la colonna sonora.
+Nel 2021 uscì Luca, che ricevette recensioni positive dalla critica, e nel marzo 2022 fu la volta di Red di Domee Shi. Nel giugno dello stesso anno Pixar tornò in sala con Lightyear di Angus MacLane. Nel giugno 2023 è uscito Elemental, e il 9 febbraio dello stesso anno il CEO della Disney Bob Iger annuncia la produzione di un quinto capitolo del franchise di Toy Story.
+Nel 2024 era prevista l'uscita di Elio, successivamente posticipata al 13 giugno 2025 per via di alcuni rimaneggiamenti (e un cambio di regia) al film. Le prime fasi del film sono state dirette da Adrian Molina e successivamente il progetto è passato nelle mani di Domee Shi e Madeline Sharafian (che segnano il primo film dello studio diretto a quattro mani e non con regista e co-regista).
+Inside Out 2, sequel del film del 2015, è stato distribuito in Nord America il 14 giugno 2024. Il film si rivela un successo commerciale straordinario e diventa il maggior successo economico dello studio, incassando 1,698 miliardi di dollari a fronte di un budget di 200 milioni di dollari e risultando il maggior incasso del 2024, il 9º film con maggiori incassi nella storia del cinema, nonché secondo maggior incasso di sempre per un film d'animazione.
+Nel 2026 lo studio festeggia i suoi quarant'anni con il film originale Jumpers - Un salto tra gli animali, prima regia presso lo studio di Daniel Chong, e con Toy Story 5, quinto capitolo del franchise di Toy Story, nonché primo diretto dallo storico sceneggiatore della saga Andrew Stanton e senza la collaborazione di John Lasseter.
+
+Composizione artistica, collaborazioni e riferimenti
+I creatori
+Alla sua fondazione lo studio vedeva collaborare i quattro animatori e amici John Lasseter (anche direttore creativo fino al 2017), Pete Docter (in seguito direttore creativo dal 2018), Andrew Stanton e Joe Ranft (deceduto nel 2005, prima di poter dirigere un lungometraggio), a cui si aggiunse quasi subito Lee Unkrich. I cinque animatori lavorarono ai primi cinque film avvalendosi di una squadra di collaboratori (alcuni dei quali sarebbero poi rimasti nella composizione fissa dello studio, tra cui Ralph Eggleston e Bob Peterson), ma dirigendo loro tutte le pellicole. Nel 2004 però decisero di chiamare Brad Bird, storico animatore, regista e sceneggiatore reso noto da Il gigante di ferro e I Simpson come primo regista esterno ai cinque (dirigerà Gli Incredibili e subito dopo Ratatouille). Fino al 2011 tutti i film furono diretti da questo gruppo di sei, quando nel 2012 il film Ribelle - The Brave venne affidato dapprima a Brenda Chapman (altra regista esterna, nota per Il principe d'Egitto) e in corso d'opera a Mark Andrews (storico collaboratore di Bird). A seguire si sarebbero affiancati ai sei nomi storici, nuovi registi che lavoravano in Pixar da anni, ovvero Dan Scanlon (Monsters University, Onward), Peter Sohn (Il viaggio di Arlo, Elemental), Josh Cooley (Toy Story 4), Enrico Casarosa (Luca), Domee Shi (Red e Elio), Angus MacLane (Lightyear - La vera storia di Buzz), Kelsey Mann (Inside Out 2) e Daniel Chong (Hoppers).
+Colonne sonore e cast vocali
+Oltre al comparto registico, anche le colonne sonore hanno visto una partecipazione continuativa di alcuni nomi storici, in particolare fino al film Ribelle - The Brave (la cui OST fu curata da Patrick Doyle) tutte le colonne sonore sono state composte da Randy Newman, Thomas Newman e Michael Giacchino. Oltre a Doyle, hanno collaborato successivamente con Pixar anche Mychael e Jeff Danna (Il viaggio di Arlo e Onward), Trent Reznor e Atticus Ross (Soul), Dan Romer (Luca), Ludwig Göransson (Red), Andrea Datzman (Inside Out 2) e Rob Simonsen (Elio) Inoltre sono solite in Pixar le collaborazioni tra registi e compositori (ad esempio tutti i film di Lasseter ad eccezione di Cars 2 sono stati musicati da Randy Newman e tutti i film di Stanton ad eccezione di Toy Story 5 da Thomas Newman).
+Dal punto di vista dei cast vocali, Pixar si avvale da sempre di attori e comici molto noti per le proprie pellicole, come Tom Hanks, Ellen DeGeneres, Amy Poehler e Billy Crystal, e ha avuto inoltre una collaborazione fissa e continuativa fino al 2020 e di nuovo nel 2024 con l'attore e doppiatore John Ratzenberger (che ha preso parte in almeno un ruolo in ogni film fino a Onward e in Inside Out 2).
+In Italia tutti i film sono stati adattati e diretti da Carlo Valli fino a Alla ricerca di Dory (ad esclusione di A Bug's Life - Megaminimondo, Ratatouille e WALL•E, il cui doppiaggio fu curato rispettivamente da Francesco Vairano, Massimiliano Alto e Carlo Cosolo) e da Massimiliano Manfredi da Cars 3 in poi. I ruoli di Ratzenberger sono stati affidati in italiano a Renato Cecchetto (a parte in Gli Incredibili, Gli Incredibili 2 e Ribelle - The Brave) fino alla sua scomparsa. Da Inside Out 2 il ruolo passa ad Ambrogio Colombo. Anche per le edizioni italiane tutti i film vedono la partecipazione di personaggi dello spettacolo (attori e non) in ruoli principali o minori (come Fabrizio Frizzi, Carla Signoris, Paola Cortellesi e Anna Mazzamauro), ad eccezione di A Bug's Life, WALL•E, Up, Inside Out e Il viaggio di Arlo.
+Riferimenti e tradizioni
+Come detto, ogni film dello studio fino a Onward - Oltre la magia e da Inside Out 2 vede la partecipazione di John Ratzenberger in un ruolo, più o meno centrale (ad esempio Hamm nella saga di Toy Story, Yeti nel franchise di Monsters & Co., Mustafa in Ratatouille e Fritz in Inside Out e Inside Out 2).
+Oltre a ciò, ogni film Pixar contiene un cameo del furgone del Pizza Planet proveniente da Toy Story e del codice A113 (classe della scuola di animazione California Institute of the Arts di cui fecero parte i fondatori di Pixar). Inoltre, ogni film presenta un riferimento al lungometraggio successivo in ordine di uscita:
+
+In Toy Story un insetto morto sul casco di Buzz rimanda a A Bug's Life - Megaminimondo.
+Nei titoli di coda di A Bug's Life - Megaminimondo compare Woody, protagonista di Toy Story 2.
+In Toy Story 2 vi è un riferimento a Hidden City, la caffetteria di Mostropoli in Monsters & Co..
+Tra i giocattoli di Boo in Monsters & Co. c'è Nemo.
+In Alla ricerca di Nemo un bambino legge una rivista dedicata a Mr. Incredibile.
+Tra le macchine parcheggiate in una scena di Gli Incredibili è presente una Hudson Hornet (Doc di Cars).
+In Cars - Motori ruggenti all'interno del cono Motel è visibile un poster della Torre Eiffel, rimando a Ratatouille.
+In casa di Linguini, co-protagonista di Ratatouille, compare Hal, lo scarafaggio amico di WALL•E.
+In WALL•E è visibile il girello di Carl Fredricksen tra la spazzatura.
+Nella scena del decollo con la casa in Up, una bambina ha Lotso tra i propri giocattoli.
+Un poster di Finn McMissile si vede nella camera da letto di Andy in Toy Story 3.
+Nel pub londinese di Cars 2 c'è l'arazzo di famiglia di Ribelle - The Brave in versione automobilistica.
+Tra le sculture in legno della Strega di Ribelle - The Brave c'è James P. Sullivan.
+Sulla copertina del quadernetto consegnato da Scott a Sulley in Monsters University è visibile un unicorno, rimando all'attrice del Centro Produzione Sogni di Inside Out.
+In un ricordo di Inside Out compare una statua di Forrest da Il viaggio di Arlo.
+In un'inquadratura sottomarina de Il viaggio di Arlo si vede Hank, il polpo amico di Dory.
+Uno degli autisti del furgone di Alla ricerca di Dory indossa un braccialetto di Saetta McQueen.
+In una scena di Cars 3 è visibile la chitarra di Hector da Coco, Inoltre nella scena dell’allenamento viete citata e mostrata la città di Santa Cecilia.
+Nel mondo degli spiriti di Coco è presente una versione "scheletrica" del poster di Gli Incredibili 2.
+Tra i giocattoli di Jack Jack in Gli Incredibili 2 è compreso Duke Caboom.
+Una delle bancarelle del luna park di Toy Story 4 presenta il medesimo disegno del furgone di Barley Lightfoot.
+Tra i dischi in casa Lightfoot in Onward ce n'è uno di Dorothea Williams, la jazzista di Soul.
+In Soul si vede un poster che invita a viaggiare a Portorosso.
+In Luca c'è un disco di "4☆Villaggi", riferimento alla band "4☆Towns" di Red.
+In Red su uno skateboard è attaccato un adesivo col simbolo della squadra di Lightyear.
+In Lightyear - La vera storia di Buzz in un distributore automatico compare una bottiglia d'acqua marca Wade, riferimento al protagonista di Elemental.
+In Elemental si notano riferimenti a Inside Out 2 e a Elio, poiché il secondo era inizialmente programmato per uscire prima. C'è un'etichetta con la scritta "SparkJoy", in riferimento a Gioia, e uno dei blob di Elio tra il pubblico della partita.
+In Inside Out 2, per la stessa ragione di Elemental, sono presenti un riferimento a Elio (che compare tra i ricordi di Riley) e a Toy Story 5 (Gioia porge a Tristezza un binocolo con le fattezze di Lenny).
+In Elio sono presenti due riferimenti a Hoppers. Uno dei personaggi è presente nello spazio, come indicato dalla regista Madeline Sharafian. Inoltre, al termine del film, nelle proiezioni statunitensi, è presente un teaser trailer di Jumpers - Un salto tra animali.
+Atlas, uno dei personaggi originali del film Toy Story 5, è presente in Jumpers - Un salto tra gli animali.
+Inoltre, sia in Cars 2 che in Ribelle c'è un riferimento a Newt, un film dello studio inizialmente previsto per il 2012, ma in seguito cancellato pochi mesi prima.
+
+RenderMan
+RenderMan (letteralmente "uomo del rendering") è il software sviluppato e utilizzato dalla Pixar per i suoi film. È anche un plug-in compatibile con i più importanti software di animazione 3D come Maya. Render Man è uno dei motori di rendering più avanzati e versatili in circolazione, che crea immagini di grande qualità, molto ben considerato anche perché il suo sviluppo software è il frutto dell'esperienza diretta dei creatori con le necessità del cinema e dell'animazione più esigenti e professionali.
+
+Filmografia
+Lungometraggi
+Toy Story - Il mondo dei giocattoli (Toy Story), regia di John Lasseter (1995)
+A Bug's Life - Megaminimondo (A Bug's Life), regia di John Lasseter (1998)
+Toy Story 2 - Woody e Buzz alla riscossa (Toy Story 2), regia di John Lasseter (1999)
+Monsters & Co. (Monsters, Inc.), regia di Pete Docter (2001)
+Alla ricerca di Nemo (Finding Nemo), regia di Andrew Stanton (2003)
+Gli Incredibili - Una "normale" famiglia di supereroi (The Incredibles), regia di Brad Bird (2004)
+Cars - Motori ruggenti (Cars), regia di John Lasseter (2006)
+Ratatouille, regia di Brad Bird (2007)
+WALL•E, regia di Andrew Stanton (2008)
+Up, regia di Pete Docter (2009)
+Toy Story 3 - La grande fuga (Toy Story 3), regia di Lee Unkrich (2010)
+Cars 2, regia di John Lasseter (2011)
+Ribelle - The Brave (Brave), regia di Mark Andrews e Brenda Chapman (2012)
+Monsters University, regia di Dan Scanlon (2013)
+Inside Out, regia di Pete Docter (2015)
+Il viaggio di Arlo (The Good Dinosaur), regia di Peter Sohn (2015)
+Alla ricerca di Dory (Finding Dory), regia di Andrew Stanton (2016)
+Cars 3, regia di Brian Fee (2017)
+Coco, regia di Lee Unkrich (2017)
+Gli Incredibili 2 (Incredibles 2), regia di Brad Bird (2018)
+Toy Story 4, regia di Josh Cooley (2019)
+Onward - Oltre la magia (Onward), regia di Dan Scanlon (2020)
+Soul, regia di Pete Docter (2020)
+Luca, regia di Enrico Casarosa (2021)
+Red (Turning Red), regia di Domee Shi (2022)
+Lightyear - La vera storia di Buzz (Lightyear), regia di Angus MacLane (2022)
+Elemental, regia di Peter Sohn (2023)
+Inside Out 2, regia di Kelsey Mann (2024)
+Elio, regia di Domee Shi e Madeline Sharafian (2025)
+Jumpers - Un salto tra gli animali (Hoppers), regia di Daniel Chong (2026)
+Toy Story 5, regia di Andrew Stanton (2026)
+Gatto, regia di Enrico Casarosa (2027)
+Ghost Market, regia di Jesse Andrews e Trevor Jimenez (2028)
+Gli Incredibili 3 (The Incredibles 3), regia di Peter Sohn (2028)
+Coco 2, regia di Lee Unkrich e Adrian Molina (2029)
+
+Cortometraggi
+1984 – Le avventure di André & Wally B.
+1986 – Luxo Junior
+1987 – Il sogno di Red
+1988 – Tin Toy
+1989 – Knick Knack
+1997 – Il gioco di Geri
+2000 – Pennuti spennati
+2002 – La nuova macchina di Mike
+2003 – L'agnello rimbalzello
+2005 – L'attacco di Jack-Jack
+2005 – Le avventure di Mr. Incredibile
+2005 – One Man Band
+2006 – Carl Attrezzi e la luce fantasma
+2006 – Stu - Anche un alieno può sbagliare
+2007 – Il tuo amico topo
+2008 – Presto
+2008 – BURN•E
+2009 – Parzialmente nuvoloso
+2009 – La missione speciale di Dug
+2009 – George & A.J.
+2010 – Quando il giorno incontra la notte
+2011 – Vacanze hawaiiane
+2011 – La luna
+2011 – Buzz a sorpresa
+2012 – La leggenda di Mor'du
+2012 – Non c'è festa senza Rex
+2013 – L'ombrello blu
+2013 – Centro feste
+2014 – Lava
+2015 – Il primo appuntamento di Riley
+2015 – Il super team di Sanjay
+2016 – Piper
+2016 – Alla ricerca di Dory - Interviste al parco oceanografico
+2017 – Lou
+2017 - Scuooola per piloti di Miss Fritter
+2018 – Bao
+2018 – Zietta Edna
+2018 – Purl
+2019 – Smash and Grab
+2019 – Kitbull
+2019 – Float
+2019 – Vita da lampada
+2019 – Wind
+2020 – Loop
+2020 – Out
+2020 – La tana
+2021 – 22 contro la Terra
+2021 – Vent'anni
+2021 – Nona
+2021 – Ciao Alberto
+2023 – L'appuntamento di Carl
+2024 – Self
+TBA – Loving Dory
+
+Prodotti televisivi
+Sono state realizzate due serie da Disney Television Animation ispirate a prodotti Pixar (e da Pixar co-prodotte). La prima è Buzz Lightyear da Comando Stellare (2000-2001), con annesso il film-pilota Buzz Lightyear da Comando Stellare - Si parte! (2000), che presenta una scena di apertura realizzata dagli studi Pixar. La seconda, prodotta a partire dal 2021, è Monsters & Co. la serie - Lavori in corso!, serie sequel di Monsters & Co..
+Pixar ha invece direttamente realizzato attualmente otto serie animate, pubblicate per la prima volta su ABC, Disney Channel, Disney Jr. o Disney+, ovvero:
+
+Toy Story Treats (1995): trasmessi all'epoca dell'uscita del primo Toy Story, intervallavano le trasmissioni del contenitore televisivo per ragazzi One Saturday Morning (oggi ABC Kids) in onda sulla ABC.
+Cars Toons (2008-2013): serie di corti con trame verticali che raccontano di immaginari lavori estremi svolti da Cricchetto prima e durante gli eventi della saga cinematografica di Cars. Sono andati in onda su Disney Jr. e Disney Channel.
+I perché di Forky (2019): miniserie di 10 puntate ambientata subito dopo gli eventi di Toy Story 4, nel quale Forky dialoga con alcuni protagonisti della saga e con personaggi introdotti appositamente per conoscere risposte a suoi quesiti sulla vita. Pubblicata su Disney+ a novembre 2019.
+Una vita da Dug (2021): miniserie di brevi corti che raccontano la vita di Carl Fredricksen e il cane Dug dopo gli eventi del film Up. Pubblicata su Disney+ a settembre 2021. L'Appuntamento di Carl era stato originariamente realizzato come episodio conclusivo della serie, ma è poi uscito al cinema come corto "individuale".
+Cars on the Road (2022): miniserie orizzontale in cui Cricchetto e Saetta McQueen percorrono un viaggio per recarsi al matrimonio della sorella di Cricchetto. Si tratta di una serie esclusiva di Disney+.
+Lego Pixar: Bricktoons (2024): creata in collaborazione con LEGO, è una miniserie di brevi corti che raccontano nuove storie con protagonisti diversi personaggi di film Pixar, disegnati in versione LEGO. Pubblicata su Disney+ a settembre 2024.
+Dream Productions (2024): spin-off di Inside Out, si incentra sulla vita presso il Centro produzione sogni di Riley. Pubblicata su Disney+ a dicembre 2024.
+Win or Lose (2025): si tratta della prima serie Pixar originale (non legata ad un loro lungometraggio) e pubblicata su Disney+ a partire da febbraio 2025.
+Inoltre, Pixar ha realizzato due special televisivi legati al franchise di Toy Story e simili ai tre corti Toy Story Toons, ovvero Toy Story of Terror! (2013) e Toy Story: Tutto un altro mondo (2014).
+
+Note
+Voci correlate
+Apple
+DreamWorks Animation
+John Ratzenberger
+Walt Disney Animation Studios
+Walt Disney Pictures
+
+Altri progetti
+ Wikimedia Commons contiene immagini o altri file su Pixar Animation Studios
+
+Collegamenti esterni
+(EN) Sito ufficiale, su pixar.com. 
+Pixar (canale), su YouTube, Google LLC. 
+(EN) John M. Cunningham, Pixar, su Enciclopedia Britannica, Encyclopædia Britannica, Inc. 
+(EN) Pixar Animation Studios, su MobyGames, Blue Flame Labs. 
+(EN) Pixar Animation Studios, su MusicBrainz, MetaBrainz Foundation. 
+Pixar Animation Studios, su Cinematografo, Fondazione Ente dello Spettacolo. 
+(EN) Pixar Animation Studios, su IMDb, IMDb.com. 
+Scheda sulla Pixar Animation Studios del Big Cartoon Database
+Il software Render Man, su renderman.pixar.com.

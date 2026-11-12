@@ -1,0 +1,7 @@
+target/
+index/
+progresso.json
+.DS_Store
+.idea/
+*.iml
+.vscode/

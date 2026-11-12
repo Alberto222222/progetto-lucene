@@ -1,0 +1,91 @@
+L'animazione è una tecnica che crea la percezione di movimento, tramite l'esposizione dello spettatore ad immagini proposte in rapida successione temporale. E contrariamente a quanto creduto per tanto tempo, l'animazione in generale nel cinema e in TV, non sono basati sulla cosiddetta persistenza della visione o sul fenomeno phi (che oggi risultano concetti obsoleti e fraintesi, risalenti rispettivamente al XIX secolo e all'inizio del XX secolo), ma sul meccanismo del movimento apparente a corto raggio o short-range apparent motion, come affermano gli ultimi studi fisiologici e neurologici sulla percezione.
+L'animazione viene solitamente prodotta mediante cartoni animati o animazioni a passo uno. Gli animatori sono le figure professionali che si dedicano alla creazione delle animazioni. Le animazioni, disegnate su carta, oppure prodotte con la computer grafica, possono essere fruite tramite una vasta gamma di metodi, a partire dal semplicissimo flip-book (un blocchetto di fogli), ai macchinari del precinema, alla pellicola cinematografica, al video, e sino ai sistemi digitali di ogni tipo oggi in commercio.
+
+Percezione del movimento
+La percezione del movimento, tramite l'animazione, viene prodotta esattamente come per i film, mediante la rapida successione di immagini fisse che, superando il tempo di percezione dell'occhio umano (approssimabile al valore minimo di 10 Hz, ovvero 10 fotogrammi al secondo), restituisce la percezione di un apparente movimento continuo, invece delle singole immagini fisse.
+La frequenza di successione delle immagini si misura in fotogrammi al secondo (fps); in passato, il valore minimo accettabile era considerato di 12 fps, al quale però l'immagine può presentare un effetto non propriamente fluido e continuo e per questo motivo, in seguito, si è preferito considerare come minimo naturale 16 fotogrammi al secondo. Invece, i valori standard sono diventati presto, 24 fps per il Cinema, 25 fps per i sistemi televisivi europei (PAL) e 29,97 fps per il sistemi televisivi americano e nipponico (NTSC).
+
+Tecniche
+Nel corso della storia sono state utilizzate varie tecniche per realizzare l'animazione di immagini; si presentano qui le principali.
+
+Animazione tradizionale
+L'animazione tradizionale è la tecnica classica dei disegni animati, chiamata anche cell animation; i cell sono fogli di rodovetro, fogli lucidi sintetici di acetato, usato per sovrapporre le parti da animare a quelle fisse.
+
+Animazione piena: termine che indica un processo di produzione di alta qualità, principalmente legato ai film d'animazione, con un elevato numero di disegni molto dettagliati per unità di tempo, nel quale si fa grande cura alla movimentazione dei personaggi. Classici esempi di animazione piena sono i lungometraggi della Disney o i film dello Studio Ghibli
+Animazione a tubo di gomma o Rubber hose è stato il primo stile di animazione che è stato standardizzato nel campo dell'animazione americana, usato nei primi anni fino agli anni '30 e che ha rivisto una sua riapparizione negli anni 2010 anche in ambito videogame (Bendy and the Ink Machine, Cuphead, Epic Mickey, Mouse: P.I. for Hire), questa tecnica sacrifica i dettagli e coerenza visiva per massimizzare la velocità di produzione mantenendo la scena più animata possibile
+Animazione limitata: termine contrapposto al precedente, indica un'animazione di tipo più economico, con meno disegni, meno dettagli, ed in cui le pose intermedie del movimento dei personaggi sono limitate. Pioniere del genere fu lo studio di animazione United Productions of America; esempi di animazione limitata sono: Gerald McBoing-Boing (USA 1951), Yellow Submarine (UK 1968), e molte serie a cartoni animati prodotti in America, Europa e in Giappone; successivamente l'uso primario che si è fatto della animazione limitata è stato quello di realizzare serie televisive a basso costo (settore nel quale si sono distinti degli studi di animazione come Filmation e Hanna-Barbera), e più tardi, anche nei cosiddetti web cartoon (Animazione Flash).
+Rotoscopio: tecnica brevettata da Max Fleischer nel 1917; i disegnatori tracciano i contorni per i loro disegni dai fotogrammi di riprese dal vivo. Il film sorgente, precedentemente realizzato, può essere usato direttamente per la realizzazione del cartone animato (come nel lungometraggio cinematografico Il Signore degli Anelli), usato come ispirazione (come in molti film Disney), o in maniera stilizzata ed espressiva (come in Waking Life), o addirittura attraverso vari dipinti utilizzati come fotogrammi come in Loving Vincent
+
+Passo uno
+Nota a livello internazionale come stop-motion. Questa tecnica anziché impiegare disegni eseguiti a mano, utilizza delle fotografie realizzate su un modellino/pupazzo, di qualunque natura o materiale, che viene movimentato dagli animatori fra una fotografia e l'altra. Il fatto di coinvolgere dei reali oggetti fisici, e non degli oggetti disegnati manualmente, ha permesso l'uso di questa tecnica anche nella comune cinematografia, per la quale ha rappresentato la prima fonte di effetti speciali. Alcune delle tecniche elencate sotto si distinguono più per i materiali usati che per la differente metodica.
+
+Claymation - abbreviazione di Clay animation; questa tecnica riguarda esclusivamente l'animazione di pupazzi in plastilina (es: Galline in fuga) usata nei film della Aardman
+Cutout animation - Genere di stop-motion bidimensionale; l'animazione viene applicata ad oggetti piatti come ritagli di giornale, vestiti, cartoncini (es: South Park) ecc. creando una sorta di collage in movimento. Fu una delle prime tecniche utilizzate, ed è sopravvissuta fino ad oggi, anche se poco sfruttata; fu molto usata da Quirino Cristiani.
+Silhouette animation Variante monocromatica della Cutout animation; con questa tecnica i personaggi spiccano dallo sfondo colorato come ombre nere. Il risultato finale rassomiglia alle ombre cinesi.
+Sand animation variante in cui viene utilizzata la sabbia.
+Graphic animation Sfrutta materiale di grafica non disegnata, come ad esempio fotografie, oppure ritagli di giornali o rotocalchi; Questa tecnica di stop-motion si realizza movimentando la grafica in oggetto, oppure mantenendo ferma la grafica e muovendo la fotocamera. Difficilmente viene usata da sola, piuttosto in combinazione con altre.
+Model animation Tecnica utilizzata per la creazione di effetti speciali che permette l'inserimento di elementi animati in stop-motion all'interno delle scene girate dal vivo o in set appositamente costruiti (es: King Kong del 1933; Star Wars: Episodio IV - Una nuova speranza del 1977)
+Go-motion Inventata dalla ILM (Industrial Light & Magic), da abbinarsi al computer. La normale model animation può creare un effetto di disorientamento nello spettatore, quando applicata ad oggetti che dovrebbero muoversi a grande velocità, essendo costituita da foto di soggetti fissi; nella go-motion le fotografie sono realizzate su soggetti che sono realmente in movimento (con ciò che ne deriva in ambito di profondità di campo, sensibilità della pellicola, e regolazione di otturatore e diaframma). Fu impiegata nel film Star Wars: Episodio V - L'Impero colpisce ancora del 1980.
+Object animation Questa tecnica di stop-motion immortala degli oggetti di comune uso quotidiano, o comunque oggetti non creati appositamente per lo stop-motion. Un esempio di object animation sono i Brickfilm, i film realizzati applicando la stop-motion ai mattoncini LEGO.
+Pixilation Tecnica che coinvolge degli attori reali, che si prestano alla fotografia in stop-motion, quindi rimanendo immobili mentre che viene catturato un frame, muovendosi di poco per il frame successivo e così via; è un metodo che permette l'inserimento di scene surreali, come apparizioni e sparizioni o movimento attraverso pavimenti e pareti di persone e oggetti.
+Puppet animation - Tecnica tipicamente usata per animare pupazzi, marionette, fantocci, giocattoli, bambole di carta, modellini; presenti in un ambiente costruito a loro dimensione (in contrasto quindi con la model animation). I pupazzi usati hanno generalmente uno scheletro metallico interno che li mantiene fermi e rigidi durante le manipolazioni delle giunture e una superficie esterna abbastanza malleabile che permette all'animatore di dare espressività e realismo ai pupazzi; infine per il labiale e le espressioni esse vengono generalmente realizzate singolarmente una per una, grazie alle stampanti 3D, e vengono applicate singolarmente per ogni fotogramma, tramite dei magneti, ai pupazzi. Esempi di questa tecnica sono: Una volpe a Corte (Le Roman de Renard) di Ladislav Starevich, i film di Jiří Trnka, i film dello studio Laika, diversi film di Tim Burton come La sposa cadavere, Nightmare Before Christmas di Henry Selick o Fantastic Mr. FoxFantastic Mr. Fox di Wes Anderson.
+Puppetoon - variante creata sulla base dei metodi impiegati da George Pal; questa tecnica impiega numerosi pupazzi identici fra loro, che si differenziano soltanto nella struttura interna, in modo da usare il pupazzo più adatto per l'azione del momento.
+
+Animazione computerizzata
+Anche l'animazione al computer ha sviluppato diverse tecniche e varianti, unite principalmente proprio dall'utilizzo del computer.
+
+Animazione 2D
+Le immagini sono create e/o modificate nel computer usando grafica bitmap o grafica vettoriale. La lavorazione al computer include e integra tutte le varie tecniche manuali, come la sovrapposizione, il morphing, lo onion skin, e il rotoscopio.
+
+Animazione flash
+
+Animazione 3D e tecniche di rendering
+Le forme animate nascono come modelli tridimensionali composti da poligoni, per poi essere manipolate da un animatore attraverso il rigging, un vero e proprio sistema di ossa che permette il movimento del personaggio e che può essere realizzato con varie tecniche. Quindi il solido viene rivestito con delle texture per creare la somiglianza con vari materiali. Infine il solido viene posto in una scenografia (a volte creata con la tecnica del Matte painting) anch'essa creata in 3D e il tutto viene illuminato. Questa tecnica è giunta ad uno stadio molto avanzato, ed è oggi impiegata per la realizzazione degli effetti speciali nei film live-action e per la creazione di interi lungometraggi, come ad esempio fanno i Pixar Animation Studios, lo studio DreamWorks Animation, lo studio Sony Pictures Animation.
+
+Motion capture
+Il Motion capture permette, attraverso speciali tute dotate di sensori e in un ambiente monitorato da ricevitori e telecamere, di registrare i movimenti realizzati da attori reali comprese le espressioni facciali. Questi movimenti vengono poi adattati sui modelli digitali che assumono dei movimenti e un'espressività molto più realistica e precisa, rispetto ad un'animazione manuale realizzata con il rigging. Questa tecnica di ultima generazione viene molto utilizzata per gli effetti speciali nei film live-action (come Jurassic World, dove la motion capture è stata utilizzata per le animazioni dei dinosauri impersonati da attori reali), più raramente nelle animazioni dei videogiochi e quasi mai nei lungometraggi animati.
+
+Altro
+Altri tipi di animazione sono:
+
+Morph target animation
+Crowd simulation
+Drawn on film animation
+Paint-on-glass animation
+Pinscreen animation
+Sand animation
+
+Storia
+Festival
+Vari sono i festival dedicati all'animazione di immagini:
+
+Cartoons on the Bay
+Festival internazionale del film d'animazione di Annecy
+VIEW Conference
+Imaginaria - festival internazionale del cinema d'animazione d'autore
+Animaphix. International animated filmfest, Bagheria, Italia
+PFA Piccolo Festival dell'Animazione, Friuli Venezia Giulia, Italia
+24FRAME FUTURE FILM FESTIVAL, Bologna, Modena Italia
+
+Note
+Voci correlate
+Cinema d'animazione
+Grafica computerizzata
+Live action
+Rodovetro
+Storia dell'animazione
+
+Altri progetti
+ Wikiquote contiene citazioni sull'animazione
+ Wikizionario contiene il lemma di dizionario «animazione»
+ Wikinotizie contiene notizie di attualità sull'animazione
+ Wikimedia Commons contiene immagini o altri file sull'animazione
+
+Collegamenti esterni
+(EN) Dave Kehr, animation, su Enciclopedia Britannica, Encyclopædia Britannica, Inc. 
+(EN, FR) Animazione, su Enciclopedia canadese. 
+(EN)  Animazione dal sito DMOZ
+(EN)  Experimental Animation Techniques in formato pdf.
+(EN) Kisscartoon, su kisscartoon.city.
+(EN) Cronologia dell'animazione, su animated-divots.net. URL consultato il 5 marzo 2011 (archiviato dall'url originale il 19 gennaio 2021).
+Blog italiano sulla Stop Motion e Animazione, su stop-motion.it.

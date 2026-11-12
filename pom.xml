@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- Identità del progetto -->
+    <groupId>it.ingdati</groupId>
+    <artifactId>progetto-lucene</artifactId>
+    <version>1.0</version>
+    <packaging>jar</packaging>
+
+    <properties>
+        <maven.compiler.release>21</maven.compiler.release>   <!-- Lucene 10 richiede Java 21 -->
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <lucene.version>10.6.0</lucene.version>   <!-- stessa versione del repository del corso (tteofili/lucenex) -->
+    </properties>
+
+    <dependencies>
+        <!-- Cuore di Lucene: Document, Field, IndexWriter, IndexSearcher, Query, BM25... -->
+        <dependency>
+            <groupId>org.apache.lucene</groupId>
+            <artifactId>lucene-core</artifactId>
+            <version>${lucene.version}</version>
+        </dependency>
+        <!-- Analyzer pronti (ItalianAnalyzer) e mattoncini per CustomAnalyzer -->
+        <dependency>
+            <groupId>org.apache.lucene</groupId>
+            <artifactId>lucene-analysis-common</artifactId>
+            <version>${lucene.version}</version>
+        </dependency>
+        <!-- QueryParser: trasforma il testo della query (anche "frasi") in oggetti Query -->
+        <dependency>
+            <groupId>org.apache.lucene</groupId>
+            <artifactId>lucene-queryparser</artifactId>
+            <version>${lucene.version}</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <!-- Permette di lanciare i programmi con:  mvn -q exec:java@indicizza  /  exec:java@cerca -->
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>3.5.0</version>
+                <executions>
+                    <execution>
+                        <id>indicizza</id>
+                        <configuration>
+                            <mainClass>it.ingdati.lucene.Indicizzatore</mainClass>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>analisi</id>
+                        <configuration>
+                            <mainClass>it.ingdati.lucene.MostraAnalisi</mainClass>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>cerca</id>
+                        <configuration>
+                            <mainClass>it.ingdati.lucene.Ricercatore</mainClass>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+</project>

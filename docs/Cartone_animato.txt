@@ -1,0 +1,90 @@
+Un cartone animato, spesso abbreviato in cartone, è un'opera audiovisiva d'animazione.
+Più raramente viene chiamato disegno animato o cartoon (dall'inglese).
+I cartoni animati vengono realizzati per il cinema, la televisione, il mercato home video e anche per il web.
+
+Etimologia e diffusione dei termini
+Il termine cartone animato (plurale: cartoni animati) deriva dall'italianizzazione del corrispondente termine inglese animated cartoon. Il termine cartoon, abbreviato anche toon, diffuso anche nella lingua italiana come sinonimo di cartone animato, è a sua volta derivato dall'italiano cartone con riferimento ai disegni preparatori per arazzi e affreschi, e nella lingua inglese nasce per designare le vignette umoristiche presenti nei giornali. Fu utilizzato in questo senso per la prima volta nel 1843 nella rivista Punch.
+Il termine disegno animato (plurale: disegni animati) è meno diffuso nella lingua italiana, ma parole imparentate si sono affermate nelle altre lingue romanze: portoghese desenho animado, spagnolo dibujo animado, francese dessin animé, rumeno desene animate.
+Ultimamente i termini cartone animato e cartoon trovano impiego in campo pubblicitario anche nella descrizione di serie dal vero, e non animate.
+Termini più tecnici per indicare un cartone animato sono cortometraggio d'animazione e lungometraggio d'animazione.
+Lo stesso termine proviene dal Nord America, e dai paesi europei (Regno Unito, Francia e Spagna), prima di chiamarsi dall'Italia "cartone animato".
+
+Storia
+In origine il cartone animato si afferma nel cinema, dove si distingue per contenuti umoristici destinati principalmente agli adulti ma in grado anche di rivolgersi a tutta la famiglia. Nel secondo dopoguerra il cartone animato entra gradualmente in televisione, scomparendo al contempo dal cinema ad eccezione dei lungometraggi. Questo passaggio lo trasforma radicalmente nello stile del disegno (con il progressivo abbandono di mimica e surrealismo), nelle tematiche affrontate e nel pubblico di riferimento.
+
+Processo produttivo
+Pre-produzione
+Idea
+Un testo di pochissime righe che descrive i personaggi, l'ambientazione e il tempo in cui si svolge un cortometraggio.
+
+Soggetto
+Racconto che narra le vicende del cortometraggio; presenta i personaggi e descrive l'ambientazione.
+
+Sceneggiatura
+Testo suddiviso in scene (e cioè le scene del corto) dove si descrive cosa succede, quello che dicono i personaggi ecc.
+
+Storyboard
+La realizzazione di un disegno animato, come anche di un film, prevede come prima fase la stesura dello storyboard, per tradurre in disegni il testo della sceneggiatura. Lo storyboard è molto simile alla bozza di un fumetto, ma senza nuvolette; i dialoghi, se ci sono, sono collocati sotto la scenetta, insieme alle annotazioni, mentre il disegno è grezzo, pieno di tratti non cancellati, e questo perché i disegni da fare sono molti, ma soprattutto non deve essere bello in sé, ma mostrare le inquadrature nel migliore dei modi.
+Lo storyboard viene progressivamente modificato, fino ad arrivare alla versione definitiva, con il confronto della squadra di artisti con il regista; per fare un esempio, i pittori degli sfondi devono sapere dove dipingere e dove invece lasciare spazi bianchi riservati ai personaggi.
+In pubblicità lo storyboard è usato per sottoporre al cliente uno spot commerciale prima di filmarlo. A differenza degli storyboard per copioni cinematografici, questi sono più dettagliati e attentamente colorati, essendo già in sé una presentazione al cliente.
+Questo compendio fatto di disegni e annotazioni viene poi rifinito con la squadra che lavorerà alla registrazione, ossia attori e sceneggiatori.
+
+Produzione esecutiva
+Incisione delle voci
+Prima di iniziare il lavoro di animazione si usa registrare una pista audio preliminare, che servirà da guida agli animatori. Questa pista contiene soltanto le voci, utili agli animatori per regolarsi con la quantità dei disegni.
+La pista audio completa includerà le voci del doppiaggio, gli effetti sonori e la musica, ma sarà realizzata solo nella fase successiva di post-produzione.
+
+Videoboard
+Passo successivo allo storyboard e all'incisione delle voci; consiste in un montaggio realizzato impiegando le vignette dello storyboard e le voci della pista audio preliminare.
+
+Animatic o Leica Reel
+Prima di approvare lo storyboard in via definitiva, si realizza una animazione molto approssimata, costituita in prevalenza da disegni fissi, con brevi e male scanditi movimenti, e cambiamenti di inquadratura. Questa realizzazione è nota come Animatic ed è l'ultima verifica della validità dello storyboard.
+Un altro nome equivalente, oggi meno usato, è leica reel; esso deriva dal fatto che in passato si faceva un largo uso di prodotti Leica in cinematografia.
+
+Sfondo
+Lo sfondo nel cartone animato tradizionale veniva dipinto su un foglio bianco, dove nel caso, includeva anche parti dei personaggi.
+
+Disegno, Animazione e Timing
+Il timing è letteralmente la misurazione dei tempi delle varie scene, fondamentale per stabilire il corretto quantitativo di disegni per ogni sequenza.
+I disegni sono realizzati utilizzando differenti metodi:
+
+dai primi cartoni animati in passo uno/frame by frame, comprendenti sia soggetto che sfondo
+all'uso del rodovetro, foglio di acetato trasparente, che permette di ridisegnare solamente i personaggi in movimento e lasciando fissi gli sfondi
+fino ad oggi, quando i disegni si effettuano su fogli di carta leggera, semitrasparente, per poi essere scanditi e montati mediante l'elaboratore elettronico.
+L'animatore disegna in successione i fotogrammi per dare ai personaggi il movimento una volta che i fotogrammi saranno montati velocemente uno dietro l'altro.
+I disegni vengono già realizzati in modo da fondersi, con ombre e sottrazioni, allo sfondo.
+
+Impaginazione
+Anticamente per impaginare i singoli fotogrammi i fogli di rodovetro, con sopra disegnati i personaggi, venivano posti in una cornice assieme allo sfondo, illuminati e impressi nella pellicola uno per uno.
+Più modernamente i personaggi e gli sfondi vengono scannerizzati, resi digitali e uniti a formare il cortometraggio al computer.
+
+Postproduzione
+Montaggio e correzione
+Le scene così realizzate vengono montate insieme a comporre il risultato finale.
+Nelle produzioni moderne è anche possibile aggiustare piccoli errori o fare la correzione dei colori, ovvero uniformare i colori delle varie scene, correggendolo digitalmente
+
+Doppiaggio, effetti sonori e musiche
+Il doppiaggio, come è già stato scritto, viene registrato prima di disegnare il cartone animato. Il doppiaggio di solito si registra a ciak in una sala di registrazione accuratamente insonorizzata, dove i doppiatori sono presenti, da soli, con le battute scritte e, a schermo, le animazioni completate e montate, per poter seguire il labiale dei personaggi. Quando poi il doppiaggio comprende più di una persona si fa in modo di metterle insieme, per andare d'accordo con i tempi. Il doppiaggio è molto importante in un cartone animato, vista l'assenza di attori e la presenza di personaggi senza una propria voce.
+Vengono infine aggiunti gli effetti sonori e le musiche, anch'essi realizzati con a schermo le animazioni.
+
+Note
+Voci correlate
+Animazione
+Anime
+Cartoonist
+Cartoon Italia
+Cinema d'animazione
+Serie animate televisive
+
+Altri progetti
+ Wikiquote contiene citazioni sul cartone animato
+ Wikizionario contiene il lemma di dizionario «cartone animato»
+ Wikimedia Commons contiene immagini o altri file sul cartone animato
+
+Collegamenti esterni
+Gianni Rondolino, cartoni animati, in Enciclopedia dei ragazzi, Istituto dell'Enciclopedia Italiana, 2005. 
+Cartoni animati 2012-2013 al cinema, su cartonianimatimania.myblog.it. URL consultato il 22 novembre 2017 (archiviato dall'url originale il 16 settembre 2015).
+Laboratorio formativo per insegnanti, su cartonianimati.ning.com. URL consultato il 20 febbraio 2019 (archiviato dall'url originale il 1º giugno 2013).
+(EN)  Sci-fi animato Come si fa un cartone animato
+(EN)  Animation Toolworks raccolta di articoli erudenti l'animazione
+(EN)  Cartoon Network tv_shows Archiviato il 1º novembre 2008 in Internet Archive. è presente una piccola lezione (Animation: How to...) a cura dell'autore Atom Ant

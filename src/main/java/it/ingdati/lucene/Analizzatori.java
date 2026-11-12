@@ -2,9 +2,19 @@ package it.ingdati.lucene;
 
 import java.io.IOException;
 import java.io.UncheckedIOException;
+import java.util.Arrays;
 import java.util.Map;
 
 import org.apache.lucene.analysis.Analyzer;
+import org.apache.lucene.analysis.CharArraySet;
+import org.apache.lucene.analysis.LowerCaseFilter;
+import org.apache.lucene.analysis.StopFilter;
+import org.apache.lucene.analysis.TokenStream;
+import org.apache.lucene.analysis.Tokenizer;
+import org.apache.lucene.analysis.it.ItalianLightStemFilter;
+import org.apache.lucene.analysis.miscellaneous.ASCIIFoldingFilter;
+import org.apache.lucene.analysis.standard.StandardTokenizer;
+import org.apache.lucene.analysis.util.ElisionFilter;
 import org.apache.lucene.analysis.core.FlattenGraphFilterFactory;
 import org.apache.lucene.analysis.core.LowerCaseFilterFactory;
 import org.apache.lucene.analysis.core.WhitespaceTokenizerFactory;
@@ -57,14 +67,45 @@ public final class Analizzatori {
         }
     }
 
+    /** Articoli elisi dell'italiano (stessa lista usata internamente da ItalianAnalyzer). */
+    private static final CharArraySet ARTICOLI = new CharArraySet(Arrays.asList(
+            "c", "l", "all", "dall", "dell", "nell", "sull", "coll", "pell", "gl", "agl", "dagl",
+            "degl", "negl", "sugl", "un", "m", "t", "s", "v", "d"), true);
+
     /**
      * Analyzer per il CONTENUTO: testo in italiano (voci di Wikipedia).
      *
-     * ItalianAnalyzer = StandardTokenizer + ElisionFilter (l'eroe -> eroe)
-     *                   + LowerCaseFilter + StopFilter (il, di, che, ...)
-     *                   + ItalianLightStemFilter (fumetti / fumetto -> stessa radice)
+     * È la stessa catena di ItalianAnalyzer con in più l'ASCIIFolding:
+     *   StandardTokenizer         : parole secondo le regole Unicode
+     *   ElisionFilter             : l'eroe -> eroe, dell'universo -> universo
+     *   LowerCaseFilter           : minuscolo
+     *   StopFilter (italiano)     : toglie il, di, che, della, ...
+     *   ASCIIFoldingFilter        : shōnen -> shonen, Mystère -> mystere (l'utente scrive senza segni diacritici;
+     *                               aggiunto dopo la valutazione: senza, la query "shonen" non trovava "shōnen")
+     *   ItalianLightStemFilter    : fumetto / fumetti -> fumett
      */
     public static Analyzer analyzerContenuto() {
+        return new Analyzer() {
+            @Override
+            protected TokenStreamComponents createComponents(String campo) {
+                Tokenizer source = new StandardTokenizer();
+                TokenStream ts = new ElisionFilter(source, ARTICOLI);
+                ts = new LowerCaseFilter(ts);
+                ts = new StopFilter(ts, ItalianAnalyzer.getDefaultStopSet());
+                ts = new ASCIIFoldingFilter(ts);
+                ts = new ItalianLightStemFilter(ts);
+                return new TokenStreamComponents(source, ts);
+            }
+
+            @Override
+            protected TokenStream normalize(String campo, TokenStream in) {
+                return new ASCIIFoldingFilter(new LowerCaseFilter(new ElisionFilter(in, ARTICOLI)));
+            }
+        };
+    }
+
+    /** ItalianAnalyzer "puro" di Lucene (senza ASCIIFolding): usato solo nel confronto del Valutatore. */
+    public static Analyzer analyzerContenutoItalianoPuro() {
         return new ItalianAnalyzer();
     }
 

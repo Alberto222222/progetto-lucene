@@ -11,12 +11,14 @@ progetto-lucene/
 ├── docs/                    200 file .txt (dataset, voci di Wikipedia in italiano)
 ├── scarica_dataset.py       script che ha costruito il dataset
 ├── FONTI.md                 elenco delle voci di Wikipedia usate (licenza CC BY-SA 4.0)
+├── valutazione/             query di test, giudizi di rilevanza (qrels) e risultati
 ├── pom.xml                  progetto Maven (Java 21, Lucene 10.6.0)
 └── src/main/java/it/ingdati/lucene/
     ├── Analizzatori.java    analyzer dei due campi (unico punto di configurazione)
     ├── Indicizzatore.java   programma 1: crea l'indice e misura i tempi
     ├── Ricercatore.java     programma 2: legge le query da console e stampa i risultati
     ├── MostraAnalisi.java   mostra i token prodotti dagli analyzer (utile per la relazione)
+    ├── Valutatore.java      programma 3: valutazione (Precision, Recall, F1, P@5, P@10)
     └── Console.java         output della console in UTF-8
 ```
 
@@ -35,6 +37,9 @@ mvn -q compile exec:java@indicizza
 
 # 2. Cerca
 mvn -q compile exec:java@cerca
+
+# 3. Valuta il sistema sulle 12 query di test (scrive i risultati in valutazione/)
+mvn -q compile exec:java@valuta
 
 # (facoltativo) Mostra come gli analyzer trasformano alcuni testi d'esempio
 mvn -q compile exec:java@analisi
@@ -67,7 +72,7 @@ il numero di documenti trovati, il tempo di risposta e i primi 10 risultati con 
 | Campo | Tipo | Memorizzato | Analyzer |
 |---|---|---|---|
 | `nome` | `TextField` | sì | analyzer personalizzato per i nomi |
-| `contenuto` | `TextField` | no | `ItalianAnalyzer` |
+| `contenuto` | `TextField` | no | catena di `ItalianAnalyzer` + `ASCIIFoldingFilter` |
 | `file` | `StoredField` | sì | — (solo per stampare il nome completo) |
 
 **Analyzer del campo `nome`**: `CustomAnalyzer` con
@@ -76,13 +81,22 @@ I nomi dei file sono identificatori, non frasi: vanno spezzati su `_`, `-`, `.` 
 maiuscolo/minuscolo (`SpongeBob` → `sponge`, `bob`), resi indipendenti da accenti e maiuscole
 (`Pokémon` → `pokemon`), ma senza stopword né stemming. L'estensione `.txt` non viene indicizzata.
 
-**Analyzer del campo `contenuto`**: `ItalianAnalyzer` (StandardTokenizer, elisione `l'`/`dell'`,
-minuscolo, stopword italiane, stemming leggero `ItalianLightStemFilter`): i testi sono in italiano,
-così `fumetto`/`fumetti` diventano lo stesso termine `fumett`.
+**Analyzer del campo `contenuto`**: la catena di `ItalianAnalyzer` (StandardTokenizer, elisione `l'`/`dell'`,
+minuscolo, stopword italiane, stemming leggero `ItalianLightStemFilter`) con in più `ASCIIFoldingFilter`:
+i testi sono in italiano, così `fumetto`/`fumetti` diventano lo stesso termine `fumett`, e chi scrive
+`shonen` trova anche `shōnen` (aggiunta motivata dalla valutazione).
 
 Lo **stesso analyzer** è usato in indicizzazione (`PerFieldAnalyzerWrapper`) e in ricerca
 (un `QueryParser` per campo). I nomi dei file vengono normalizzati in Unicode NFC, perché macOS
 li salva in forma scomposta (NFD) e l'accento separato verrebbe trattato come separatore.
+
+## Valutazione
+
+Collezione di test in `valutazione/`: 12 query (`query.tsv`, 5 sul nome e 7 sul contenuto, ognuna con
+l'esigenza informativa scritta) e 127 giudizi di rilevanza (`qrels.txt`, formato TREC), assegnati esaminando
+i titoli di tutti i 200 documenti e il pool dei primi 20 risultati di più configurazioni (`pool.txt`).
+`Valutatore` calcola Precision, Recall, F1 (sull'insieme dei documenti restituiti), P@5 e P@10, per il
+sistema del progetto e per configurazioni alternative (analyzer, modello di ranking, operatore OR/AND).
 
 ## Dataset
 

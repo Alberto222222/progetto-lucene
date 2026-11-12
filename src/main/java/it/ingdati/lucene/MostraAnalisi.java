@@ -40,7 +40,8 @@ public class MostraAnalisi {
         for (String s : new String[] {"Gli eroi della Marvel combattono i supercriminali.",
                                       "L'Uomo Ragno è un supereroe dei fumetti.",
                                       "Il Cavaliere Oscuro difende Gotham City.",
-                                      "fumetto fumetti fumettista fumettistico"}) {
+                                      "fumetto fumetti fumettista fumettistico",
+                                      "Dragon Ball è un manga shōnen di Akira Toriyama."}) {
             stampa("contenuto", contenuto, s);
         }
     }

@@ -58,6 +58,12 @@
                         </configuration>
                     </execution>
                     <execution>
+                        <id>valuta</id>
+                        <configuration>
+                            <mainClass>it.ingdati.lucene.Valutatore</mainClass>
+                        </configuration>
+                    </execution>
+                    <execution>
                         <id>cerca</id>
                         <configuration>
                             <mainClass>it.ingdati.lucene.Ricercatore</mainClass>

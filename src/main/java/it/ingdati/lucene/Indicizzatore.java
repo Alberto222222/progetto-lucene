@@ -44,10 +44,7 @@ public class Indicizzatore {
         Path cartellaIndice    = Paths.get(args.length > 1 ? args[1] : "index");
 
         // 1. Elenco dei file .txt da indicizzare (ordinati per avere esecuzioni ripetibili)
-        List<Path> files;
-        try (Stream<Path> s = Files.list(cartellaDocumenti)) {
-            files = s.filter(p -> p.toString().toLowerCase().endsWith(".txt")).sorted().toList();
-        }
+        List<Path> files = elencaFileTxt(cartellaDocumenti);
         System.out.printf("Trovati %d file .txt in %s%n", files.size(), cartellaDocumenti.toAbsolutePath());
 
         // 2. Configurazione dell'IndexWriter: analyzer per campo + indice ricreato da zero
@@ -61,24 +58,8 @@ public class Indicizzatore {
              IndexWriter writer = new IndexWriter(directory, config)) {
 
             for (Path file : files) {
-                // macOS salva i nomi dei file in forma Unicode "scomposta" (NFD): "é" = "e" + accento.
-                // Normalizziamo in forma "composta" (NFC), altrimenti l'accento staccato verrebbe visto
-                // come separatore e "Pokémon" diventerebbe i due token "poke" e "mon".
-                String nomeFile = nfc(file.getFileName().toString());
-                String nomeSenzaEstensione = nomeFile.substring(0, nomeFile.length() - ".txt".length());
-                String testo = nfc(Files.readString(file, StandardCharsets.UTF_8));
                 totaleByte += Files.size(file);
-
-                // 3. Un Document per file
-                Document doc = new Document();
-                // TextField = testo tokenizzato; Store.YES = possiamo rileggerlo nei risultati
-                doc.add(new TextField(Analizzatori.CAMPO_NOME, nomeSenzaEstensione, Field.Store.YES));
-                // Store.NO: il contenuto è cercabile ma non lo ricopiamo nell'indice (come l'abstract nelle slide)
-                doc.add(new TextField(Analizzatori.CAMPO_CONTENUTO, testo, Field.Store.NO));
-                // StoredField: solo memorizzato, non cercabile
-                doc.add(new StoredField(Analizzatori.CAMPO_FILE, nomeFile));
-
-                writer.addDocument(doc);
+                writer.addDocument(creaDocumento(file));   // 3. un Document per file
             }
 
             // 4. Commit: senza commit l'indice resterebbe invisibile in fase di ricerca
@@ -97,6 +78,32 @@ public class Indicizzatore {
         System.out.printf("Indice salvato in     : %s%n", cartellaIndice.toAbsolutePath());
 
         stampaStatistiche(cartellaIndice);
+    }
+
+    /** Elenco ordinato dei file .txt di una cartella (ordinato = esecuzioni ripetibili). */
+    static List<Path> elencaFileTxt(Path cartella) throws IOException {
+        try (Stream<Path> s = Files.list(cartella)) {
+            return s.filter(p -> p.toString().toLowerCase().endsWith(".txt")).sorted().toList();
+        }
+    }
+
+    /** Crea il Document Lucene di un file (usato anche dal Valutatore). */
+    static Document creaDocumento(Path file) throws IOException {
+        // macOS salva i nomi dei file in forma Unicode "scomposta" (NFD): "é" = "e" + accento.
+        // Normalizziamo in forma "composta" (NFC), altrimenti l'accento staccato verrebbe visto
+        // come separatore e "Pokémon" diventerebbe i due token "poke" e "mon".
+        String nomeFile = nfc(file.getFileName().toString());
+        String nomeSenzaEstensione = nomeFile.substring(0, nomeFile.length() - ".txt".length());
+        String testo = nfc(Files.readString(file, StandardCharsets.UTF_8));
+
+        Document doc = new Document();
+        // TextField = testo tokenizzato; Store.YES = possiamo rileggerlo nei risultati
+        doc.add(new TextField(Analizzatori.CAMPO_NOME, nomeSenzaEstensione, Field.Store.YES));
+        // Store.NO: il contenuto è cercabile ma non lo ricopiamo nell'indice (come l'abstract nelle slide)
+        doc.add(new TextField(Analizzatori.CAMPO_CONTENUTO, testo, Field.Store.NO));
+        // StoredField: solo memorizzato, non cercabile
+        doc.add(new StoredField(Analizzatori.CAMPO_FILE, nomeFile));
+        return doc;
     }
 
     /** Forma Unicode composta (NFC). */

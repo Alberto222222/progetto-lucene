@@ -57,9 +57,10 @@ Ogni query inizia con il campo (`nome` oppure `contenuto`) seguito dai termini:
 |---|---|
 | `nome batman` | file il cui nome contiene "batman" |
 | `nome "spider man"` | phrase query sul nome |
-| `contenuto supereroe mutante` | almeno uno dei termini (OR), ordinati per rilevanza |
+| `contenuto supereroe mutante` | tutti i termini devono comparire (operatore di default AND), ordinati per rilevanza |
+| `contenuto marvel OR dc` | basta uno dei termini (OR esplicito) |
 | `contenuto "cavaliere oscuro"` | phrase query: le parole in sequenza |
-| `contenuto +marvel -spider` | `+` obbligatorio, `-` escluso (sintassi del QueryParser di Lucene) |
+| `contenuto marvel -spider` | `-` escluso (sintassi del QueryParser di Lucene) |
 | `esci` | termina il programma |
 
 Il programma stampa anche la query come l'ha interpretata Lucene (dopo l'analisi),
@@ -76,10 +77,11 @@ il numero di documenti trovati, il tempo di risposta e i primi 10 risultati con 
 | `file` | `StoredField` | sì | — (solo per stampare il nome completo) |
 
 **Analyzer del campo `nome`**: `CustomAnalyzer` con
-`WhitespaceTokenizer → WordDelimiterGraphFilter → FlattenGraphFilter → ASCIIFoldingFilter → LowerCaseFilter`.
+`WhitespaceTokenizer → WordDelimiterGraphFilter → FlattenGraphFilter → ASCIIFoldingFilter → LowerCaseFilter → ItalianLightStemFilter`.
 I nomi dei file sono identificatori, non frasi: vanno spezzati su `_`, `-`, `.` e sui cambi
 maiuscolo/minuscolo (`SpongeBob` → `sponge`, `bob`), resi indipendenti da accenti e maiuscole
-(`Pokémon` → `pokemon`), ma senza stopword né stemming. L'estensione `.txt` non viene indicizzata.
+(`Pokémon` → `pokemon`) e con uno stemming leggero (`fumetto`/`fumetti` → `fumett`), ma senza stopword:
+in un titolo ogni parola conta. L'estensione `.txt` non viene indicizzata.
 
 **Analyzer del campo `contenuto`**: la catena di `ItalianAnalyzer` (StandardTokenizer, elisione `l'`/`dell'`,
 minuscolo, stopword italiane, stemming leggero `ItalianLightStemFilter`) con in più `ASCIIFoldingFilter`:
@@ -92,11 +94,17 @@ li salva in forma scomposta (NFD) e l'accento separato verrebbe trattato come se
 
 ## Valutazione
 
-Collezione di test in `valutazione/`: 12 query (`query.tsv`, 5 sul nome e 7 sul contenuto, ognuna con
-l'esigenza informativa scritta) e 127 giudizi di rilevanza (`qrels.txt`, formato TREC), assegnati esaminando
-i titoli di tutti i 200 documenti e il pool dei primi 20 risultati di più configurazioni (`pool.txt`).
-`Valutatore` calcola Precision, Recall, F1 (sull'insieme dei documenti restituiti), P@5 e P@10, per il
-sistema del progetto e per configurazioni alternative (analyzer, modello di ranking, operatore OR/AND).
+Collezione di test in `valutazione/`: 24 query (`query.tsv`) divise in due set, ognuna con l'esigenza
+informativa scritta, e 157 giudizi di rilevanza (`qrels.txt`, formato TREC):
+
+- **set A** (12 query): query esplorative scritte per prime, comprese alcune volutamente difficili;
+- **set B** (12 query): ricerche precise tipiche di un utente (un personaggio, una serie), scritte insieme
+  ai giudizi prima di eseguirle.
+
+I giudizi sono stati assegnati esaminando i titoli di tutti i 200 documenti e il pool dei primi 20 risultati
+di 24 configurazioni (`pool.txt`). `Valutatore` calcola sui primi 10 risultati mostrati Precision, Recall e F1,
+poi R-Precision, P@5 e P@10, per il sistema del progetto (analyzer scelti + BM25 + AND) e per configurazioni
+alternative (analyzer, modello di ranking, operatore OR/AND), con le medie per set A, set B e totale.
 
 ## Dataset
 

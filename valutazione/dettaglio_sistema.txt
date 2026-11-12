@@ -1,0 +1,275 @@
+=== A01: nome batman
+    esigenza: I file dedicati a Batman (il personaggio e le sue opere principali).
+    query Lucene: nome:batman
+    rilevanti=2 trovati=2 rilevanti_nei_primi_10=2  P=1.00 R=1.00 F1=1.00 R-Prec=1.00 P@5=0.40 P@10=0.20
+     1. [R] Batman.txt
+     2. [R] Batman_-_Il_ritorno_del_Cavaliere_Oscuro.txt
+
+=== A02: nome pokemon
+    esigenza: Il file dedicato ai Pokémon (scritto senza accento: verifica dell'ASCIIFolding).
+    query Lucene: nome:pokemon
+    rilevanti=1 trovati=1 rilevanti_nei_primi_10=1  P=1.00 R=1.00 F1=1.00 R-Prec=1.00 P@5=0.20 P@10=0.10
+     1. [R] Pokémon_serie_animata.txt
+
+=== A03: nome "spider man"
+    esigenza: I file dedicati a Spider-Man (personaggio e film), cercati come phrase query sul nome.
+    query Lucene: nome:"spider man"
+    rilevanti=2 trovati=1 rilevanti_nei_primi_10=1  P=1.00 R=0.50 F1=0.67 R-Prec=0.50 P@5=0.20 P@10=0.10
+     1. [R] Spider-Man_-_Un_nuovo_universo.txt
+    rilevanti NON tra i primi 10: [Uomo_Ragno.txt]
+
+=== A04: nome marvel comics
+    esigenza: I file su personaggi, universo ed editore Marvel il cui nome richiama la Marvel.
+    query Lucene: +nome:marvel +nome:comics
+    rilevanti=9 trovati=6 rilevanti_nei_primi_10=6  P=1.00 R=0.67 F1=0.80 R-Prec=0.67 P@5=1.00 P@10=0.60
+     1. [R] Marvel_Comics.txt
+     2. [R] Ciclope_Marvel_Comics.txt
+     3. [R] Loki_Marvel_Comics.txt
+     4. [R] Scarlet_Marvel_Comics.txt
+     5. [R] Thor_Marvel_Comics.txt
+     6. [R] Venom_Marvel_Comics.txt
+    rilevanti NON tra i primi 10: [Marvel_Cinematic_Universe.txt, Ms._Marvel.txt, Universo_Marvel.txt]
+
+=== A05: nome fumetto
+    esigenza: I file che trattano il fumetto in generale (forme, storia, tradizioni), non una singola opera.
+    query Lucene: nome:fumett
+    rilevanti=9 trovati=14 rilevanti_nei_primi_10=4  P=0.40 R=0.44 F1=0.42 R-Prec=0.33 P@5=0.60 P@10=0.40
+     1. [R] Fumetto.txt
+     2. [R] Fumetto_online.txt
+     3. [R] Fumetto_statunitense.txt
+     4. [ ] Invincible_fumetto.txt
+     5. [ ] Persepolis_fumetto.txt
+     6. [ ] Saga_fumetto.txt
+     7. [ ] Spawn_fumetto.txt
+     8. [ ] Tex_fumetto.txt
+     9. [ ] Valentina_fumetto.txt
+    10. [R] Romanzo_a_fumetti.txt
+    rilevanti NON tra i primi 10: [Bande_dessinée.txt, Comic_book.txt, L_età_dell_oro_fumetto.txt, Manga.txt, Storia_del_fumetto_italiano.txt]
+
+=== A06: contenuto mutanti x-men
+    esigenza: I personaggi mutanti legati agli X-Men e il gruppo stesso.
+    query Lucene: +contenuto:mutant +contenuto:x +contenuto:men
+    rilevanti=11 trovati=39 rilevanti_nei_primi_10=10  P=1.00 R=0.91 F1=0.95 R-Prec=0.91 P@5=1.00 P@10=1.00
+     1. [R] X-Men.txt
+     2. [R] Ciclope_Marvel_Comics.txt
+     3. [R] Magneto.txt
+     4. [R] Professor_X.txt
+     5. [R] Tempesta_personaggio.txt
+     6. [R] Rogue_personaggio.txt
+     7. [R] Jean_Grey.txt
+     8. [R] Gambit.txt
+     9. [R] Wolverine.txt
+    10. [R] Scarlet_Marvel_Comics.txt
+    rilevanti NON tra i primi 10: [Namor.txt]
+
+=== A07: contenuto "cavaliere oscuro"
+    esigenza: Batman e il suo universo: il personaggio, le sue opere, alleati, nemici e Gotham City.
+    query Lucene: contenuto:"cavalier oscur"
+    rilevanti=13 trovati=30 rilevanti_nei_primi_10=8  P=0.80 R=0.62 F1=0.70 R-Prec=0.85 P@5=0.80 P@10=0.80
+     1. [R] Batman_-_Il_ritorno_del_Cavaliere_Oscuro.txt
+     2. [ ] Frank_Miller.txt
+     3. [R] Ra_s_al_Ghul.txt
+     4. [R] Joker.txt
+     5. [R] Gotham_City.txt
+     6. [R] Spaventapasseri_DC_Comics.txt
+     7. [R] Batman.txt
+     8. [R] Pinguino_personaggio.txt
+     9. [R] Batgirl.txt
+    10. [ ] Freccia_Verde.txt
+    rilevanti NON tra i primi 10: [Catwoman.txt, Due_Facce.txt, Enigmista.txt, Harley_Quinn.txt, Nightwing.txt]
+
+=== A08: contenuto miyazaki ghibli
+    esigenza: Lo Studio Ghibli, Hayao Miyazaki e i loro film.
+    query Lucene: +contenuto:miyazak +contenuto:ghibl
+    rilevanti=4 trovati=5 rilevanti_nei_primi_10=4  P=0.80 R=1.00 F1=0.89 R-Prec=1.00 P@5=0.80 P@10=0.40
+     1. [R] Studio_Ghibli.txt
+     2. [R] Hayao_Miyazaki.txt
+     3. [R] Il_mio_vicino_Totoro.txt
+     4. [R] La_città_incantata.txt
+     5. [ ] Anime.txt
+
+=== A09: contenuto fumetto italiano bonelli
+    esigenza: La casa editrice Bonelli, i suoi fondatori e le sue serie a fumetti.
+    query Lucene: +contenuto:fumett +contenuto:italian +contenuto:bonell
+    rilevanti=10 trovati=20 rilevanti_nei_primi_10=8  P=0.80 R=0.80 F1=0.80 R-Prec=0.80 P@5=0.80 P@10=0.80
+     1. [R] Sergio_Bonelli_Editore.txt
+     2. [R] Sergio_Bonelli.txt
+     3. [R] Gianluigi_Bonelli.txt
+     4. [R] Tex_fumetto.txt
+     5. [ ] Storia_del_fumetto_italiano.txt
+     6. [R] Dylan_Dog.txt
+     7. [R] Martin_Mystère.txt
+     8. [R] Julia_-_Le_avventure_di_una_criminologa.txt
+     9. [R] Zagor.txt
+    10. [ ] Zerocalcare.txt
+    rilevanti NON tra i primi 10: [Mister_No.txt, Nathan_Never.txt]
+
+=== A10: contenuto nemici di batman
+    esigenza: I supercriminali e gli antagonisti di Batman.
+    query Lucene: +contenuto:nemic +contenuto:batman
+    rilevanti=8 trovati=37 rilevanti_nei_primi_10=6  P=0.60 R=0.75 F1=0.67 R-Prec=0.63 P@5=0.60 P@10=0.60
+     1. [ ] Batman.txt
+     2. [R] Ra_s_al_Ghul.txt
+     3. [R] Joker.txt
+     4. [R] Enigmista.txt
+     5. [ ] Lex_Luthor.txt
+     6. [R] Pinguino_personaggio.txt
+     7. [ ] Supereroe.txt
+     8. [R] Due_Facce.txt
+     9. [R] Catwoman.txt
+    10. [ ] Sinestro.txt
+    rilevanti NON tra i primi 10: [Harley_Quinn.txt, Spaventapasseri_DC_Comics.txt]
+
+=== A11: contenuto manga giapponese shonen
+    esigenza: Il genere shōnen e i manga/anime shōnen.
+    query Lucene: +contenuto:manga +contenuto:giappones +contenuto:shonen
+    rilevanti=13 trovati=23 rilevanti_nei_primi_10=9  P=0.90 R=0.69 F1=0.78 R-Prec=0.85 P@5=0.80 P@10=0.90
+     1. [R] Shōnen.txt
+     2. [R] Dragon_Ball.txt
+     3. [R] Detective_Conan.txt
+     4. [R] Naruto.txt
+     5. [ ] Akira_Toriyama.txt
+     6. [R] Demon_Slayer_-_Kimetsu_no_yaiba.txt
+     7. [R] Ken_il_guerriero.txt
+     8. [R] Death_Note.txt
+     9. [R] L_attacco_dei_giganti.txt
+    10. [R] One_Piece.txt
+    rilevanti NON tra i primi 10: [Astro_Boy.txt, Fullmetal_Alchemist.txt, I_Cavalieri_dello_zodiaco.txt, Jujutsu_kaisen_-_Sorcery_Fight.txt]
+
+=== A12: contenuto +marvel -spider
+    esigenza: Personaggi, opere ed editore Marvel che non riguardano Spider-Man.
+    query Lucene: +contenuto:marvel -contenuto:spider
+    rilevanti=45 trovati=39 rilevanti_nei_primi_10=3  P=0.30 R=0.07 F1=0.11 R-Prec=0.07 P@5=0.60 P@10=0.30
+     1. [R] Ms._Marvel.txt
+     2. [ ] Jack_Kirby.txt
+     3. [R] Bucky_Barnes.txt
+     4. [R] Magneto.txt
+     5. [ ] Fumetto_statunitense.txt
+     6. [ ] DC_Comics.txt
+     7. [ ] Storia_del_fumetto_italiano.txt
+     8. [ ] Neil_Gaiman.txt
+     9. [ ] DC_Extended_Universe.txt
+    10. [ ] Alan_Moore.txt
+    rilevanti NON tra i primi 10: [Ant-Man.txt, Black_Panther_film.txt, Capitan_America.txt, Ciclope_Marvel_Comics.txt, Deadpool.txt, Dottor_Destino.txt, Dottor_Strange.txt, Fantastici_Quattro.txt, Galactus.txt, Gambit.txt, Groot.txt, Guardiani_della_Galassia.txt, Hulk.txt, Iron_Man.txt, Jean_Grey.txt, Jessica_Jones.txt, Loki_Marvel_Comics.txt, Luke_Cage.txt, Marvel_Cinematic_Universe.txt, Marvel_Comics.txt, Moon_Knight.txt, Namor.txt, Natasha_Romanoff.txt, Nick_Fury.txt, Occhio_di_Falco.txt, Professor_X.txt, Punitore.txt, Rocket_Raccoon.txt, Rogue_personaggio.txt, Scarlet_Marvel_Comics.txt, She-Hulk.txt, Silver_Surfer.txt, Star-Lord.txt, Tempesta_personaggio.txt, Teschio_Rosso.txt, Thanos.txt, Thor_Marvel_Comics.txt, Ultron.txt, Universo_Marvel.txt, Vendicatori.txt, Wolverine.txt, X-Men.txt]
+
+=== B01: nome "iron man"
+    esigenza: Il file dedicato a Iron Man.
+    query Lucene: nome:"iron man"
+    rilevanti=1 trovati=1 rilevanti_nei_primi_10=1  P=1.00 R=1.00 F1=1.00 R-Prec=1.00 P@5=0.20 P@10=0.10
+     1. [R] Iron_Man.txt
+
+=== B02: nome lanterna verde
+    esigenza: Il file dedicato a Lanterna Verde.
+    query Lucene: +nome:lantern +nome:verde
+    rilevanti=1 trovati=1 rilevanti_nei_primi_10=1  P=1.00 R=1.00 F1=1.00 R-Prec=1.00 P@5=0.20 P@10=0.10
+     1. [R] Lanterna_Verde.txt
+
+=== B03: nome dc comics
+    esigenza: I file su personaggi, universo ed editore DC il cui nome richiama la DC.
+    query Lucene: +nome:dc +nome:comics
+    rilevanti=6 trovati=4 rilevanti_nei_primi_10=4  P=1.00 R=0.67 F1=0.80 R-Prec=0.67 P@5=0.80 P@10=0.40
+     1. [R] DC_Comics.txt
+     2. [R] Cyborg_DC_Comics.txt
+     3. [R] Sandman_DC_Comics.txt
+     4. [R] Spaventapasseri_DC_Comics.txt
+    rilevanti NON tra i primi 10: [DC_Extended_Universe.txt, Universo_DC.txt]
+
+=== B04: nome walt disney
+    esigenza: I file su Walt Disney e sul suo studio di animazione.
+    query Lucene: +nome:walt +nome:disney
+    rilevanti=2 trovati=2 rilevanti_nei_primi_10=2  P=1.00 R=1.00 F1=1.00 R-Prec=1.00 P@5=0.40 P@10=0.20
+     1. [R] Walt_Disney.txt
+     2. [R] Walt_Disney_Animation_Studios.txt
+
+=== B05: nome capitan america
+    esigenza: Il file dedicato a Capitan America.
+    query Lucene: +nome:capitan +nome:americ
+    rilevanti=1 trovati=1 rilevanti_nei_primi_10=1  P=1.00 R=1.00 F1=1.00 R-Prec=1.00 P@5=0.20 P@10=0.10
+     1. [R] Capitan_America.txt
+
+=== B06: contenuto "studio ghibli"
+    esigenza: Lo Studio Ghibli, il suo fondatore Hayao Miyazaki e i suoi film.
+    query Lucene: contenuto:"stud ghibl"
+    rilevanti=4 trovati=6 rilevanti_nei_primi_10=4  P=0.67 R=1.00 F1=0.80 R-Prec=1.00 P@5=0.80 P@10=0.40
+     1. [R] Studio_Ghibli.txt
+     2. [R] Il_mio_vicino_Totoro.txt
+     3. [R] Hayao_Miyazaki.txt
+     4. [R] La_città_incantata.txt
+     5. [ ] Animazione.txt
+     6. [ ] Neon_Genesis_Evangelion.txt
+
+=== B07: contenuto "guardiani della galassia"
+    esigenza: Il gruppo dei Guardiani della Galassia e i suoi membri.
+    query Lucene: contenuto:"guardian ? galass"
+    rilevanti=4 trovati=23 rilevanti_nei_primi_10=4  P=0.40 R=1.00 F1=0.57 R-Prec=1.00 P@5=0.80 P@10=0.40
+     1. [R] Guardiani_della_Galassia.txt
+     2. [R] Rocket_Raccoon.txt
+     3. [R] Star-Lord.txt
+     4. [R] Groot.txt
+     5. [ ] Thanos.txt
+     6. [ ] Marvel_Cinematic_Universe.txt
+     7. [ ] Stan_Lee.txt
+     8. [ ] Loki_Marvel_Comics.txt
+     9. [ ] Fantastici_Quattro.txt
+    10. [ ] Carnage_personaggio.txt
+
+=== B08: contenuto paperino paperinik
+    esigenza: Paperino e il suo alter ego Paperinik.
+    query Lucene: +contenuto:paperin +contenuto:paperinik
+    rilevanti=2 trovati=6 rilevanti_nei_primi_10=2  P=0.33 R=1.00 F1=0.50 R-Prec=1.00 P@5=0.40 P@10=0.20
+     1. [R] Paperinik.txt
+     2. [R] Paperino.txt
+     3. [ ] Giorgio_Cavazzano.txt
+     4. [ ] Romano_Scarpa.txt
+     5. [ ] Diabolik.txt
+     6. [ ] Supereroe.txt
+
+=== B09: contenuto "tartarughe ninja"
+    esigenza: Le Tartarughe Ninja.
+    query Lucene: contenuto:"tartarug ninja"
+    rilevanti=1 trovati=5 rilevanti_nei_primi_10=1  P=0.20 R=1.00 F1=0.33 R-Prec=1.00 P@5=0.20 P@10=0.10
+     1. [R] Tartarughe_Ninja.txt
+     2. [ ] Usagi_Yojimbo.txt
+     3. [ ] Spaventapasseri_DC_Comics.txt
+     4. [ ] Due_Facce.txt
+     5. [ ] Harley_Quinn.txt
+
+=== B10: contenuto simpson griffin futurama
+    esigenza: Le serie animate I Simpson, I Griffin e Futurama.
+    query Lucene: +contenuto:simpson +contenuto:griffin +contenuto:futuram
+    rilevanti=3 trovati=4 rilevanti_nei_primi_10=3  P=0.75 R=1.00 F1=0.86 R-Prec=1.00 P@5=0.60 P@10=0.30
+     1. [R] I_Simpson.txt
+     2. [R] Futurama.txt
+     3. [R] I_Griffin.txt
+     4. [ ] South_Park.txt
+
+=== B11: contenuto joker harley quinn
+    esigenza: Il Joker e Harley Quinn.
+    query Lucene: +contenuto:joker +contenuto:harley +contenuto:quinn
+    rilevanti=2 trovati=13 rilevanti_nei_primi_10=2  P=0.20 R=1.00 F1=0.33 R-Prec=1.00 P@5=0.40 P@10=0.20
+     1. [R] Harley_Quinn.txt
+     2. [R] Joker.txt
+     3. [ ] Enigmista.txt
+     4. [ ] Batman.txt
+     5. [ ] Spaventapasseri_DC_Comics.txt
+     6. [ ] Supercriminale.txt
+     7. [ ] Gotham_City.txt
+     8. [ ] Catwoman.txt
+     9. [ ] Due_Facce.txt
+    10. [ ] Aquaman.txt
+
+=== B12: contenuto superman kryptonite
+    esigenza: Superman, la sua famiglia kryptoniana e la kryptonite.
+    query Lucene: +contenuto:superman +contenuto:kryptonit
+    rilevanti=3 trovati=13 rilevanti_nei_primi_10=3  P=0.30 R=1.00 F1=0.46 R-Prec=0.67 P@5=0.60 P@10=0.30
+     1. [R] Kryptonite.txt
+     2. [ ] Lex_Luthor.txt
+     3. [R] Superman.txt
+     4. [ ] Brainiac.txt
+     5. [R] Supergirl.txt
+     6. [ ] Darkseid.txt
+     7. [ ] Batman_-_Il_ritorno_del_Cavaliere_Oscuro.txt
+     8. [ ] Freccia_Verde.txt
+     9. [ ] Universo_DC.txt
+    10. [ ] Supereroe.txt
+

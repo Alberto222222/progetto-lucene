@@ -2,142 +2,184 @@
 # Costruiti esaminando i titoli di TUTTI i 200 documenti e il pool dei primi 20 risultati di 12 configurazioni
 # (2 analyzer x 3 modelli di ranking x 2 operatori); per i casi dubbi si è letto il testo del documento.
 # I documenti non elencati sono considerati NON rilevanti.
-# Q01: I file dedicati a Batman  (2 rilevanti)
-Q01 0 Batman.txt 1
-Q01 0 Batman_-_Il_ritorno_del_Cavaliere_Oscuro.txt 1
-# Q02: Il file dedicato ai Pokémon  (1 rilevanti)
-Q02 0 Pokémon_serie_animata.txt 1
-# Q03: I file dedicati a Spider-Man (nota: la voce del personaggio si chiama Uomo_Ragno)  (2 rilevanti)
-Q03 0 Spider-Man_-_Un_nuovo_universo.txt 1
-Q03 0 Uomo_Ragno.txt 1
-# Q04: File su personaggi/universo/editore Marvel il cui nome richiama la Marvel (DC_Comics, Image_Comics ecc. NON rilevanti)  (9 rilevanti)
-Q04 0 Marvel_Comics.txt 1
-Q04 0 Ciclope_Marvel_Comics.txt 1
-Q04 0 Loki_Marvel_Comics.txt 1
-Q04 0 Scarlet_Marvel_Comics.txt 1
-Q04 0 Thor_Marvel_Comics.txt 1
-Q04 0 Venom_Marvel_Comics.txt 1
-Q04 0 Ms._Marvel.txt 1
-Q04 0 Universo_Marvel.txt 1
-Q04 0 Marvel_Cinematic_Universe.txt 1
-# Q05: Il fumetto in generale: forme, storia, tradizioni (le singole opere come Tex_fumetto NON sono rilevanti)  (9 rilevanti)
-Q05 0 Fumetto.txt 1
-Q05 0 Fumetto_online.txt 1
-Q05 0 Fumetto_statunitense.txt 1
-Q05 0 Storia_del_fumetto_italiano.txt 1
-Q05 0 L_età_dell_oro_fumetto.txt 1
-Q05 0 Romanzo_a_fumetti.txt 1
-Q05 0 Bande_dessinée.txt 1
-Q05 0 Comic_book.txt 1
-Q05 0 Manga.txt 1
-# Q06: Il gruppo X-Men e i personaggi mutanti che ne fanno o ne hanno fatto parte (Deadpool non è un mutante)  (11 rilevanti)
-Q06 0 X-Men.txt 1
-Q06 0 Wolverine.txt 1
-Q06 0 Ciclope_Marvel_Comics.txt 1
-Q06 0 Tempesta_personaggio.txt 1
-Q06 0 Jean_Grey.txt 1
-Q06 0 Professor_X.txt 1
-Q06 0 Magneto.txt 1
-Q06 0 Rogue_personaggio.txt 1
-Q06 0 Gambit.txt 1
-Q06 0 Scarlet_Marvel_Comics.txt 1
-Q06 0 Namor.txt 1
-# Q07: Batman e il suo universo: personaggio, opere, alleati, nemici, Gotham City  (13 rilevanti)
-Q07 0 Batman.txt 1
-Q07 0 Batman_-_Il_ritorno_del_Cavaliere_Oscuro.txt 1
-Q07 0 Batgirl.txt 1
-Q07 0 Catwoman.txt 1
-Q07 0 Due_Facce.txt 1
-Q07 0 Enigmista.txt 1
-Q07 0 Gotham_City.txt 1
-Q07 0 Joker.txt 1
-Q07 0 Nightwing.txt 1
-Q07 0 Pinguino_personaggio.txt 1
-Q07 0 Ra_s_al_Ghul.txt 1
-Q07 0 Spaventapasseri_DC_Comics.txt 1
-Q07 0 Harley_Quinn.txt 1
-# Q08: Lo Studio Ghibli, Hayao Miyazaki e i loro film  (4 rilevanti)
-Q08 0 Studio_Ghibli.txt 1
-Q08 0 Hayao_Miyazaki.txt 1
-Q08 0 La_città_incantata.txt 1
-Q08 0 Il_mio_vicino_Totoro.txt 1
-# Q09: La casa editrice Bonelli, i suoi fondatori e le sue serie (autori/fumetti italiani non Bonelli NON rilevanti)  (10 rilevanti)
-Q09 0 Sergio_Bonelli_Editore.txt 1
-Q09 0 Sergio_Bonelli.txt 1
-Q09 0 Gianluigi_Bonelli.txt 1
-Q09 0 Tex_fumetto.txt 1
-Q09 0 Dylan_Dog.txt 1
-Q09 0 Zagor.txt 1
-Q09 0 Nathan_Never.txt 1
-Q09 0 Martin_Mystère.txt 1
-Q09 0 Mister_No.txt 1
-Q09 0 Julia_-_Le_avventure_di_una_criminologa.txt 1
-# Q10: I supercriminali e antagonisti di Batman  (8 rilevanti)
-Q10 0 Joker.txt 1
-Q10 0 Due_Facce.txt 1
-Q10 0 Enigmista.txt 1
-Q10 0 Pinguino_personaggio.txt 1
-Q10 0 Spaventapasseri_DC_Comics.txt 1
-Q10 0 Ra_s_al_Ghul.txt 1
-Q10 0 Harley_Quinn.txt 1
-Q10 0 Catwoman.txt 1
-# Q11: Il genere shōnen e le opere shōnen (autori come Akira Toriyama o Eiichirō Oda NON rilevanti)  (13 rilevanti)
-Q11 0 Shōnen.txt 1
-Q11 0 Dragon_Ball.txt 1
-Q11 0 One_Piece.txt 1
-Q11 0 Naruto.txt 1
-Q11 0 Ken_il_guerriero.txt 1
-Q11 0 I_Cavalieri_dello_zodiaco.txt 1
-Q11 0 L_attacco_dei_giganti.txt 1
-Q11 0 Death_Note.txt 1
-Q11 0 Detective_Conan.txt 1
-Q11 0 Fullmetal_Alchemist.txt 1
-Q11 0 Demon_Slayer_-_Kimetsu_no_yaiba.txt 1
-Q11 0 Jujutsu_kaisen_-_Sorcery_Fight.txt 1
-Q11 0 Astro_Boy.txt 1
-# Q12: Personaggi, opere, universo ed editore Marvel, esclusi quelli legati a Spider-Man (Uomo Ragno, film, Venom, Carnage, Kingpin); autori esclusi; Falcon.txt è una pagina di disambiguazione, non il personaggio  (45 rilevanti)
-Q12 0 Marvel_Comics.txt 1
-Q12 0 Universo_Marvel.txt 1
-Q12 0 Marvel_Cinematic_Universe.txt 1
-Q12 0 Iron_Man.txt 1
-Q12 0 Capitan_America.txt 1
-Q12 0 Thor_Marvel_Comics.txt 1
-Q12 0 Hulk.txt 1
-Q12 0 Natasha_Romanoff.txt 1
-Q12 0 Occhio_di_Falco.txt 1
-Q12 0 Black_Panther_film.txt 1
-Q12 0 Dottor_Strange.txt 1
-Q12 0 Wolverine.txt 1
-Q12 0 X-Men.txt 1
-Q12 0 Fantastici_Quattro.txt 1
-Q12 0 Vendicatori.txt 1
-Q12 0 Deadpool.txt 1
-Q12 0 Silver_Surfer.txt 1
-Q12 0 Ant-Man.txt 1
-Q12 0 Guardiani_della_Galassia.txt 1
-Q12 0 Punitore.txt 1
-Q12 0 Scarlet_Marvel_Comics.txt 1
-Q12 0 Ciclope_Marvel_Comics.txt 1
-Q12 0 Tempesta_personaggio.txt 1
-Q12 0 Jean_Grey.txt 1
-Q12 0 Professor_X.txt 1
-Q12 0 Gambit.txt 1
-Q12 0 Rogue_personaggio.txt 1
-Q12 0 Nick_Fury.txt 1
-Q12 0 Bucky_Barnes.txt 1
-Q12 0 Star-Lord.txt 1
-Q12 0 Groot.txt 1
-Q12 0 Rocket_Raccoon.txt 1
-Q12 0 Moon_Knight.txt 1
-Q12 0 Luke_Cage.txt 1
-Q12 0 Jessica_Jones.txt 1
-Q12 0 She-Hulk.txt 1
-Q12 0 Ms._Marvel.txt 1
-Q12 0 Namor.txt 1
-Q12 0 Galactus.txt 1
-Q12 0 Ultron.txt 1
-Q12 0 Teschio_Rosso.txt 1
-Q12 0 Magneto.txt 1
-Q12 0 Thanos.txt 1
-Q12 0 Dottor_Destino.txt 1
-Q12 0 Loki_Marvel_Comics.txt 1
+# A01: I file dedicati a Batman  (2 rilevanti)
+A01 0 Batman.txt 1
+A01 0 Batman_-_Il_ritorno_del_Cavaliere_Oscuro.txt 1
+# A02: Il file dedicato ai Pokémon  (1 rilevanti)
+A02 0 Pokémon_serie_animata.txt 1
+# A03: I file dedicati a Spider-Man (nota: la voce del personaggio si chiama Uomo_Ragno)  (2 rilevanti)
+A03 0 Spider-Man_-_Un_nuovo_universo.txt 1
+A03 0 Uomo_Ragno.txt 1
+# A04: File su personaggi/universo/editore Marvel il cui nome richiama la Marvel (DC_Comics, Image_Comics ecc. NON rilevanti)  (9 rilevanti)
+A04 0 Marvel_Comics.txt 1
+A04 0 Ciclope_Marvel_Comics.txt 1
+A04 0 Loki_Marvel_Comics.txt 1
+A04 0 Scarlet_Marvel_Comics.txt 1
+A04 0 Thor_Marvel_Comics.txt 1
+A04 0 Venom_Marvel_Comics.txt 1
+A04 0 Ms._Marvel.txt 1
+A04 0 Universo_Marvel.txt 1
+A04 0 Marvel_Cinematic_Universe.txt 1
+# A05: Il fumetto in generale: forme, storia, tradizioni (le singole opere come Tex_fumetto NON sono rilevanti)  (9 rilevanti)
+A05 0 Fumetto.txt 1
+A05 0 Fumetto_online.txt 1
+A05 0 Fumetto_statunitense.txt 1
+A05 0 Storia_del_fumetto_italiano.txt 1
+A05 0 L_età_dell_oro_fumetto.txt 1
+A05 0 Romanzo_a_fumetti.txt 1
+A05 0 Bande_dessinée.txt 1
+A05 0 Comic_book.txt 1
+A05 0 Manga.txt 1
+# A06: Il gruppo X-Men e i personaggi mutanti che ne fanno o ne hanno fatto parte (Deadpool non è un mutante)  (11 rilevanti)
+A06 0 X-Men.txt 1
+A06 0 Wolverine.txt 1
+A06 0 Ciclope_Marvel_Comics.txt 1
+A06 0 Tempesta_personaggio.txt 1
+A06 0 Jean_Grey.txt 1
+A06 0 Professor_X.txt 1
+A06 0 Magneto.txt 1
+A06 0 Rogue_personaggio.txt 1
+A06 0 Gambit.txt 1
+A06 0 Scarlet_Marvel_Comics.txt 1
+A06 0 Namor.txt 1
+# A07: Batman e il suo universo: personaggio, opere, alleati, nemici, Gotham City  (13 rilevanti)
+A07 0 Batman.txt 1
+A07 0 Batman_-_Il_ritorno_del_Cavaliere_Oscuro.txt 1
+A07 0 Batgirl.txt 1
+A07 0 Catwoman.txt 1
+A07 0 Due_Facce.txt 1
+A07 0 Enigmista.txt 1
+A07 0 Gotham_City.txt 1
+A07 0 Joker.txt 1
+A07 0 Nightwing.txt 1
+A07 0 Pinguino_personaggio.txt 1
+A07 0 Ra_s_al_Ghul.txt 1
+A07 0 Spaventapasseri_DC_Comics.txt 1
+A07 0 Harley_Quinn.txt 1
+# A08: Lo Studio Ghibli, Hayao Miyazaki e i loro film  (4 rilevanti)
+A08 0 Studio_Ghibli.txt 1
+A08 0 Hayao_Miyazaki.txt 1
+A08 0 La_città_incantata.txt 1
+A08 0 Il_mio_vicino_Totoro.txt 1
+# A09: La casa editrice Bonelli, i suoi fondatori e le sue serie (autori/fumetti italiani non Bonelli NON rilevanti)  (10 rilevanti)
+A09 0 Sergio_Bonelli_Editore.txt 1
+A09 0 Sergio_Bonelli.txt 1
+A09 0 Gianluigi_Bonelli.txt 1
+A09 0 Tex_fumetto.txt 1
+A09 0 Dylan_Dog.txt 1
+A09 0 Zagor.txt 1
+A09 0 Nathan_Never.txt 1
+A09 0 Martin_Mystère.txt 1
+A09 0 Mister_No.txt 1
+A09 0 Julia_-_Le_avventure_di_una_criminologa.txt 1
+# A10: I supercriminali e antagonisti di Batman  (8 rilevanti)
+A10 0 Joker.txt 1
+A10 0 Due_Facce.txt 1
+A10 0 Enigmista.txt 1
+A10 0 Pinguino_personaggio.txt 1
+A10 0 Spaventapasseri_DC_Comics.txt 1
+A10 0 Ra_s_al_Ghul.txt 1
+A10 0 Harley_Quinn.txt 1
+A10 0 Catwoman.txt 1
+# A11: Il genere shōnen e le opere shōnen (autori come Akira Toriyama o Eiichirō Oda NON rilevanti)  (13 rilevanti)
+A11 0 Shōnen.txt 1
+A11 0 Dragon_Ball.txt 1
+A11 0 One_Piece.txt 1
+A11 0 Naruto.txt 1
+A11 0 Ken_il_guerriero.txt 1
+A11 0 I_Cavalieri_dello_zodiaco.txt 1
+A11 0 L_attacco_dei_giganti.txt 1
+A11 0 Death_Note.txt 1
+A11 0 Detective_Conan.txt 1
+A11 0 Fullmetal_Alchemist.txt 1
+A11 0 Demon_Slayer_-_Kimetsu_no_yaiba.txt 1
+A11 0 Jujutsu_kaisen_-_Sorcery_Fight.txt 1
+A11 0 Astro_Boy.txt 1
+# A12: Personaggi, opere, universo ed editore Marvel, esclusi quelli legati a Spider-Man (Uomo Ragno, film, Venom, Carnage, Kingpin); autori esclusi; Falcon.txt è una pagina di disambiguazione, non il personaggio  (45 rilevanti)
+A12 0 Marvel_Comics.txt 1
+A12 0 Universo_Marvel.txt 1
+A12 0 Marvel_Cinematic_Universe.txt 1
+A12 0 Iron_Man.txt 1
+A12 0 Capitan_America.txt 1
+A12 0 Thor_Marvel_Comics.txt 1
+A12 0 Hulk.txt 1
+A12 0 Natasha_Romanoff.txt 1
+A12 0 Occhio_di_Falco.txt 1
+A12 0 Black_Panther_film.txt 1
+A12 0 Dottor_Strange.txt 1
+A12 0 Wolverine.txt 1
+A12 0 X-Men.txt 1
+A12 0 Fantastici_Quattro.txt 1
+A12 0 Vendicatori.txt 1
+A12 0 Deadpool.txt 1
+A12 0 Silver_Surfer.txt 1
+A12 0 Ant-Man.txt 1
+A12 0 Guardiani_della_Galassia.txt 1
+A12 0 Punitore.txt 1
+A12 0 Scarlet_Marvel_Comics.txt 1
+A12 0 Ciclope_Marvel_Comics.txt 1
+A12 0 Tempesta_personaggio.txt 1
+A12 0 Jean_Grey.txt 1
+A12 0 Professor_X.txt 1
+A12 0 Gambit.txt 1
+A12 0 Rogue_personaggio.txt 1
+A12 0 Nick_Fury.txt 1
+A12 0 Bucky_Barnes.txt 1
+A12 0 Star-Lord.txt 1
+A12 0 Groot.txt 1
+A12 0 Rocket_Raccoon.txt 1
+A12 0 Moon_Knight.txt 1
+A12 0 Luke_Cage.txt 1
+A12 0 Jessica_Jones.txt 1
+A12 0 She-Hulk.txt 1
+A12 0 Ms._Marvel.txt 1
+A12 0 Namor.txt 1
+A12 0 Galactus.txt 1
+A12 0 Ultron.txt 1
+A12 0 Teschio_Rosso.txt 1
+A12 0 Magneto.txt 1
+A12 0 Thanos.txt 1
+A12 0 Dottor_Destino.txt 1
+A12 0 Loki_Marvel_Comics.txt 1
+# B01: Il file dedicato a Iron Man.  (1 rilevanti)
+B01 0 Iron_Man.txt 1
+# B02: Il file dedicato a Lanterna Verde.  (1 rilevanti)
+B02 0 Lanterna_Verde.txt 1
+# B03: I file su personaggi, universo ed editore DC il cui nome richiama la DC.  (6 rilevanti)
+B03 0 DC_Comics.txt 1
+B03 0 Universo_DC.txt 1
+B03 0 DC_Extended_Universe.txt 1
+B03 0 Cyborg_DC_Comics.txt 1
+B03 0 Sandman_DC_Comics.txt 1
+B03 0 Spaventapasseri_DC_Comics.txt 1
+# B04: I file su Walt Disney e sul suo studio di animazione.  (2 rilevanti)
+B04 0 Walt_Disney.txt 1
+B04 0 Walt_Disney_Animation_Studios.txt 1
+# B05: Il file dedicato a Capitan America.  (1 rilevanti)
+B05 0 Capitan_America.txt 1
+# B06: Lo Studio Ghibli, il suo fondatore Hayao Miyazaki e i suoi film.  (4 rilevanti)
+B06 0 Studio_Ghibli.txt 1
+B06 0 Hayao_Miyazaki.txt 1
+B06 0 La_città_incantata.txt 1
+B06 0 Il_mio_vicino_Totoro.txt 1
+# B07: Il gruppo dei Guardiani della Galassia e i suoi membri.  (4 rilevanti)
+B07 0 Guardiani_della_Galassia.txt 1
+B07 0 Star-Lord.txt 1
+B07 0 Groot.txt 1
+B07 0 Rocket_Raccoon.txt 1
+# B08: Paperino e il suo alter ego Paperinik.  (2 rilevanti)
+B08 0 Paperino.txt 1
+B08 0 Paperinik.txt 1
+# B09: Le Tartarughe Ninja.  (1 rilevanti)
+B09 0 Tartarughe_Ninja.txt 1
+# B10: Le serie animate I Simpson, I Griffin e Futurama.  (3 rilevanti)
+B10 0 I_Simpson.txt 1
+B10 0 I_Griffin.txt 1
+B10 0 Futurama.txt 1
+# B11: Il Joker e Harley Quinn.  (2 rilevanti)
+B11 0 Joker.txt 1
+B11 0 Harley_Quinn.txt 1
+# B12: Superman, la sua famiglia kryptoniana e la kryptonite.  (3 rilevanti)
+B12 0 Superman.txt 1
+B12 0 Supergirl.txt 1
+B12 0 Kryptonite.txt 1

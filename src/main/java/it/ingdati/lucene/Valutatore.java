@@ -15,6 +15,7 @@ import java.util.Locale;
 import java.util.Map;
 import java.util.Set;
 import java.util.TreeSet;
+import java.util.function.ToDoubleFunction;
 
 import org.apache.lucene.analysis.Analyzer;
 import org.apache.lucene.analysis.miscellaneous.PerFieldAnalyzerWrapper;
@@ -39,41 +40,42 @@ import org.apache.lucene.store.Directory;
 /**
  * Programma 3: valutazione dell'efficacia del motore di ricerca.
  *
- * Confronta i risultati del sistema con i giudizi di rilevanza (qrels) e calcola, per ogni query:
- *   Precision = rilevanti trovati / documenti trovati
- *   Recall    = rilevanti trovati / rilevanti totali
- *   F1        = 2 * P * R / (P + R)
- *   P@5, P@10 = rilevanti tra i primi 5 / 10 risultati, diviso 5 / 10
- * e la media su tutte le query (macro-media).
+ * Il sistema, come il Ricercatore, mostra all'utente i primi K = 10 risultati. Su questi si calcola, per ogni query:
+ *   Precision   = rilevanti tra i risultati mostrati / risultati mostrati (al massimo 10)
+ *   Recall      = rilevanti tra i risultati mostrati / rilevanti totali
+ *   F1          = 2 * P * R / (P + R)
+ *   R-Precision = precision sui primi R risultati, con R = numero di rilevanti della query
+ *                 (non penalizza le query con pochi rilevanti, a differenza di P@5 e P@10)
+ *   P@5, P@10   = rilevanti tra i primi 5 / 10 risultati, diviso 5 / 10 (definizione standard)
+ * e la media su tutte le query (macro-media), separatamente per il set A, il set B e in totale.
  *
- * Oltre al sistema del progetto (analyzer scelti + BM25 + operatore OR) prova altre configurazioni,
- * per giustificare le scelte con i numeri:
- *   - analyzer : "progetto" (CustomAnalyzer sul nome + ItalianAnalyzer con ASCIIFolding sul contenuto)
- *                vs "italiano-puro" (come progetto, ma ItalianAnalyzer di Lucene senza ASCIIFolding sul contenuto)
- *                vs "standard" (StandardAnalyzer su entrambi i campi: nessuna scelta specifica)
- *   - ranking  : BM25 (default di Lucene)  vs  TF-IDF (ClassicSimilarity)  vs  modello linguistico (LMDirichlet)
- *   - operatore: OR (basta un termine)  vs  AND (servono tutti i termini)
+ * Oltre al sistema del progetto prova altre configurazioni per giustificare ogni scelta con i numeri:
+ *   - analyzer : progetto | nome-senza-stemming | contenuto-senza-folding | standard (StandardAnalyzer ovunque)
+ *   - ranking  : BM25 (default di Lucene) | TF-IDF (ClassicSimilarity) | LM-Dirichlet
+ *   - operatore: AND (sistema) | OR
  *
  * Uso:  mvn -q compile exec:java@valuta
  *       mvn -q compile exec:java@valuta -Dexec.args="--pool 20"    (genera i candidati da giudicare)
  *
- * File in valutazione/:  query.tsv (input), qrels.txt (input),
- *                        riepilogo.csv, per_query.csv, dettaglio_bm25.txt (output)
+ * File in valutazione/:  query.tsv, qrels.txt (input)  ->  riepilogo.csv, per_query.csv, dettaglio_sistema.txt (output)
  */
 public class Valutatore {
 
-    /** Una query della collezione di test. */
-    record QueryTest(String id, String campo, String testo, String esigenza) { }
+    static final int K = 10;   // risultati mostrati all'utente
+    static final Path CARTELLA = Paths.get("valutazione");
 
-    /** Metriche di una query in una configurazione. */
-    record Metriche(int trovati, int rilevanti, int rilTrovati, double p, double r, double f1, double p5, double p10) { }
+    record QueryTest(String id, String campo, String testo, String esigenza) {
+        String set() { return id.substring(0, 1); }   // "A" o "B"
+    }
 
-    /** Una configurazione del sistema da valutare. */
+    record Metriche(int rilevanti, int trovati, int rilMostrati, double p, double r, double f1,
+                    double rprec, double p5, double p10) { }
+
     record Config(String analyzer, String ranking, QueryParser.Operator operatore) {
         String nome() { return analyzer + " / " + ranking + " / " + operatore; }
     }
 
-    static final Path CARTELLA = Paths.get("valutazione");
+    static final Config SISTEMA = new Config("progetto", "BM25", QueryParser.Operator.AND);
 
     public static void main(String[] args) throws Exception {
         Console.usaUtf8();
@@ -81,52 +83,44 @@ public class Valutatore {
         Path docs = Paths.get("docs");
 
         List<QueryTest> queries = leggiQuery(CARTELLA.resolve("query.tsv"));
-        System.out.printf("Query di test: %d%n", queries.size());
+        System.out.printf("Query di test: %d (set A: %d, set B: %d)%n", queries.size(),
+                queries.stream().filter(q -> q.set().equals("A")).count(),
+                queries.stream().filter(q -> q.set().equals("B")).count());
 
         // Un indice in memoria per ciascuna scelta di analyzer
         Map<String, Directory> indici = new LinkedHashMap<>();
-        indici.put("progetto", costruisciIndice(docs, Analizzatori.perCampo()));
-        indici.put("italiano-puro", costruisciIndice(docs, new PerFieldAnalyzerWrapper(new StandardAnalyzer(),
-                Map.of(Analizzatori.CAMPO_NOME, Analizzatori.analyzerNome(),
-                       Analizzatori.CAMPO_CONTENUTO, Analizzatori.analyzerContenutoItalianoPuro()))));
-        indici.put("standard", costruisciIndice(docs, new StandardAnalyzer()));
+        for (String a : new String[] {"progetto", "nome-senza-stemming", "contenuto-senza-folding", "standard"})
+            indici.put(a, costruisciIndice(docs, analyzerIndice(a)));
 
         List<Config> configurazioni = new ArrayList<>();
         for (String a : indici.keySet())
             for (String r : new String[] {"BM25", "TF-IDF", "LM-Dirichlet"})
-                for (QueryParser.Operator o : QueryParser.Operator.values())
+                for (QueryParser.Operator o : new QueryParser.Operator[] {QueryParser.Operator.AND, QueryParser.Operator.OR})
                     configurazioni.add(new Config(a, r, o));
 
         if (args.length > 0 && args[0].equals("--pool")) {
-            int k = args.length > 1 ? Integer.parseInt(args[1]) : 20;
-            creaPool(queries, configurazioni, indici, k);
+            creaPool(queries, configurazioni, indici, args.length > 1 ? Integer.parseInt(args[1]) : 20);
             return;
         }
 
         Map<String, Set<String>> qrels = leggiQrels(CARTELLA.resolve("qrels.txt"));
-        Config principale = new Config("progetto", "BM25", QueryParser.Operator.OR);
+        Map<Config, Map<String, Metriche>> tutti = new LinkedHashMap<>();
+        Map<Config, Double> tempi = new LinkedHashMap<>();
 
         try (PrintWriter perQuery = new PrintWriter(Files.newBufferedWriter(CARTELLA.resolve("per_query.csv"), StandardCharsets.UTF_8));
-             PrintWriter riepilogo = new PrintWriter(Files.newBufferedWriter(CARTELLA.resolve("riepilogo.csv"), StandardCharsets.UTF_8));
-             PrintWriter dettaglio = new PrintWriter(Files.newBufferedWriter(CARTELLA.resolve("dettaglio_bm25.txt"), StandardCharsets.UTF_8))) {
+             PrintWriter dettaglio = new PrintWriter(Files.newBufferedWriter(CARTELLA.resolve("dettaglio_sistema.txt"), StandardCharsets.UTF_8))) {
 
-            perQuery.println("configurazione;query;campo;testo;rilevanti;trovati;rilevanti_trovati;precision;recall;f1;p@5;p@10");
-            riepilogo.println("configurazione;precision;recall;f1;p@5;p@10;tempo_medio_ms");
-
-            System.out.printf("%n%-40s %9s %7s %6s %6s %6s %9s%n", "configurazione", "Precision", "Recall", "F1", "P@5", "P@10", "ms/query");
+            perQuery.println("configurazione;query;set;campo;testo;rilevanti;trovati;rilevanti_mostrati;precision;recall;f1;r_precision;p@5;p@10");
             for (Config c : configurazioni) {
-                Map<String, Metriche> risultati = new LinkedHashMap<>();
+                Map<String, Metriche> ris = new LinkedHashMap<>();
                 double tempoTotale = 0;
                 try (IndexReader reader = DirectoryReader.open(indici.get(c.analyzer()))) {
                     IndexSearcher searcher = new IndexSearcher(reader);
                     searcher.setSimilarity(similarita(c.ranking()));
                     StoredFields sf = searcher.storedFields();
-                    boolean stampaDettaglio = c.equals(principale);
-
                     for (QueryTest q : queries) {
                         Query query = parse(q, c);
-                        // tempo di risposta: media di 5 esecuzioni dopo una di "riscaldamento"
-                        searcher.search(query, reader.maxDoc());
+                        searcher.search(query, reader.maxDoc());                 // riscaldamento
                         long t0 = System.nanoTime();
                         ScoreDoc[] hits = null;
                         for (int i = 0; i < 5; i++) hits = searcher.search(query, reader.maxDoc()).scoreDocs;
@@ -134,52 +128,90 @@ public class Valutatore {
 
                         List<String> classifica = new ArrayList<>();
                         for (ScoreDoc sd : hits) classifica.add(sf.document(sd.doc).get(Analizzatori.CAMPO_FILE));
-
                         Set<String> rel = qrels.getOrDefault(q.id(), Set.of());
                         Metriche m = calcola(classifica, rel);
-                        risultati.put(q.id(), m);
-                        perQuery.printf(Locale.ROOT, "%s;%s;%s;%s;%d;%d;%d;%.4f;%.4f;%.4f;%.4f;%.4f%n", c.nome(), q.id(), q.campo(),
-                                q.testo().replace(";", ","), m.rilevanti(), m.trovati(), m.rilTrovati(), m.p(), m.r(), m.f1(), m.p5(), m.p10());
-                        if (stampaDettaglio) scriviDettaglio(dettaglio, q, query, classifica, rel, m);
+                        ris.put(q.id(), m);
+                        perQuery.printf(Locale.ROOT, "%s;%s;%s;%s;%s;%d;%d;%d;%.4f;%.4f;%.4f;%.4f;%.4f;%.4f%n",
+                                c.nome(), q.id(), q.set(), q.campo(), q.testo().replace(";", ","), m.rilevanti(), m.trovati(),
+                                m.rilMostrati(), m.p(), m.r(), m.f1(), m.rprec(), m.p5(), m.p10());
+                        if (c.equals(SISTEMA)) scriviDettaglio(dettaglio, q, query, classifica, rel, m);
                     }
                 }
-                double n = queries.size();
-                double mp = risultati.values().stream().mapToDouble(Metriche::p).sum() / n;
-                double mr = risultati.values().stream().mapToDouble(Metriche::r).sum() / n;
-                double mf = risultati.values().stream().mapToDouble(Metriche::f1).sum() / n;
-                double m5 = risultati.values().stream().mapToDouble(Metriche::p5).sum() / n;
-                double m10 = risultati.values().stream().mapToDouble(Metriche::p10).sum() / n;
-                double ms = tempoTotale / n;
-                System.out.printf("%-40s %9.3f %7.3f %6.3f %6.3f %6.3f %9.2f%s%n", c.nome(), mp, mr, mf, m5, m10, ms,
-                        c.equals(principale) ? "   <- sistema del progetto" : "");
-                riepilogo.printf(Locale.ROOT, "%s;%.4f;%.4f;%.4f;%.4f;%.4f;%.3f%n", c.nome(), mp, mr, mf, m5, m10, ms);
-
-                if (c.equals(principale)) stampaTabellaQuery(queries, risultati);
+                tutti.put(c, ris);
+                tempi.put(c, tempoTotale / queries.size());
             }
         }
-        System.out.println("\nFile scritti in " + CARTELLA.toAbsolutePath() + ": riepilogo.csv, per_query.csv, dettaglio_bm25.txt");
+
+        // ---- stampa: sistema del progetto, query per query
+        System.out.println("\nSISTEMA DEL PROGETTO: " + SISTEMA.nome() + "   (P, R, F1 sui primi " + K + " risultati mostrati)");
+        stampaTabellaQuery(queries, tutti.get(SISTEMA));
+
+        // ---- stampa e CSV: medie per configurazione e per set
+        try (PrintWriter riepilogo = new PrintWriter(Files.newBufferedWriter(CARTELLA.resolve("riepilogo.csv"), StandardCharsets.UTF_8))) {
+            riepilogo.println("configurazione;set;precision;recall;f1;r_precision;p@5;p@10;tempo_medio_ms");
+            for (String set : new String[] {"A+B", "A", "B"}) {
+                System.out.printf("%nMEDIE - set %s%n%-46s %6s %6s %6s %6s %6s %6s %8s%n", set,
+                        "configurazione", "P", "R", "F1", "R-Prec", "P@5", "P@10", "ms/query");
+                for (Config c : configurazioni) {
+                    List<Metriche> ms = new ArrayList<>();
+                    for (QueryTest q : queries) if (set.contains(q.set())) ms.add(tutti.get(c).get(q.id()));
+                    double[] v = {media(ms, Metriche::p), media(ms, Metriche::r), media(ms, Metriche::f1),
+                                  media(ms, Metriche::rprec), media(ms, Metriche::p5), media(ms, Metriche::p10)};
+                    System.out.printf("%-46s %6.3f %6.3f %6.3f %6.3f %6.3f %6.3f %8.2f%s%n", c.nome(),
+                            v[0], v[1], v[2], v[3], v[4], v[5], tempi.get(c), c.equals(SISTEMA) ? "  <- sistema" : "");
+                    riepilogo.printf(Locale.ROOT, "%s;%s;%.4f;%.4f;%.4f;%.4f;%.4f;%.4f;%.3f%n",
+                            c.nome(), set, v[0], v[1], v[2], v[3], v[4], v[5], tempi.get(c));
+                }
+            }
+        }
+        System.out.println("\nFile scritti in " + CARTELLA.toAbsolutePath() + ": riepilogo.csv, per_query.csv, dettaglio_sistema.txt");
     }
 
     // ------------------------------------------------------------------ metriche
 
-    /** Calcola le metriche confrontando la classifica restituita con l'insieme dei rilevanti. */
+    /** Confronta la classifica restituita (tutti i documenti trovati, in ordine) con l'insieme dei rilevanti. */
     static Metriche calcola(List<String> classifica, Set<String> rilevanti) {
-        int trovati = classifica.size();
-        int rilTrovati = 0, ril5 = 0, ril10 = 0;
-        for (int i = 0; i < classifica.size(); i++) {
-            if (rilevanti.contains(classifica.get(i))) {
-                rilTrovati++;
-                if (i < 5) ril5++;
-                if (i < 10) ril10++;
-            }
-        }
-        double p = trovati == 0 ? 0 : (double) rilTrovati / trovati;
-        double r = rilevanti.isEmpty() ? 0 : (double) rilTrovati / rilevanti.size();
+        int nRel = rilevanti.size();
+        int mostrati = Math.min(K, classifica.size());
+        int relMostrati = contaRilevanti(classifica, rilevanti, K);
+        double p = mostrati == 0 ? 0 : (double) relMostrati / mostrati;
+        double r = nRel == 0 ? 0 : (double) relMostrati / nRel;
         double f1 = (p + r) == 0 ? 0 : 2 * p * r / (p + r);
-        return new Metriche(trovati, rilevanti.size(), rilTrovati, p, r, f1, ril5 / 5.0, ril10 / 10.0);
+        double rprec = nRel == 0 ? 0 : (double) contaRilevanti(classifica, rilevanti, nRel) / nRel;
+        double p5 = contaRilevanti(classifica, rilevanti, 5) / 5.0;
+        double p10 = contaRilevanti(classifica, rilevanti, 10) / 10.0;
+        return new Metriche(nRel, classifica.size(), relMostrati, p, r, f1, rprec, p5, p10);
     }
 
-    // ------------------------------------------------------------------ indice e ricerca
+    /** Quanti documenti rilevanti ci sono tra i primi k della classifica. */
+    static int contaRilevanti(List<String> classifica, Set<String> rilevanti, int k) {
+        int n = 0;
+        for (int i = 0; i < Math.min(k, classifica.size()); i++) if (rilevanti.contains(classifica.get(i))) n++;
+        return n;
+    }
+
+    static double media(List<Metriche> ms, ToDoubleFunction<Metriche> f) {
+        return ms.stream().mapToDouble(f).average().orElse(0);
+    }
+
+    // ------------------------------------------------------------------ analyzer, indice e ricerca
+
+    /** Analyzer per campo usato per indicizzare, a seconda della configurazione. */
+    static Analyzer analyzerIndice(String config) {
+        return switch (config) {
+            case "standard" -> new StandardAnalyzer();
+            default -> new PerFieldAnalyzerWrapper(new StandardAnalyzer(),
+                    Map.of(Analizzatori.CAMPO_NOME, analyzerCampo(config, Analizzatori.CAMPO_NOME),
+                           Analizzatori.CAMPO_CONTENUTO, analyzerCampo(config, Analizzatori.CAMPO_CONTENUTO)));
+        };
+    }
+
+    /** Lo stesso analyzer, campo per campo, da usare in fase di ricerca. */
+    static Analyzer analyzerCampo(String config, String campo) {
+        if (config.equals("standard")) return new StandardAnalyzer();
+        if (campo.equals(Analizzatori.CAMPO_NOME)) return Analizzatori.analyzerNome(!config.equals("nome-senza-stemming"));
+        return config.equals("contenuto-senza-folding") ? Analizzatori.analyzerContenutoItalianoPuro() : Analizzatori.analyzerContenuto();
+    }
 
     static Directory costruisciIndice(Path docs, Analyzer analyzer) throws IOException {
         Directory dir = new ByteBuffersDirectory();
@@ -198,15 +230,7 @@ public class Valutatore {
     }
 
     static Query parse(QueryTest q, Config c) throws ParseException {
-        Analyzer a;
-        if (c.analyzer().equals("progetto")) {
-            a = q.campo().equals(Analizzatori.CAMPO_NOME) ? Analizzatori.analyzerNome() : Analizzatori.analyzerContenuto();
-        } else if (c.analyzer().equals("italiano-puro")) {
-            a = q.campo().equals(Analizzatori.CAMPO_NOME) ? Analizzatori.analyzerNome() : Analizzatori.analyzerContenutoItalianoPuro();
-        } else {
-            a = new StandardAnalyzer();
-        }
-        QueryParser parser = new QueryParser(q.campo(), a);
+        QueryParser parser = new QueryParser(q.campo(), analyzerCampo(c.analyzer(), q.campo()));
         parser.setDefaultOperator(c.operatore());
         return parser.parse(q.testo());
     }
@@ -259,26 +283,25 @@ public class Valutatore {
     }
 
     static void stampaTabellaQuery(List<QueryTest> queries, Map<String, Metriche> ris) {
-        System.out.printf("%n    %-4s %-38s %4s %5s %6s %6s %6s %6s %6s%n", "id", "query", "ril", "trov", "P", "R", "F1", "P@5", "P@10");
+        System.out.printf("    %-4s %-38s %4s %5s %6s %6s %6s %6s %6s %6s%n", "id", "query", "ril", "trov", "P", "R", "F1", "R-Prec", "P@5", "P@10");
         for (QueryTest q : queries) {
             Metriche m = ris.get(q.id());
             String testo = q.campo() + " " + q.testo();
             if (testo.length() > 38) testo = testo.substring(0, 37) + "…";
-            System.out.printf("    %-4s %-38s %4d %5d %6.2f %6.2f %6.2f %6.2f %6.2f%n", q.id(), testo,
-                    m.rilevanti(), m.trovati(), m.p(), m.r(), m.f1(), m.p5(), m.p10());
+            System.out.printf("    %-4s %-38s %4d %5d %6.2f %6.2f %6.2f %6.2f %6.2f %6.2f%n", q.id(), testo,
+                    m.rilevanti(), m.trovati(), m.p(), m.r(), m.f1(), m.rprec(), m.p5(), m.p10());
         }
-        System.out.println();
     }
 
     static void scriviDettaglio(PrintWriter pw, QueryTest q, Query query, List<String> classifica, Set<String> rel, Metriche m) {
         pw.printf("=== %s: %s %s%n    esigenza: %s%n    query Lucene: %s%n", q.id(), q.campo(), q.testo(), q.esigenza(), query);
-        pw.printf(Locale.ROOT, "    rilevanti=%d trovati=%d rilevanti_trovati=%d  P=%.2f R=%.2f F1=%.2f P@5=%.2f P@10=%.2f%n",
-                m.rilevanti(), m.trovati(), m.rilTrovati(), m.p(), m.r(), m.f1(), m.p5(), m.p10());
-        for (int i = 0; i < Math.min(10, classifica.size()); i++)
+        pw.printf(Locale.ROOT, "    rilevanti=%d trovati=%d rilevanti_nei_primi_%d=%d  P=%.2f R=%.2f F1=%.2f R-Prec=%.2f P@5=%.2f P@10=%.2f%n",
+                m.rilevanti(), m.trovati(), K, m.rilMostrati(), m.p(), m.r(), m.f1(), m.rprec(), m.p5(), m.p10());
+        for (int i = 0; i < Math.min(K, classifica.size()); i++)
             pw.printf("    %2d. %s %s%n", i + 1, rel.contains(classifica.get(i)) ? "[R]" : "[ ]", classifica.get(i));
         Set<String> mancanti = new HashSet<>(rel);
-        mancanti.removeAll(classifica);
-        if (!mancanti.isEmpty()) pw.printf("    rilevanti NON trovati: %s%n", new TreeSet<>(mancanti));
+        mancanti.removeAll(classifica.subList(0, Math.min(K, classifica.size())));
+        if (!mancanti.isEmpty()) pw.printf("    rilevanti NON tra i primi %d: %s%n", K, new TreeSet<>(mancanti));
         pw.println();
     }
 }

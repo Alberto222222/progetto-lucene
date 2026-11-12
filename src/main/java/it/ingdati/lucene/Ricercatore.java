@@ -28,9 +28,10 @@ import org.apache.lucene.store.FSDirectory;
  * Sintassi della query:   <campo> <termini>
  *   nome batman
  *   nome capitan america
- *   contenuto supereroe mutante
+ *   contenuto supereroe mutante              (tutti i termini devono comparire: operatore AND)
  *   contenuto "cavaliere oscuro"            (tra virgolette = phrase query)
- *   contenuto +marvel -spider                (+ obbligatorio, - escluso: sintassi del QueryParser)
+ *   contenuto marvel OR dc                   (OR esplicito: basta uno dei due termini)
+ *   contenuto marvel -spider                 (- escluso: sintassi del QueryParser)
  * Comandi:  "esci" per terminare.
  */
 public class Ricercatore {
@@ -48,6 +49,10 @@ public class Ricercatore {
             // Un QueryParser per campo, ciascuno con lo STESSO analyzer usato in indicizzazione
             QueryParser parserNome = new QueryParser(Analizzatori.CAMPO_NOME, Analizzatori.analyzerNome());
             QueryParser parserContenuto = new QueryParser(Analizzatori.CAMPO_CONTENUTO, Analizzatori.analyzerContenuto());
+            // Operatore di default AND: un documento deve contenere TUTTI i termini (come nei motori di ricerca web).
+            // Scelta motivata dalla valutazione: a parità di P@5 aumenta molto la precision (vedi Valutatore).
+            parserNome.setDefaultOperator(QueryParser.Operator.AND);
+            parserContenuto.setDefaultOperator(QueryParser.Operator.AND);
 
             System.out.printf("Indice aperto: %d documenti.%n", reader.numDocs());
             System.out.println("Scrivi una query (es.  nome batman   |   contenuto \"cavaliere oscuro\"), oppure 'esci'.");

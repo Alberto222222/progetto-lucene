@@ -1,13 +1,26 @@
-# Collezione di test: <id> TAB <campo> TAB <testo della query> TAB <esigenza informativa (criterio di rilevanza)>
-Q01	nome	batman	I file dedicati a Batman (il personaggio e le sue opere principali).
-Q02	nome	pokemon	Il file dedicato ai Pokémon (scritto senza accento: verifica dell'ASCIIFolding).
-Q03	nome	"spider man"	I file dedicati a Spider-Man (personaggio e film), cercati come phrase query sul nome.
-Q04	nome	marvel comics	I file su personaggi, universo ed editore Marvel il cui nome richiama la Marvel.
-Q05	nome	fumetto	I file che trattano il fumetto in generale (forme, storia, tradizioni), non una singola opera.
-Q06	contenuto	mutanti x-men	I personaggi mutanti legati agli X-Men e il gruppo stesso.
-Q07	contenuto	"cavaliere oscuro"	Batman e il suo universo: il personaggio, le sue opere, alleati, nemici e Gotham City.
-Q08	contenuto	miyazaki ghibli	Lo Studio Ghibli, Hayao Miyazaki e i loro film.
-Q09	contenuto	fumetto italiano bonelli	La casa editrice Bonelli, i suoi fondatori e le sue serie a fumetti.
-Q10	contenuto	nemici di batman	I supercriminali e gli antagonisti di Batman.
-Q11	contenuto	manga giapponese shonen	Il genere shōnen e i manga/anime shōnen.
-Q12	contenuto	+marvel -spider	Personaggi, opere ed editore Marvel che non riguardano Spider-Man.
+# Collezione di test (set A = query esplorative scritte per prime, comprese quelle difficili;
+# set B = query ben formulate, tipiche ricerche precise di un utente, scritte con i giudizi PRIMA di eseguirle): <id> TAB <campo> TAB <testo della query> TAB <esigenza informativa (criterio di rilevanza)>
+A01	nome	batman	I file dedicati a Batman (il personaggio e le sue opere principali).
+A02	nome	pokemon	Il file dedicato ai Pokémon (scritto senza accento: verifica dell'ASCIIFolding).
+A03	nome	"spider man"	I file dedicati a Spider-Man (personaggio e film), cercati come phrase query sul nome.
+A04	nome	marvel comics	I file su personaggi, universo ed editore Marvel il cui nome richiama la Marvel.
+A05	nome	fumetto	I file che trattano il fumetto in generale (forme, storia, tradizioni), non una singola opera.
+A06	contenuto	mutanti x-men	I personaggi mutanti legati agli X-Men e il gruppo stesso.
+A07	contenuto	"cavaliere oscuro"	Batman e il suo universo: il personaggio, le sue opere, alleati, nemici e Gotham City.
+A08	contenuto	miyazaki ghibli	Lo Studio Ghibli, Hayao Miyazaki e i loro film.
+A09	contenuto	fumetto italiano bonelli	La casa editrice Bonelli, i suoi fondatori e le sue serie a fumetti.
+A10	contenuto	nemici di batman	I supercriminali e gli antagonisti di Batman.
+A11	contenuto	manga giapponese shonen	Il genere shōnen e i manga/anime shōnen.
+A12	contenuto	+marvel -spider	Personaggi, opere ed editore Marvel che non riguardano Spider-Man.
+B01	nome	"iron man"	Il file dedicato a Iron Man.
+B02	nome	lanterna verde	Il file dedicato a Lanterna Verde.
+B03	nome	dc comics	I file su personaggi, universo ed editore DC il cui nome richiama la DC.
+B04	nome	walt disney	I file su Walt Disney e sul suo studio di animazione.
+B05	nome	capitan america	Il file dedicato a Capitan America.
+B06	contenuto	"studio ghibli"	Lo Studio Ghibli, il suo fondatore Hayao Miyazaki e i suoi film.
+B07	contenuto	"guardiani della galassia"	Il gruppo dei Guardiani della Galassia e i suoi membri.
+B08	contenuto	paperino paperinik	Paperino e il suo alter ego Paperinik.
+B09	contenuto	"tartarughe ninja"	Le Tartarughe Ninja.
+B10	contenuto	simpson griffin futurama	Le serie animate I Simpson, I Griffin e Futurama.
+B11	contenuto	joker harley quinn	Il Joker e Harley Quinn.
+B12	contenuto	superman kryptonite	Superman, la sua famiglia kryptoniana e la kryptonite.

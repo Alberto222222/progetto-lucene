@@ -1,217 +1,577 @@
-configurazione;query;campo;testo;rilevanti;trovati;rilevanti_trovati;precision;recall;f1;p@5;p@10
-progetto / BM25 / OR;Q01;nome;batman;2;2;2;1.0000;1.0000;1.0000;0.4000;0.2000
-progetto / BM25 / OR;Q02;nome;pokemon;1;1;1;1.0000;1.0000;1.0000;0.2000;0.1000
-progetto / BM25 / OR;Q03;nome;"spider man";2;1;1;1.0000;0.5000;0.6667;0.2000;0.1000
-progetto / BM25 / OR;Q04;nome;marvel comics;9;15;9;0.6000;1.0000;0.7500;1.0000;0.8000
-progetto / BM25 / OR;Q05;nome;fumetto;9;13;5;0.3846;0.5556;0.4545;0.6000;0.3000
-progetto / BM25 / OR;Q06;contenuto;mutanti x-men;11;104;11;0.1058;1.0000;0.1913;1.0000;1.0000
-progetto / BM25 / OR;Q07;contenuto;"cavaliere oscuro";13;30;13;0.4333;1.0000;0.6047;0.8000;0.8000
-progetto / BM25 / OR;Q08;contenuto;miyazaki ghibli;4;10;4;0.4000;1.0000;0.5714;0.8000;0.4000
-progetto / BM25 / OR;Q09;contenuto;fumetto italiano bonelli;10;197;10;0.0508;1.0000;0.0966;0.8000;0.8000
-progetto / BM25 / OR;Q10;contenuto;nemici di batman;8;136;8;0.0588;1.0000;0.1111;0.6000;0.6000
-progetto / BM25 / OR;Q11;contenuto;manga giapponese shonen;13;72;13;0.1806;1.0000;0.3059;0.8000;0.9000
-progetto / BM25 / OR;Q12;contenuto;+marvel -spider;45;39;3;0.0769;0.0667;0.0714;0.6000;0.3000
-progetto / BM25 / AND;Q01;nome;batman;2;2;2;1.0000;1.0000;1.0000;0.4000;0.2000
-progetto / BM25 / AND;Q02;nome;pokemon;1;1;1;1.0000;1.0000;1.0000;0.2000;0.1000
-progetto / BM25 / AND;Q03;nome;"spider man";2;1;1;1.0000;0.5000;0.6667;0.2000;0.1000
-progetto / BM25 / AND;Q04;nome;marvel comics;9;6;6;1.0000;0.6667;0.8000;1.0000;0.6000
-progetto / BM25 / AND;Q05;nome;fumetto;9;13;5;0.3846;0.5556;0.4545;0.6000;0.3000
-progetto / BM25 / AND;Q06;contenuto;mutanti x-men;11;39;11;0.2821;1.0000;0.4400;1.0000;1.0000
-progetto / BM25 / AND;Q07;contenuto;"cavaliere oscuro";13;30;13;0.4333;1.0000;0.6047;0.8000;0.8000
-progetto / BM25 / AND;Q08;contenuto;miyazaki ghibli;4;5;4;0.8000;1.0000;0.8889;0.8000;0.4000
-progetto / BM25 / AND;Q09;contenuto;fumetto italiano bonelli;10;20;9;0.4500;0.9000;0.6000;0.8000;0.8000
-progetto / BM25 / AND;Q10;contenuto;nemici di batman;8;37;7;0.1892;0.8750;0.3111;0.6000;0.6000
-progetto / BM25 / AND;Q11;contenuto;manga giapponese shonen;13;23;13;0.5652;1.0000;0.7222;0.8000;0.9000
-progetto / BM25 / AND;Q12;contenuto;+marvel -spider;45;39;3;0.0769;0.0667;0.0714;0.6000;0.3000
-progetto / TF-IDF / OR;Q01;nome;batman;2;2;2;1.0000;1.0000;1.0000;0.4000;0.2000
-progetto / TF-IDF / OR;Q02;nome;pokemon;1;1;1;1.0000;1.0000;1.0000;0.2000;0.1000
-progetto / TF-IDF / OR;Q03;nome;"spider man";2;1;1;1.0000;0.5000;0.6667;0.2000;0.1000
-progetto / TF-IDF / OR;Q04;nome;marvel comics;9;15;9;0.6000;1.0000;0.7500;1.0000;0.8000
-progetto / TF-IDF / OR;Q05;nome;fumetto;9;13;5;0.3846;0.5556;0.4545;0.6000;0.3000
-progetto / TF-IDF / OR;Q06;contenuto;mutanti x-men;11;104;11;0.1058;1.0000;0.1913;1.0000;1.0000
-progetto / TF-IDF / OR;Q07;contenuto;"cavaliere oscuro";13;30;13;0.4333;1.0000;0.6047;0.8000;0.8000
-progetto / TF-IDF / OR;Q08;contenuto;miyazaki ghibli;4;10;4;0.4000;1.0000;0.5714;0.8000;0.4000
-progetto / TF-IDF / OR;Q09;contenuto;fumetto italiano bonelli;10;197;10;0.0508;1.0000;0.0966;0.6000;0.7000
-progetto / TF-IDF / OR;Q10;contenuto;nemici di batman;8;136;8;0.0588;1.0000;0.1111;0.6000;0.7000
-progetto / TF-IDF / OR;Q11;contenuto;manga giapponese shonen;13;72;13;0.1806;1.0000;0.3059;0.6000;0.5000
-progetto / TF-IDF / OR;Q12;contenuto;+marvel -spider;45;39;3;0.0769;0.0667;0.0714;0.6000;0.3000
-progetto / TF-IDF / AND;Q01;nome;batman;2;2;2;1.0000;1.0000;1.0000;0.4000;0.2000
-progetto / TF-IDF / AND;Q02;nome;pokemon;1;1;1;1.0000;1.0000;1.0000;0.2000;0.1000
-progetto / TF-IDF / AND;Q03;nome;"spider man";2;1;1;1.0000;0.5000;0.6667;0.2000;0.1000
-progetto / TF-IDF / AND;Q04;nome;marvel comics;9;6;6;1.0000;0.6667;0.8000;1.0000;0.6000
-progetto / TF-IDF / AND;Q05;nome;fumetto;9;13;5;0.3846;0.5556;0.4545;0.6000;0.3000
-progetto / TF-IDF / AND;Q06;contenuto;mutanti x-men;11;39;11;0.2821;1.0000;0.4400;1.0000;1.0000
-progetto / TF-IDF / AND;Q07;contenuto;"cavaliere oscuro";13;30;13;0.4333;1.0000;0.6047;0.8000;0.8000
-progetto / TF-IDF / AND;Q08;contenuto;miyazaki ghibli;4;5;4;0.8000;1.0000;0.8889;0.8000;0.4000
-progetto / TF-IDF / AND;Q09;contenuto;fumetto italiano bonelli;10;20;9;0.4500;0.9000;0.6000;0.6000;0.6000
-progetto / TF-IDF / AND;Q10;contenuto;nemici di batman;8;37;7;0.1892;0.8750;0.3111;0.8000;0.7000
-progetto / TF-IDF / AND;Q11;contenuto;manga giapponese shonen;13;23;13;0.5652;1.0000;0.7222;0.6000;0.6000
-progetto / TF-IDF / AND;Q12;contenuto;+marvel -spider;45;39;3;0.0769;0.0667;0.0714;0.6000;0.3000
-progetto / LM-Dirichlet / OR;Q01;nome;batman;2;2;2;1.0000;1.0000;1.0000;0.4000;0.2000
-progetto / LM-Dirichlet / OR;Q02;nome;pokemon;1;1;1;1.0000;1.0000;1.0000;0.2000;0.1000
-progetto / LM-Dirichlet / OR;Q03;nome;"spider man";2;1;1;1.0000;0.5000;0.6667;0.2000;0.1000
-progetto / LM-Dirichlet / OR;Q04;nome;marvel comics;9;15;9;0.6000;1.0000;0.7500;1.0000;0.9000
-progetto / LM-Dirichlet / OR;Q05;nome;fumetto;9;13;5;0.3846;0.5556;0.4545;0.6000;0.3000
-progetto / LM-Dirichlet / OR;Q06;contenuto;mutanti x-men;11;104;11;0.1058;1.0000;0.1913;1.0000;1.0000
-progetto / LM-Dirichlet / OR;Q07;contenuto;"cavaliere oscuro";13;30;13;0.4333;1.0000;0.6047;0.8000;0.8000
-progetto / LM-Dirichlet / OR;Q08;contenuto;miyazaki ghibli;4;10;4;0.4000;1.0000;0.5714;0.8000;0.4000
-progetto / LM-Dirichlet / OR;Q09;contenuto;fumetto italiano bonelli;10;197;10;0.0508;1.0000;0.0966;0.8000;0.6000
-progetto / LM-Dirichlet / OR;Q10;contenuto;nemici di batman;8;136;8;0.0588;1.0000;0.1111;0.6000;0.6000
-progetto / LM-Dirichlet / OR;Q11;contenuto;manga giapponese shonen;13;72;13;0.1806;1.0000;0.3059;0.8000;0.7000
-progetto / LM-Dirichlet / OR;Q12;contenuto;+marvel -spider;45;39;3;0.0769;0.0667;0.0714;0.6000;0.3000
-progetto / LM-Dirichlet / AND;Q01;nome;batman;2;2;2;1.0000;1.0000;1.0000;0.4000;0.2000
-progetto / LM-Dirichlet / AND;Q02;nome;pokemon;1;1;1;1.0000;1.0000;1.0000;0.2000;0.1000
-progetto / LM-Dirichlet / AND;Q03;nome;"spider man";2;1;1;1.0000;0.5000;0.6667;0.2000;0.1000
-progetto / LM-Dirichlet / AND;Q04;nome;marvel comics;9;6;6;1.0000;0.6667;0.8000;1.0000;0.6000
-progetto / LM-Dirichlet / AND;Q05;nome;fumetto;9;13;5;0.3846;0.5556;0.4545;0.6000;0.3000
-progetto / LM-Dirichlet / AND;Q06;contenuto;mutanti x-men;11;39;11;0.2821;1.0000;0.4400;1.0000;1.0000
-progetto / LM-Dirichlet / AND;Q07;contenuto;"cavaliere oscuro";13;30;13;0.4333;1.0000;0.6047;0.8000;0.8000
-progetto / LM-Dirichlet / AND;Q08;contenuto;miyazaki ghibli;4;5;4;0.8000;1.0000;0.8889;0.8000;0.4000
-progetto / LM-Dirichlet / AND;Q09;contenuto;fumetto italiano bonelli;10;20;9;0.4500;0.9000;0.6000;0.8000;0.6000
-progetto / LM-Dirichlet / AND;Q10;contenuto;nemici di batman;8;37;7;0.1892;0.8750;0.3111;0.6000;0.7000
-progetto / LM-Dirichlet / AND;Q11;contenuto;manga giapponese shonen;13;23;13;0.5652;1.0000;0.7222;0.8000;0.7000
-progetto / LM-Dirichlet / AND;Q12;contenuto;+marvel -spider;45;39;3;0.0769;0.0667;0.0714;0.6000;0.3000
-italiano-puro / BM25 / OR;Q01;nome;batman;2;2;2;1.0000;1.0000;1.0000;0.4000;0.2000
-italiano-puro / BM25 / OR;Q02;nome;pokemon;1;1;1;1.0000;1.0000;1.0000;0.2000;0.1000
-italiano-puro / BM25 / OR;Q03;nome;"spider man";2;1;1;1.0000;0.5000;0.6667;0.2000;0.1000
-italiano-puro / BM25 / OR;Q04;nome;marvel comics;9;15;9;0.6000;1.0000;0.7500;1.0000;0.8000
-italiano-puro / BM25 / OR;Q05;nome;fumetto;9;13;5;0.3846;0.5556;0.4545;0.6000;0.3000
-italiano-puro / BM25 / OR;Q06;contenuto;mutanti x-men;11;104;11;0.1058;1.0000;0.1913;1.0000;1.0000
-italiano-puro / BM25 / OR;Q07;contenuto;"cavaliere oscuro";13;30;13;0.4333;1.0000;0.6047;0.8000;0.8000
-italiano-puro / BM25 / OR;Q08;contenuto;miyazaki ghibli;4;10;4;0.4000;1.0000;0.5714;0.8000;0.4000
-italiano-puro / BM25 / OR;Q09;contenuto;fumetto italiano bonelli;10;197;10;0.0508;1.0000;0.0966;0.8000;0.8000
-italiano-puro / BM25 / OR;Q10;contenuto;nemici di batman;8;136;8;0.0588;1.0000;0.1111;0.6000;0.6000
-italiano-puro / BM25 / OR;Q11;contenuto;manga giapponese shonen;13;72;13;0.1806;1.0000;0.3059;0.4000;0.5000
-italiano-puro / BM25 / OR;Q12;contenuto;+marvel -spider;45;39;3;0.0769;0.0667;0.0714;0.6000;0.3000
-italiano-puro / BM25 / AND;Q01;nome;batman;2;2;2;1.0000;1.0000;1.0000;0.4000;0.2000
-italiano-puro / BM25 / AND;Q02;nome;pokemon;1;1;1;1.0000;1.0000;1.0000;0.2000;0.1000
-italiano-puro / BM25 / AND;Q03;nome;"spider man";2;1;1;1.0000;0.5000;0.6667;0.2000;0.1000
-italiano-puro / BM25 / AND;Q04;nome;marvel comics;9;6;6;1.0000;0.6667;0.8000;1.0000;0.6000
-italiano-puro / BM25 / AND;Q05;nome;fumetto;9;13;5;0.3846;0.5556;0.4545;0.6000;0.3000
-italiano-puro / BM25 / AND;Q06;contenuto;mutanti x-men;11;39;11;0.2821;1.0000;0.4400;1.0000;1.0000
-italiano-puro / BM25 / AND;Q07;contenuto;"cavaliere oscuro";13;30;13;0.4333;1.0000;0.6047;0.8000;0.8000
-italiano-puro / BM25 / AND;Q08;contenuto;miyazaki ghibli;4;5;4;0.8000;1.0000;0.8889;0.8000;0.4000
-italiano-puro / BM25 / AND;Q09;contenuto;fumetto italiano bonelli;10;20;9;0.4500;0.9000;0.6000;0.8000;0.8000
-italiano-puro / BM25 / AND;Q10;contenuto;nemici di batman;8;37;7;0.1892;0.8750;0.3111;0.6000;0.6000
-italiano-puro / BM25 / AND;Q11;contenuto;manga giapponese shonen;13;8;5;0.6250;0.3846;0.4762;0.4000;0.5000
-italiano-puro / BM25 / AND;Q12;contenuto;+marvel -spider;45;39;3;0.0769;0.0667;0.0714;0.6000;0.3000
-italiano-puro / TF-IDF / OR;Q01;nome;batman;2;2;2;1.0000;1.0000;1.0000;0.4000;0.2000
-italiano-puro / TF-IDF / OR;Q02;nome;pokemon;1;1;1;1.0000;1.0000;1.0000;0.2000;0.1000
-italiano-puro / TF-IDF / OR;Q03;nome;"spider man";2;1;1;1.0000;0.5000;0.6667;0.2000;0.1000
-italiano-puro / TF-IDF / OR;Q04;nome;marvel comics;9;15;9;0.6000;1.0000;0.7500;1.0000;0.8000
-italiano-puro / TF-IDF / OR;Q05;nome;fumetto;9;13;5;0.3846;0.5556;0.4545;0.6000;0.3000
-italiano-puro / TF-IDF / OR;Q06;contenuto;mutanti x-men;11;104;11;0.1058;1.0000;0.1913;1.0000;1.0000
-italiano-puro / TF-IDF / OR;Q07;contenuto;"cavaliere oscuro";13;30;13;0.4333;1.0000;0.6047;0.8000;0.8000
-italiano-puro / TF-IDF / OR;Q08;contenuto;miyazaki ghibli;4;10;4;0.4000;1.0000;0.5714;0.8000;0.4000
-italiano-puro / TF-IDF / OR;Q09;contenuto;fumetto italiano bonelli;10;197;10;0.0508;1.0000;0.0966;0.6000;0.7000
-italiano-puro / TF-IDF / OR;Q10;contenuto;nemici di batman;8;136;8;0.0588;1.0000;0.1111;0.6000;0.7000
-italiano-puro / TF-IDF / OR;Q11;contenuto;manga giapponese shonen;13;72;13;0.1806;1.0000;0.3059;0.4000;0.5000
-italiano-puro / TF-IDF / OR;Q12;contenuto;+marvel -spider;45;39;3;0.0769;0.0667;0.0714;0.6000;0.3000
-italiano-puro / TF-IDF / AND;Q01;nome;batman;2;2;2;1.0000;1.0000;1.0000;0.4000;0.2000
-italiano-puro / TF-IDF / AND;Q02;nome;pokemon;1;1;1;1.0000;1.0000;1.0000;0.2000;0.1000
-italiano-puro / TF-IDF / AND;Q03;nome;"spider man";2;1;1;1.0000;0.5000;0.6667;0.2000;0.1000
-italiano-puro / TF-IDF / AND;Q04;nome;marvel comics;9;6;6;1.0000;0.6667;0.8000;1.0000;0.6000
-italiano-puro / TF-IDF / AND;Q05;nome;fumetto;9;13;5;0.3846;0.5556;0.4545;0.6000;0.3000
-italiano-puro / TF-IDF / AND;Q06;contenuto;mutanti x-men;11;39;11;0.2821;1.0000;0.4400;1.0000;1.0000
-italiano-puro / TF-IDF / AND;Q07;contenuto;"cavaliere oscuro";13;30;13;0.4333;1.0000;0.6047;0.8000;0.8000
-italiano-puro / TF-IDF / AND;Q08;contenuto;miyazaki ghibli;4;5;4;0.8000;1.0000;0.8889;0.8000;0.4000
-italiano-puro / TF-IDF / AND;Q09;contenuto;fumetto italiano bonelli;10;20;9;0.4500;0.9000;0.6000;0.6000;0.6000
-italiano-puro / TF-IDF / AND;Q10;contenuto;nemici di batman;8;37;7;0.1892;0.8750;0.3111;0.8000;0.7000
-italiano-puro / TF-IDF / AND;Q11;contenuto;manga giapponese shonen;13;8;5;0.6250;0.3846;0.4762;0.4000;0.5000
-italiano-puro / TF-IDF / AND;Q12;contenuto;+marvel -spider;45;39;3;0.0769;0.0667;0.0714;0.6000;0.3000
-italiano-puro / LM-Dirichlet / OR;Q01;nome;batman;2;2;2;1.0000;1.0000;1.0000;0.4000;0.2000
-italiano-puro / LM-Dirichlet / OR;Q02;nome;pokemon;1;1;1;1.0000;1.0000;1.0000;0.2000;0.1000
-italiano-puro / LM-Dirichlet / OR;Q03;nome;"spider man";2;1;1;1.0000;0.5000;0.6667;0.2000;0.1000
-italiano-puro / LM-Dirichlet / OR;Q04;nome;marvel comics;9;15;9;0.6000;1.0000;0.7500;1.0000;0.9000
-italiano-puro / LM-Dirichlet / OR;Q05;nome;fumetto;9;13;5;0.3846;0.5556;0.4545;0.6000;0.3000
-italiano-puro / LM-Dirichlet / OR;Q06;contenuto;mutanti x-men;11;104;11;0.1058;1.0000;0.1913;1.0000;1.0000
-italiano-puro / LM-Dirichlet / OR;Q07;contenuto;"cavaliere oscuro";13;30;13;0.4333;1.0000;0.6047;0.8000;0.8000
-italiano-puro / LM-Dirichlet / OR;Q08;contenuto;miyazaki ghibli;4;10;4;0.4000;1.0000;0.5714;0.8000;0.4000
-italiano-puro / LM-Dirichlet / OR;Q09;contenuto;fumetto italiano bonelli;10;197;10;0.0508;1.0000;0.0966;0.8000;0.6000
-italiano-puro / LM-Dirichlet / OR;Q10;contenuto;nemici di batman;8;136;8;0.0588;1.0000;0.1111;0.6000;0.6000
-italiano-puro / LM-Dirichlet / OR;Q11;contenuto;manga giapponese shonen;13;72;13;0.1806;1.0000;0.3059;0.6000;0.6000
-italiano-puro / LM-Dirichlet / OR;Q12;contenuto;+marvel -spider;45;39;3;0.0769;0.0667;0.0714;0.6000;0.3000
-italiano-puro / LM-Dirichlet / AND;Q01;nome;batman;2;2;2;1.0000;1.0000;1.0000;0.4000;0.2000
-italiano-puro / LM-Dirichlet / AND;Q02;nome;pokemon;1;1;1;1.0000;1.0000;1.0000;0.2000;0.1000
-italiano-puro / LM-Dirichlet / AND;Q03;nome;"spider man";2;1;1;1.0000;0.5000;0.6667;0.2000;0.1000
-italiano-puro / LM-Dirichlet / AND;Q04;nome;marvel comics;9;6;6;1.0000;0.6667;0.8000;1.0000;0.6000
-italiano-puro / LM-Dirichlet / AND;Q05;nome;fumetto;9;13;5;0.3846;0.5556;0.4545;0.6000;0.3000
-italiano-puro / LM-Dirichlet / AND;Q06;contenuto;mutanti x-men;11;39;11;0.2821;1.0000;0.4400;1.0000;1.0000
-italiano-puro / LM-Dirichlet / AND;Q07;contenuto;"cavaliere oscuro";13;30;13;0.4333;1.0000;0.6047;0.8000;0.8000
-italiano-puro / LM-Dirichlet / AND;Q08;contenuto;miyazaki ghibli;4;5;4;0.8000;1.0000;0.8889;0.8000;0.4000
-italiano-puro / LM-Dirichlet / AND;Q09;contenuto;fumetto italiano bonelli;10;20;9;0.4500;0.9000;0.6000;0.8000;0.6000
-italiano-puro / LM-Dirichlet / AND;Q10;contenuto;nemici di batman;8;37;7;0.1892;0.8750;0.3111;0.6000;0.7000
-italiano-puro / LM-Dirichlet / AND;Q11;contenuto;manga giapponese shonen;13;8;5;0.6250;0.3846;0.4762;0.6000;0.5000
-italiano-puro / LM-Dirichlet / AND;Q12;contenuto;+marvel -spider;45;39;3;0.0769;0.0667;0.0714;0.6000;0.3000
-standard / BM25 / OR;Q01;nome;batman;2;1;1;1.0000;0.5000;0.6667;0.2000;0.1000
-standard / BM25 / OR;Q02;nome;pokemon;1;0;0;0.0000;0.0000;0.0000;0.0000;0.0000
-standard / BM25 / OR;Q03;nome;"spider man";2;0;0;0.0000;0.0000;0.0000;0.0000;0.0000
-standard / BM25 / OR;Q04;nome;marvel comics;9;0;0;0.0000;0.0000;0.0000;0.0000;0.0000
-standard / BM25 / OR;Q05;nome;fumetto;9;1;1;1.0000;0.1111;0.2000;0.2000;0.1000
-standard / BM25 / OR;Q06;contenuto;mutanti x-men;11;97;11;0.1134;1.0000;0.2037;1.0000;0.9000
-standard / BM25 / OR;Q07;contenuto;"cavaliere oscuro";13;30;13;0.4333;1.0000;0.6047;0.8000;0.8000
-standard / BM25 / OR;Q08;contenuto;miyazaki ghibli;4;10;4;0.4000;1.0000;0.5714;0.8000;0.4000
-standard / BM25 / OR;Q09;contenuto;fumetto italiano bonelli;10;156;10;0.0641;1.0000;0.1205;0.8000;0.7000
-standard / BM25 / OR;Q10;contenuto;nemici di batman;8;200;8;0.0400;1.0000;0.0769;0.6000;0.5000
-standard / BM25 / OR;Q11;contenuto;manga giapponese shonen;13;69;13;0.1884;1.0000;0.3171;0.4000;0.5000
-standard / BM25 / OR;Q12;contenuto;+marvel -spider;45;39;3;0.0769;0.0667;0.0714;0.6000;0.3000
-standard / BM25 / AND;Q01;nome;batman;2;1;1;1.0000;0.5000;0.6667;0.2000;0.1000
-standard / BM25 / AND;Q02;nome;pokemon;1;0;0;0.0000;0.0000;0.0000;0.0000;0.0000
-standard / BM25 / AND;Q03;nome;"spider man";2;0;0;0.0000;0.0000;0.0000;0.0000;0.0000
-standard / BM25 / AND;Q04;nome;marvel comics;9;0;0;0.0000;0.0000;0.0000;0.0000;0.0000
-standard / BM25 / AND;Q05;nome;fumetto;9;1;1;1.0000;0.1111;0.2000;0.2000;0.1000
-standard / BM25 / AND;Q06;contenuto;mutanti x-men;11;34;11;0.3235;1.0000;0.4889;1.0000;0.9000
-standard / BM25 / AND;Q07;contenuto;"cavaliere oscuro";13;30;13;0.4333;1.0000;0.6047;0.8000;0.8000
-standard / BM25 / AND;Q08;contenuto;miyazaki ghibli;4;5;4;0.8000;1.0000;0.8889;0.8000;0.4000
-standard / BM25 / AND;Q09;contenuto;fumetto italiano bonelli;10;19;8;0.4211;0.8000;0.5517;0.8000;0.7000
-standard / BM25 / AND;Q10;contenuto;nemici di batman;8;29;5;0.1724;0.6250;0.2703;0.6000;0.5000
-standard / BM25 / AND;Q11;contenuto;manga giapponese shonen;13;8;5;0.6250;0.3846;0.4762;0.4000;0.5000
-standard / BM25 / AND;Q12;contenuto;+marvel -spider;45;39;3;0.0769;0.0667;0.0714;0.6000;0.3000
-standard / TF-IDF / OR;Q01;nome;batman;2;1;1;1.0000;0.5000;0.6667;0.2000;0.1000
-standard / TF-IDF / OR;Q02;nome;pokemon;1;0;0;0.0000;0.0000;0.0000;0.0000;0.0000
-standard / TF-IDF / OR;Q03;nome;"spider man";2;0;0;0.0000;0.0000;0.0000;0.0000;0.0000
-standard / TF-IDF / OR;Q04;nome;marvel comics;9;0;0;0.0000;0.0000;0.0000;0.0000;0.0000
-standard / TF-IDF / OR;Q05;nome;fumetto;9;1;1;1.0000;0.1111;0.2000;0.2000;0.1000
-standard / TF-IDF / OR;Q06;contenuto;mutanti x-men;11;97;11;0.1134;1.0000;0.2037;1.0000;1.0000
-standard / TF-IDF / OR;Q07;contenuto;"cavaliere oscuro";13;30;13;0.4333;1.0000;0.6047;0.8000;0.8000
-standard / TF-IDF / OR;Q08;contenuto;miyazaki ghibli;4;10;4;0.4000;1.0000;0.5714;0.8000;0.4000
-standard / TF-IDF / OR;Q09;contenuto;fumetto italiano bonelli;10;156;10;0.0641;1.0000;0.1205;0.8000;0.7000
-standard / TF-IDF / OR;Q10;contenuto;nemici di batman;8;200;8;0.0400;1.0000;0.0769;0.6000;0.6000
-standard / TF-IDF / OR;Q11;contenuto;manga giapponese shonen;13;69;13;0.1884;1.0000;0.3171;0.6000;0.5000
-standard / TF-IDF / OR;Q12;contenuto;+marvel -spider;45;39;3;0.0769;0.0667;0.0714;0.6000;0.3000
-standard / TF-IDF / AND;Q01;nome;batman;2;1;1;1.0000;0.5000;0.6667;0.2000;0.1000
-standard / TF-IDF / AND;Q02;nome;pokemon;1;0;0;0.0000;0.0000;0.0000;0.0000;0.0000
-standard / TF-IDF / AND;Q03;nome;"spider man";2;0;0;0.0000;0.0000;0.0000;0.0000;0.0000
-standard / TF-IDF / AND;Q04;nome;marvel comics;9;0;0;0.0000;0.0000;0.0000;0.0000;0.0000
-standard / TF-IDF / AND;Q05;nome;fumetto;9;1;1;1.0000;0.1111;0.2000;0.2000;0.1000
-standard / TF-IDF / AND;Q06;contenuto;mutanti x-men;11;34;11;0.3235;1.0000;0.4889;1.0000;1.0000
-standard / TF-IDF / AND;Q07;contenuto;"cavaliere oscuro";13;30;13;0.4333;1.0000;0.6047;0.8000;0.8000
-standard / TF-IDF / AND;Q08;contenuto;miyazaki ghibli;4;5;4;0.8000;1.0000;0.8889;0.8000;0.4000
-standard / TF-IDF / AND;Q09;contenuto;fumetto italiano bonelli;10;19;8;0.4211;0.8000;0.5517;0.8000;0.7000
-standard / TF-IDF / AND;Q10;contenuto;nemici di batman;8;29;5;0.1724;0.6250;0.2703;0.8000;0.5000
-standard / TF-IDF / AND;Q11;contenuto;manga giapponese shonen;13;8;5;0.6250;0.3846;0.4762;0.4000;0.5000
-standard / TF-IDF / AND;Q12;contenuto;+marvel -spider;45;39;3;0.0769;0.0667;0.0714;0.6000;0.3000
-standard / LM-Dirichlet / OR;Q01;nome;batman;2;1;1;1.0000;0.5000;0.6667;0.2000;0.1000
-standard / LM-Dirichlet / OR;Q02;nome;pokemon;1;0;0;0.0000;0.0000;0.0000;0.0000;0.0000
-standard / LM-Dirichlet / OR;Q03;nome;"spider man";2;0;0;0.0000;0.0000;0.0000;0.0000;0.0000
-standard / LM-Dirichlet / OR;Q04;nome;marvel comics;9;0;0;0.0000;0.0000;0.0000;0.0000;0.0000
-standard / LM-Dirichlet / OR;Q05;nome;fumetto;9;1;1;1.0000;0.1111;0.2000;0.2000;0.1000
-standard / LM-Dirichlet / OR;Q06;contenuto;mutanti x-men;11;97;11;0.1134;1.0000;0.2037;1.0000;1.0000
-standard / LM-Dirichlet / OR;Q07;contenuto;"cavaliere oscuro";13;30;13;0.4333;1.0000;0.6047;0.8000;0.8000
-standard / LM-Dirichlet / OR;Q08;contenuto;miyazaki ghibli;4;10;4;0.4000;1.0000;0.5714;0.8000;0.4000
-standard / LM-Dirichlet / OR;Q09;contenuto;fumetto italiano bonelli;10;156;10;0.0641;1.0000;0.1205;0.8000;0.4000
-standard / LM-Dirichlet / OR;Q10;contenuto;nemici di batman;8;200;8;0.0400;1.0000;0.0769;0.6000;0.7000
-standard / LM-Dirichlet / OR;Q11;contenuto;manga giapponese shonen;13;69;13;0.1884;1.0000;0.3171;0.6000;0.6000
-standard / LM-Dirichlet / OR;Q12;contenuto;+marvel -spider;45;39;3;0.0769;0.0667;0.0714;0.6000;0.3000
-standard / LM-Dirichlet / AND;Q01;nome;batman;2;1;1;1.0000;0.5000;0.6667;0.2000;0.1000
-standard / LM-Dirichlet / AND;Q02;nome;pokemon;1;0;0;0.0000;0.0000;0.0000;0.0000;0.0000
-standard / LM-Dirichlet / AND;Q03;nome;"spider man";2;0;0;0.0000;0.0000;0.0000;0.0000;0.0000
-standard / LM-Dirichlet / AND;Q04;nome;marvel comics;9;0;0;0.0000;0.0000;0.0000;0.0000;0.0000
-standard / LM-Dirichlet / AND;Q05;nome;fumetto;9;1;1;1.0000;0.1111;0.2000;0.2000;0.1000
-standard / LM-Dirichlet / AND;Q06;contenuto;mutanti x-men;11;34;11;0.3235;1.0000;0.4889;1.0000;1.0000
-standard / LM-Dirichlet / AND;Q07;contenuto;"cavaliere oscuro";13;30;13;0.4333;1.0000;0.6047;0.8000;0.8000
-standard / LM-Dirichlet / AND;Q08;contenuto;miyazaki ghibli;4;5;4;0.8000;1.0000;0.8889;0.8000;0.4000
-standard / LM-Dirichlet / AND;Q09;contenuto;fumetto italiano bonelli;10;19;8;0.4211;0.8000;0.5517;0.8000;0.4000
-standard / LM-Dirichlet / AND;Q10;contenuto;nemici di batman;8;29;5;0.1724;0.6250;0.2703;0.8000;0.5000
-standard / LM-Dirichlet / AND;Q11;contenuto;manga giapponese shonen;13;8;5;0.6250;0.3846;0.4762;0.6000;0.5000
-standard / LM-Dirichlet / AND;Q12;contenuto;+marvel -spider;45;39;3;0.0769;0.0667;0.0714;0.6000;0.3000
+configurazione;query;set;campo;testo;rilevanti;trovati;rilevanti_mostrati;precision;recall;f1;r_precision;p@5;p@10
+progetto / BM25 / AND;A01;A;nome;batman;2;2;2;1.0000;1.0000;1.0000;1.0000;0.4000;0.2000
+progetto / BM25 / AND;A02;A;nome;pokemon;1;1;1;1.0000;1.0000;1.0000;1.0000;0.2000;0.1000
+progetto / BM25 / AND;A03;A;nome;"spider man";2;1;1;1.0000;0.5000;0.6667;0.5000;0.2000;0.1000
+progetto / BM25 / AND;A04;A;nome;marvel comics;9;6;6;1.0000;0.6667;0.8000;0.6667;1.0000;0.6000
+progetto / BM25 / AND;A05;A;nome;fumetto;9;14;4;0.4000;0.4444;0.4211;0.3333;0.6000;0.4000
+progetto / BM25 / AND;A06;A;contenuto;mutanti x-men;11;39;10;1.0000;0.9091;0.9524;0.9091;1.0000;1.0000
+progetto / BM25 / AND;A07;A;contenuto;"cavaliere oscuro";13;30;8;0.8000;0.6154;0.6957;0.8462;0.8000;0.8000
+progetto / BM25 / AND;A08;A;contenuto;miyazaki ghibli;4;5;4;0.8000;1.0000;0.8889;1.0000;0.8000;0.4000
+progetto / BM25 / AND;A09;A;contenuto;fumetto italiano bonelli;10;20;8;0.8000;0.8000;0.8000;0.8000;0.8000;0.8000
+progetto / BM25 / AND;A10;A;contenuto;nemici di batman;8;37;6;0.6000;0.7500;0.6667;0.6250;0.6000;0.6000
+progetto / BM25 / AND;A11;A;contenuto;manga giapponese shonen;13;23;9;0.9000;0.6923;0.7826;0.8462;0.8000;0.9000
+progetto / BM25 / AND;A12;A;contenuto;+marvel -spider;45;39;3;0.3000;0.0667;0.1091;0.0667;0.6000;0.3000
+progetto / BM25 / AND;B01;B;nome;"iron man";1;1;1;1.0000;1.0000;1.0000;1.0000;0.2000;0.1000
+progetto / BM25 / AND;B02;B;nome;lanterna verde;1;1;1;1.0000;1.0000;1.0000;1.0000;0.2000;0.1000
+progetto / BM25 / AND;B03;B;nome;dc comics;6;4;4;1.0000;0.6667;0.8000;0.6667;0.8000;0.4000
+progetto / BM25 / AND;B04;B;nome;walt disney;2;2;2;1.0000;1.0000;1.0000;1.0000;0.4000;0.2000
+progetto / BM25 / AND;B05;B;nome;capitan america;1;1;1;1.0000;1.0000;1.0000;1.0000;0.2000;0.1000
+progetto / BM25 / AND;B06;B;contenuto;"studio ghibli";4;6;4;0.6667;1.0000;0.8000;1.0000;0.8000;0.4000
+progetto / BM25 / AND;B07;B;contenuto;"guardiani della galassia";4;23;4;0.4000;1.0000;0.5714;1.0000;0.8000;0.4000
+progetto / BM25 / AND;B08;B;contenuto;paperino paperinik;2;6;2;0.3333;1.0000;0.5000;1.0000;0.4000;0.2000
+progetto / BM25 / AND;B09;B;contenuto;"tartarughe ninja";1;5;1;0.2000;1.0000;0.3333;1.0000;0.2000;0.1000
+progetto / BM25 / AND;B10;B;contenuto;simpson griffin futurama;3;4;3;0.7500;1.0000;0.8571;1.0000;0.6000;0.3000
+progetto / BM25 / AND;B11;B;contenuto;joker harley quinn;2;13;2;0.2000;1.0000;0.3333;1.0000;0.4000;0.2000
+progetto / BM25 / AND;B12;B;contenuto;superman kryptonite;3;13;3;0.3000;1.0000;0.4615;0.6667;0.6000;0.3000
+progetto / BM25 / OR;A01;A;nome;batman;2;2;2;1.0000;1.0000;1.0000;1.0000;0.4000;0.2000
+progetto / BM25 / OR;A02;A;nome;pokemon;1;1;1;1.0000;1.0000;1.0000;1.0000;0.2000;0.1000
+progetto / BM25 / OR;A03;A;nome;"spider man";2;1;1;1.0000;0.5000;0.6667;0.5000;0.2000;0.1000
+progetto / BM25 / OR;A04;A;nome;marvel comics;9;15;8;0.8000;0.8889;0.8421;0.8889;1.0000;0.8000
+progetto / BM25 / OR;A05;A;nome;fumetto;9;14;4;0.4000;0.4444;0.4211;0.3333;0.6000;0.4000
+progetto / BM25 / OR;A06;A;contenuto;mutanti x-men;11;104;10;1.0000;0.9091;0.9524;0.9091;1.0000;1.0000
+progetto / BM25 / OR;A07;A;contenuto;"cavaliere oscuro";13;30;8;0.8000;0.6154;0.6957;0.8462;0.8000;0.8000
+progetto / BM25 / OR;A08;A;contenuto;miyazaki ghibli;4;10;4;0.4000;1.0000;0.5714;1.0000;0.8000;0.4000
+progetto / BM25 / OR;A09;A;contenuto;fumetto italiano bonelli;10;197;8;0.8000;0.8000;0.8000;0.8000;0.8000;0.8000
+progetto / BM25 / OR;A10;A;contenuto;nemici di batman;8;136;6;0.6000;0.7500;0.6667;0.6250;0.6000;0.6000
+progetto / BM25 / OR;A11;A;contenuto;manga giapponese shonen;13;72;9;0.9000;0.6923;0.7826;0.8462;0.8000;0.9000
+progetto / BM25 / OR;A12;A;contenuto;+marvel -spider;45;39;3;0.3000;0.0667;0.1091;0.0667;0.6000;0.3000
+progetto / BM25 / OR;B01;B;nome;"iron man";1;1;1;1.0000;1.0000;1.0000;1.0000;0.2000;0.1000
+progetto / BM25 / OR;B02;B;nome;lanterna verde;1;2;1;0.5000;1.0000;0.6667;1.0000;0.2000;0.1000
+progetto / BM25 / OR;B03;B;nome;dc comics;6;14;6;0.6000;1.0000;0.7500;1.0000;1.0000;0.6000
+progetto / BM25 / OR;B04;B;nome;walt disney;2;2;2;1.0000;1.0000;1.0000;1.0000;0.4000;0.2000
+progetto / BM25 / OR;B05;B;nome;capitan america;1;1;1;1.0000;1.0000;1.0000;1.0000;0.2000;0.1000
+progetto / BM25 / OR;B06;B;contenuto;"studio ghibli";4;6;4;0.6667;1.0000;0.8000;1.0000;0.8000;0.4000
+progetto / BM25 / OR;B07;B;contenuto;"guardiani della galassia";4;23;4;0.4000;1.0000;0.5714;1.0000;0.8000;0.4000
+progetto / BM25 / OR;B08;B;contenuto;paperino paperinik;2;15;2;0.2000;1.0000;0.3333;1.0000;0.4000;0.2000
+progetto / BM25 / OR;B09;B;contenuto;"tartarughe ninja";1;5;1;0.2000;1.0000;0.3333;1.0000;0.2000;0.1000
+progetto / BM25 / OR;B10;B;contenuto;simpson griffin futurama;3;21;3;0.3000;1.0000;0.4615;1.0000;0.6000;0.3000
+progetto / BM25 / OR;B11;B;contenuto;joker harley quinn;2;35;2;0.2000;1.0000;0.3333;1.0000;0.4000;0.2000
+progetto / BM25 / OR;B12;B;contenuto;superman kryptonite;3;56;3;0.3000;1.0000;0.4615;0.6667;0.6000;0.3000
+progetto / TF-IDF / AND;A01;A;nome;batman;2;2;2;1.0000;1.0000;1.0000;1.0000;0.4000;0.2000
+progetto / TF-IDF / AND;A02;A;nome;pokemon;1;1;1;1.0000;1.0000;1.0000;1.0000;0.2000;0.1000
+progetto / TF-IDF / AND;A03;A;nome;"spider man";2;1;1;1.0000;0.5000;0.6667;0.5000;0.2000;0.1000
+progetto / TF-IDF / AND;A04;A;nome;marvel comics;9;6;6;1.0000;0.6667;0.8000;0.6667;1.0000;0.6000
+progetto / TF-IDF / AND;A05;A;nome;fumetto;9;14;4;0.4000;0.4444;0.4211;0.3333;0.6000;0.4000
+progetto / TF-IDF / AND;A06;A;contenuto;mutanti x-men;11;39;10;1.0000;0.9091;0.9524;0.9091;1.0000;1.0000
+progetto / TF-IDF / AND;A07;A;contenuto;"cavaliere oscuro";13;30;8;0.8000;0.6154;0.6957;0.7692;0.8000;0.8000
+progetto / TF-IDF / AND;A08;A;contenuto;miyazaki ghibli;4;5;4;0.8000;1.0000;0.8889;1.0000;0.8000;0.4000
+progetto / TF-IDF / AND;A09;A;contenuto;fumetto italiano bonelli;10;20;6;0.6000;0.6000;0.6000;0.6000;0.6000;0.6000
+progetto / TF-IDF / AND;A10;A;contenuto;nemici di batman;8;37;7;0.7000;0.8750;0.7778;0.7500;0.8000;0.7000
+progetto / TF-IDF / AND;A11;A;contenuto;manga giapponese shonen;13;23;6;0.6000;0.4615;0.5217;0.6923;0.6000;0.6000
+progetto / TF-IDF / AND;A12;A;contenuto;+marvel -spider;45;39;3;0.3000;0.0667;0.1091;0.0667;0.6000;0.3000
+progetto / TF-IDF / AND;B01;B;nome;"iron man";1;1;1;1.0000;1.0000;1.0000;1.0000;0.2000;0.1000
+progetto / TF-IDF / AND;B02;B;nome;lanterna verde;1;1;1;1.0000;1.0000;1.0000;1.0000;0.2000;0.1000
+progetto / TF-IDF / AND;B03;B;nome;dc comics;6;4;4;1.0000;0.6667;0.8000;0.6667;0.8000;0.4000
+progetto / TF-IDF / AND;B04;B;nome;walt disney;2;2;2;1.0000;1.0000;1.0000;1.0000;0.4000;0.2000
+progetto / TF-IDF / AND;B05;B;nome;capitan america;1;1;1;1.0000;1.0000;1.0000;1.0000;0.2000;0.1000
+progetto / TF-IDF / AND;B06;B;contenuto;"studio ghibli";4;6;4;0.6667;1.0000;0.8000;1.0000;0.8000;0.4000
+progetto / TF-IDF / AND;B07;B;contenuto;"guardiani della galassia";4;23;4;0.4000;1.0000;0.5714;1.0000;0.8000;0.4000
+progetto / TF-IDF / AND;B08;B;contenuto;paperino paperinik;2;6;2;0.3333;1.0000;0.5000;1.0000;0.4000;0.2000
+progetto / TF-IDF / AND;B09;B;contenuto;"tartarughe ninja";1;5;1;0.2000;1.0000;0.3333;1.0000;0.2000;0.1000
+progetto / TF-IDF / AND;B10;B;contenuto;simpson griffin futurama;3;4;3;0.7500;1.0000;0.8571;1.0000;0.6000;0.3000
+progetto / TF-IDF / AND;B11;B;contenuto;joker harley quinn;2;13;2;0.2000;1.0000;0.3333;1.0000;0.4000;0.2000
+progetto / TF-IDF / AND;B12;B;contenuto;superman kryptonite;3;13;3;0.3000;1.0000;0.4615;0.6667;0.6000;0.3000
+progetto / TF-IDF / OR;A01;A;nome;batman;2;2;2;1.0000;1.0000;1.0000;1.0000;0.4000;0.2000
+progetto / TF-IDF / OR;A02;A;nome;pokemon;1;1;1;1.0000;1.0000;1.0000;1.0000;0.2000;0.1000
+progetto / TF-IDF / OR;A03;A;nome;"spider man";2;1;1;1.0000;0.5000;0.6667;0.5000;0.2000;0.1000
+progetto / TF-IDF / OR;A04;A;nome;marvel comics;9;15;8;0.8000;0.8889;0.8421;0.8889;1.0000;0.8000
+progetto / TF-IDF / OR;A05;A;nome;fumetto;9;14;4;0.4000;0.4444;0.4211;0.3333;0.6000;0.4000
+progetto / TF-IDF / OR;A06;A;contenuto;mutanti x-men;11;104;10;1.0000;0.9091;0.9524;0.9091;1.0000;1.0000
+progetto / TF-IDF / OR;A07;A;contenuto;"cavaliere oscuro";13;30;8;0.8000;0.6154;0.6957;0.7692;0.8000;0.8000
+progetto / TF-IDF / OR;A08;A;contenuto;miyazaki ghibli;4;10;4;0.4000;1.0000;0.5714;1.0000;0.8000;0.4000
+progetto / TF-IDF / OR;A09;A;contenuto;fumetto italiano bonelli;10;197;7;0.7000;0.7000;0.7000;0.7000;0.6000;0.7000
+progetto / TF-IDF / OR;A10;A;contenuto;nemici di batman;8;136;7;0.7000;0.8750;0.7778;0.6250;0.6000;0.7000
+progetto / TF-IDF / OR;A11;A;contenuto;manga giapponese shonen;13;72;5;0.5000;0.3846;0.4348;0.6154;0.6000;0.5000
+progetto / TF-IDF / OR;A12;A;contenuto;+marvel -spider;45;39;3;0.3000;0.0667;0.1091;0.0667;0.6000;0.3000
+progetto / TF-IDF / OR;B01;B;nome;"iron man";1;1;1;1.0000;1.0000;1.0000;1.0000;0.2000;0.1000
+progetto / TF-IDF / OR;B02;B;nome;lanterna verde;1;2;1;0.5000;1.0000;0.6667;1.0000;0.2000;0.1000
+progetto / TF-IDF / OR;B03;B;nome;dc comics;6;14;6;0.6000;1.0000;0.7500;0.8333;1.0000;0.6000
+progetto / TF-IDF / OR;B04;B;nome;walt disney;2;2;2;1.0000;1.0000;1.0000;1.0000;0.4000;0.2000
+progetto / TF-IDF / OR;B05;B;nome;capitan america;1;1;1;1.0000;1.0000;1.0000;1.0000;0.2000;0.1000
+progetto / TF-IDF / OR;B06;B;contenuto;"studio ghibli";4;6;4;0.6667;1.0000;0.8000;1.0000;0.8000;0.4000
+progetto / TF-IDF / OR;B07;B;contenuto;"guardiani della galassia";4;23;4;0.4000;1.0000;0.5714;1.0000;0.8000;0.4000
+progetto / TF-IDF / OR;B08;B;contenuto;paperino paperinik;2;15;2;0.2000;1.0000;0.3333;1.0000;0.4000;0.2000
+progetto / TF-IDF / OR;B09;B;contenuto;"tartarughe ninja";1;5;1;0.2000;1.0000;0.3333;1.0000;0.2000;0.1000
+progetto / TF-IDF / OR;B10;B;contenuto;simpson griffin futurama;3;21;3;0.3000;1.0000;0.4615;1.0000;0.6000;0.3000
+progetto / TF-IDF / OR;B11;B;contenuto;joker harley quinn;2;35;2;0.2000;1.0000;0.3333;1.0000;0.4000;0.2000
+progetto / TF-IDF / OR;B12;B;contenuto;superman kryptonite;3;56;3;0.3000;1.0000;0.4615;0.6667;0.6000;0.3000
+progetto / LM-Dirichlet / AND;A01;A;nome;batman;2;2;2;1.0000;1.0000;1.0000;1.0000;0.4000;0.2000
+progetto / LM-Dirichlet / AND;A02;A;nome;pokemon;1;1;1;1.0000;1.0000;1.0000;1.0000;0.2000;0.1000
+progetto / LM-Dirichlet / AND;A03;A;nome;"spider man";2;1;1;1.0000;0.5000;0.6667;0.5000;0.2000;0.1000
+progetto / LM-Dirichlet / AND;A04;A;nome;marvel comics;9;6;6;1.0000;0.6667;0.8000;0.6667;1.0000;0.6000
+progetto / LM-Dirichlet / AND;A05;A;nome;fumetto;9;14;4;0.4000;0.4444;0.4211;0.3333;0.6000;0.4000
+progetto / LM-Dirichlet / AND;A06;A;contenuto;mutanti x-men;11;39;10;1.0000;0.9091;0.9524;0.9091;1.0000;1.0000
+progetto / LM-Dirichlet / AND;A07;A;contenuto;"cavaliere oscuro";13;30;8;0.8000;0.6154;0.6957;0.8462;0.8000;0.8000
+progetto / LM-Dirichlet / AND;A08;A;contenuto;miyazaki ghibli;4;5;4;0.8000;1.0000;0.8889;1.0000;0.8000;0.4000
+progetto / LM-Dirichlet / AND;A09;A;contenuto;fumetto italiano bonelli;10;20;6;0.6000;0.6000;0.6000;0.6000;0.8000;0.6000
+progetto / LM-Dirichlet / AND;A10;A;contenuto;nemici di batman;8;37;7;0.7000;0.8750;0.7778;0.7500;0.6000;0.7000
+progetto / LM-Dirichlet / AND;A11;A;contenuto;manga giapponese shonen;13;23;7;0.7000;0.5385;0.6087;0.7692;0.8000;0.7000
+progetto / LM-Dirichlet / AND;A12;A;contenuto;+marvel -spider;45;39;3;0.3000;0.0667;0.1091;0.0667;0.6000;0.3000
+progetto / LM-Dirichlet / AND;B01;B;nome;"iron man";1;1;1;1.0000;1.0000;1.0000;1.0000;0.2000;0.1000
+progetto / LM-Dirichlet / AND;B02;B;nome;lanterna verde;1;1;1;1.0000;1.0000;1.0000;1.0000;0.2000;0.1000
+progetto / LM-Dirichlet / AND;B03;B;nome;dc comics;6;4;4;1.0000;0.6667;0.8000;0.6667;0.8000;0.4000
+progetto / LM-Dirichlet / AND;B04;B;nome;walt disney;2;2;2;1.0000;1.0000;1.0000;1.0000;0.4000;0.2000
+progetto / LM-Dirichlet / AND;B05;B;nome;capitan america;1;1;1;1.0000;1.0000;1.0000;1.0000;0.2000;0.1000
+progetto / LM-Dirichlet / AND;B06;B;contenuto;"studio ghibli";4;6;4;0.6667;1.0000;0.8000;1.0000;0.8000;0.4000
+progetto / LM-Dirichlet / AND;B07;B;contenuto;"guardiani della galassia";4;23;4;0.4000;1.0000;0.5714;1.0000;0.8000;0.4000
+progetto / LM-Dirichlet / AND;B08;B;contenuto;paperino paperinik;2;6;2;0.3333;1.0000;0.5000;1.0000;0.4000;0.2000
+progetto / LM-Dirichlet / AND;B09;B;contenuto;"tartarughe ninja";1;5;1;0.2000;1.0000;0.3333;1.0000;0.2000;0.1000
+progetto / LM-Dirichlet / AND;B10;B;contenuto;simpson griffin futurama;3;4;3;0.7500;1.0000;0.8571;1.0000;0.6000;0.3000
+progetto / LM-Dirichlet / AND;B11;B;contenuto;joker harley quinn;2;13;2;0.2000;1.0000;0.3333;1.0000;0.4000;0.2000
+progetto / LM-Dirichlet / AND;B12;B;contenuto;superman kryptonite;3;13;3;0.3000;1.0000;0.4615;0.6667;0.6000;0.3000
+progetto / LM-Dirichlet / OR;A01;A;nome;batman;2;2;2;1.0000;1.0000;1.0000;1.0000;0.4000;0.2000
+progetto / LM-Dirichlet / OR;A02;A;nome;pokemon;1;1;1;1.0000;1.0000;1.0000;1.0000;0.2000;0.1000
+progetto / LM-Dirichlet / OR;A03;A;nome;"spider man";2;1;1;1.0000;0.5000;0.6667;0.5000;0.2000;0.1000
+progetto / LM-Dirichlet / OR;A04;A;nome;marvel comics;9;15;9;0.9000;1.0000;0.9474;1.0000;1.0000;0.9000
+progetto / LM-Dirichlet / OR;A05;A;nome;fumetto;9;14;4;0.4000;0.4444;0.4211;0.3333;0.6000;0.4000
+progetto / LM-Dirichlet / OR;A06;A;contenuto;mutanti x-men;11;104;10;1.0000;0.9091;0.9524;0.9091;1.0000;1.0000
+progetto / LM-Dirichlet / OR;A07;A;contenuto;"cavaliere oscuro";13;30;8;0.8000;0.6154;0.6957;0.8462;0.8000;0.8000
+progetto / LM-Dirichlet / OR;A08;A;contenuto;miyazaki ghibli;4;10;4;0.4000;1.0000;0.5714;1.0000;0.8000;0.4000
+progetto / LM-Dirichlet / OR;A09;A;contenuto;fumetto italiano bonelli;10;197;6;0.6000;0.6000;0.6000;0.6000;0.8000;0.6000
+progetto / LM-Dirichlet / OR;A10;A;contenuto;nemici di batman;8;136;6;0.6000;0.7500;0.6667;0.6250;0.6000;0.6000
+progetto / LM-Dirichlet / OR;A11;A;contenuto;manga giapponese shonen;13;72;7;0.7000;0.5385;0.6087;0.7692;0.8000;0.7000
+progetto / LM-Dirichlet / OR;A12;A;contenuto;+marvel -spider;45;39;3;0.3000;0.0667;0.1091;0.0667;0.6000;0.3000
+progetto / LM-Dirichlet / OR;B01;B;nome;"iron man";1;1;1;1.0000;1.0000;1.0000;1.0000;0.2000;0.1000
+progetto / LM-Dirichlet / OR;B02;B;nome;lanterna verde;1;2;1;0.5000;1.0000;0.6667;1.0000;0.2000;0.1000
+progetto / LM-Dirichlet / OR;B03;B;nome;dc comics;6;14;6;0.6000;1.0000;0.7500;1.0000;1.0000;0.6000
+progetto / LM-Dirichlet / OR;B04;B;nome;walt disney;2;2;2;1.0000;1.0000;1.0000;1.0000;0.4000;0.2000
+progetto / LM-Dirichlet / OR;B05;B;nome;capitan america;1;1;1;1.0000;1.0000;1.0000;1.0000;0.2000;0.1000
+progetto / LM-Dirichlet / OR;B06;B;contenuto;"studio ghibli";4;6;4;0.6667;1.0000;0.8000;1.0000;0.8000;0.4000
+progetto / LM-Dirichlet / OR;B07;B;contenuto;"guardiani della galassia";4;23;4;0.4000;1.0000;0.5714;1.0000;0.8000;0.4000
+progetto / LM-Dirichlet / OR;B08;B;contenuto;paperino paperinik;2;15;2;0.2000;1.0000;0.3333;1.0000;0.4000;0.2000
+progetto / LM-Dirichlet / OR;B09;B;contenuto;"tartarughe ninja";1;5;1;0.2000;1.0000;0.3333;1.0000;0.2000;0.1000
+progetto / LM-Dirichlet / OR;B10;B;contenuto;simpson griffin futurama;3;21;3;0.3000;1.0000;0.4615;1.0000;0.6000;0.3000
+progetto / LM-Dirichlet / OR;B11;B;contenuto;joker harley quinn;2;35;2;0.2000;1.0000;0.3333;1.0000;0.4000;0.2000
+progetto / LM-Dirichlet / OR;B12;B;contenuto;superman kryptonite;3;56;3;0.3000;1.0000;0.4615;0.6667;0.6000;0.3000
+nome-senza-stemming / BM25 / AND;A01;A;nome;batman;2;2;2;1.0000;1.0000;1.0000;1.0000;0.4000;0.2000
+nome-senza-stemming / BM25 / AND;A02;A;nome;pokemon;1;1;1;1.0000;1.0000;1.0000;1.0000;0.2000;0.1000
+nome-senza-stemming / BM25 / AND;A03;A;nome;"spider man";2;1;1;1.0000;0.5000;0.6667;0.5000;0.2000;0.1000
+nome-senza-stemming / BM25 / AND;A04;A;nome;marvel comics;9;6;6;1.0000;0.6667;0.8000;0.6667;1.0000;0.6000
+nome-senza-stemming / BM25 / AND;A05;A;nome;fumetto;9;13;3;0.3000;0.3333;0.3158;0.3333;0.6000;0.3000
+nome-senza-stemming / BM25 / AND;A06;A;contenuto;mutanti x-men;11;39;10;1.0000;0.9091;0.9524;0.9091;1.0000;1.0000
+nome-senza-stemming / BM25 / AND;A07;A;contenuto;"cavaliere oscuro";13;30;8;0.8000;0.6154;0.6957;0.8462;0.8000;0.8000
+nome-senza-stemming / BM25 / AND;A08;A;contenuto;miyazaki ghibli;4;5;4;0.8000;1.0000;0.8889;1.0000;0.8000;0.4000
+nome-senza-stemming / BM25 / AND;A09;A;contenuto;fumetto italiano bonelli;10;20;8;0.8000;0.8000;0.8000;0.8000;0.8000;0.8000
+nome-senza-stemming / BM25 / AND;A10;A;contenuto;nemici di batman;8;37;6;0.6000;0.7500;0.6667;0.6250;0.6000;0.6000
+nome-senza-stemming / BM25 / AND;A11;A;contenuto;manga giapponese shonen;13;23;9;0.9000;0.6923;0.7826;0.8462;0.8000;0.9000
+nome-senza-stemming / BM25 / AND;A12;A;contenuto;+marvel -spider;45;39;3;0.3000;0.0667;0.1091;0.0667;0.6000;0.3000
+nome-senza-stemming / BM25 / AND;B01;B;nome;"iron man";1;1;1;1.0000;1.0000;1.0000;1.0000;0.2000;0.1000
+nome-senza-stemming / BM25 / AND;B02;B;nome;lanterna verde;1;1;1;1.0000;1.0000;1.0000;1.0000;0.2000;0.1000
+nome-senza-stemming / BM25 / AND;B03;B;nome;dc comics;6;4;4;1.0000;0.6667;0.8000;0.6667;0.8000;0.4000
+nome-senza-stemming / BM25 / AND;B04;B;nome;walt disney;2;2;2;1.0000;1.0000;1.0000;1.0000;0.4000;0.2000
+nome-senza-stemming / BM25 / AND;B05;B;nome;capitan america;1;1;1;1.0000;1.0000;1.0000;1.0000;0.2000;0.1000
+nome-senza-stemming / BM25 / AND;B06;B;contenuto;"studio ghibli";4;6;4;0.6667;1.0000;0.8000;1.0000;0.8000;0.4000
+nome-senza-stemming / BM25 / AND;B07;B;contenuto;"guardiani della galassia";4;23;4;0.4000;1.0000;0.5714;1.0000;0.8000;0.4000
+nome-senza-stemming / BM25 / AND;B08;B;contenuto;paperino paperinik;2;6;2;0.3333;1.0000;0.5000;1.0000;0.4000;0.2000
+nome-senza-stemming / BM25 / AND;B09;B;contenuto;"tartarughe ninja";1;5;1;0.2000;1.0000;0.3333;1.0000;0.2000;0.1000
+nome-senza-stemming / BM25 / AND;B10;B;contenuto;simpson griffin futurama;3;4;3;0.7500;1.0000;0.8571;1.0000;0.6000;0.3000
+nome-senza-stemming / BM25 / AND;B11;B;contenuto;joker harley quinn;2;13;2;0.2000;1.0000;0.3333;1.0000;0.4000;0.2000
+nome-senza-stemming / BM25 / AND;B12;B;contenuto;superman kryptonite;3;13;3;0.3000;1.0000;0.4615;0.6667;0.6000;0.3000
+nome-senza-stemming / BM25 / OR;A01;A;nome;batman;2;2;2;1.0000;1.0000;1.0000;1.0000;0.4000;0.2000
+nome-senza-stemming / BM25 / OR;A02;A;nome;pokemon;1;1;1;1.0000;1.0000;1.0000;1.0000;0.2000;0.1000
+nome-senza-stemming / BM25 / OR;A03;A;nome;"spider man";2;1;1;1.0000;0.5000;0.6667;0.5000;0.2000;0.1000
+nome-senza-stemming / BM25 / OR;A04;A;nome;marvel comics;9;15;8;0.8000;0.8889;0.8421;0.8889;1.0000;0.8000
+nome-senza-stemming / BM25 / OR;A05;A;nome;fumetto;9;13;3;0.3000;0.3333;0.3158;0.3333;0.6000;0.3000
+nome-senza-stemming / BM25 / OR;A06;A;contenuto;mutanti x-men;11;104;10;1.0000;0.9091;0.9524;0.9091;1.0000;1.0000
+nome-senza-stemming / BM25 / OR;A07;A;contenuto;"cavaliere oscuro";13;30;8;0.8000;0.6154;0.6957;0.8462;0.8000;0.8000
+nome-senza-stemming / BM25 / OR;A08;A;contenuto;miyazaki ghibli;4;10;4;0.4000;1.0000;0.5714;1.0000;0.8000;0.4000
+nome-senza-stemming / BM25 / OR;A09;A;contenuto;fumetto italiano bonelli;10;197;8;0.8000;0.8000;0.8000;0.8000;0.8000;0.8000
+nome-senza-stemming / BM25 / OR;A10;A;contenuto;nemici di batman;8;136;6;0.6000;0.7500;0.6667;0.6250;0.6000;0.6000
+nome-senza-stemming / BM25 / OR;A11;A;contenuto;manga giapponese shonen;13;72;9;0.9000;0.6923;0.7826;0.8462;0.8000;0.9000
+nome-senza-stemming / BM25 / OR;A12;A;contenuto;+marvel -spider;45;39;3;0.3000;0.0667;0.1091;0.0667;0.6000;0.3000
+nome-senza-stemming / BM25 / OR;B01;B;nome;"iron man";1;1;1;1.0000;1.0000;1.0000;1.0000;0.2000;0.1000
+nome-senza-stemming / BM25 / OR;B02;B;nome;lanterna verde;1;2;1;0.5000;1.0000;0.6667;1.0000;0.2000;0.1000
+nome-senza-stemming / BM25 / OR;B03;B;nome;dc comics;6;14;6;0.6000;1.0000;0.7500;1.0000;1.0000;0.6000
+nome-senza-stemming / BM25 / OR;B04;B;nome;walt disney;2;2;2;1.0000;1.0000;1.0000;1.0000;0.4000;0.2000
+nome-senza-stemming / BM25 / OR;B05;B;nome;capitan america;1;1;1;1.0000;1.0000;1.0000;1.0000;0.2000;0.1000
+nome-senza-stemming / BM25 / OR;B06;B;contenuto;"studio ghibli";4;6;4;0.6667;1.0000;0.8000;1.0000;0.8000;0.4000
+nome-senza-stemming / BM25 / OR;B07;B;contenuto;"guardiani della galassia";4;23;4;0.4000;1.0000;0.5714;1.0000;0.8000;0.4000
+nome-senza-stemming / BM25 / OR;B08;B;contenuto;paperino paperinik;2;15;2;0.2000;1.0000;0.3333;1.0000;0.4000;0.2000
+nome-senza-stemming / BM25 / OR;B09;B;contenuto;"tartarughe ninja";1;5;1;0.2000;1.0000;0.3333;1.0000;0.2000;0.1000
+nome-senza-stemming / BM25 / OR;B10;B;contenuto;simpson griffin futurama;3;21;3;0.3000;1.0000;0.4615;1.0000;0.6000;0.3000
+nome-senza-stemming / BM25 / OR;B11;B;contenuto;joker harley quinn;2;35;2;0.2000;1.0000;0.3333;1.0000;0.4000;0.2000
+nome-senza-stemming / BM25 / OR;B12;B;contenuto;superman kryptonite;3;56;3;0.3000;1.0000;0.4615;0.6667;0.6000;0.3000
+nome-senza-stemming / TF-IDF / AND;A01;A;nome;batman;2;2;2;1.0000;1.0000;1.0000;1.0000;0.4000;0.2000
+nome-senza-stemming / TF-IDF / AND;A02;A;nome;pokemon;1;1;1;1.0000;1.0000;1.0000;1.0000;0.2000;0.1000
+nome-senza-stemming / TF-IDF / AND;A03;A;nome;"spider man";2;1;1;1.0000;0.5000;0.6667;0.5000;0.2000;0.1000
+nome-senza-stemming / TF-IDF / AND;A04;A;nome;marvel comics;9;6;6;1.0000;0.6667;0.8000;0.6667;1.0000;0.6000
+nome-senza-stemming / TF-IDF / AND;A05;A;nome;fumetto;9;13;3;0.3000;0.3333;0.3158;0.3333;0.6000;0.3000
+nome-senza-stemming / TF-IDF / AND;A06;A;contenuto;mutanti x-men;11;39;10;1.0000;0.9091;0.9524;0.9091;1.0000;1.0000
+nome-senza-stemming / TF-IDF / AND;A07;A;contenuto;"cavaliere oscuro";13;30;8;0.8000;0.6154;0.6957;0.7692;0.8000;0.8000
+nome-senza-stemming / TF-IDF / AND;A08;A;contenuto;miyazaki ghibli;4;5;4;0.8000;1.0000;0.8889;1.0000;0.8000;0.4000
+nome-senza-stemming / TF-IDF / AND;A09;A;contenuto;fumetto italiano bonelli;10;20;6;0.6000;0.6000;0.6000;0.6000;0.6000;0.6000
+nome-senza-stemming / TF-IDF / AND;A10;A;contenuto;nemici di batman;8;37;7;0.7000;0.8750;0.7778;0.7500;0.8000;0.7000
+nome-senza-stemming / TF-IDF / AND;A11;A;contenuto;manga giapponese shonen;13;23;6;0.6000;0.4615;0.5217;0.6923;0.6000;0.6000
+nome-senza-stemming / TF-IDF / AND;A12;A;contenuto;+marvel -spider;45;39;3;0.3000;0.0667;0.1091;0.0667;0.6000;0.3000
+nome-senza-stemming / TF-IDF / AND;B01;B;nome;"iron man";1;1;1;1.0000;1.0000;1.0000;1.0000;0.2000;0.1000
+nome-senza-stemming / TF-IDF / AND;B02;B;nome;lanterna verde;1;1;1;1.0000;1.0000;1.0000;1.0000;0.2000;0.1000
+nome-senza-stemming / TF-IDF / AND;B03;B;nome;dc comics;6;4;4;1.0000;0.6667;0.8000;0.6667;0.8000;0.4000
+nome-senza-stemming / TF-IDF / AND;B04;B;nome;walt disney;2;2;2;1.0000;1.0000;1.0000;1.0000;0.4000;0.2000
+nome-senza-stemming / TF-IDF / AND;B05;B;nome;capitan america;1;1;1;1.0000;1.0000;1.0000;1.0000;0.2000;0.1000
+nome-senza-stemming / TF-IDF / AND;B06;B;contenuto;"studio ghibli";4;6;4;0.6667;1.0000;0.8000;1.0000;0.8000;0.4000
+nome-senza-stemming / TF-IDF / AND;B07;B;contenuto;"guardiani della galassia";4;23;4;0.4000;1.0000;0.5714;1.0000;0.8000;0.4000
+nome-senza-stemming / TF-IDF / AND;B08;B;contenuto;paperino paperinik;2;6;2;0.3333;1.0000;0.5000;1.0000;0.4000;0.2000
+nome-senza-stemming / TF-IDF / AND;B09;B;contenuto;"tartarughe ninja";1;5;1;0.2000;1.0000;0.3333;1.0000;0.2000;0.1000
+nome-senza-stemming / TF-IDF / AND;B10;B;contenuto;simpson griffin futurama;3;4;3;0.7500;1.0000;0.8571;1.0000;0.6000;0.3000
+nome-senza-stemming / TF-IDF / AND;B11;B;contenuto;joker harley quinn;2;13;2;0.2000;1.0000;0.3333;1.0000;0.4000;0.2000
+nome-senza-stemming / TF-IDF / AND;B12;B;contenuto;superman kryptonite;3;13;3;0.3000;1.0000;0.4615;0.6667;0.6000;0.3000
+nome-senza-stemming / TF-IDF / OR;A01;A;nome;batman;2;2;2;1.0000;1.0000;1.0000;1.0000;0.4000;0.2000
+nome-senza-stemming / TF-IDF / OR;A02;A;nome;pokemon;1;1;1;1.0000;1.0000;1.0000;1.0000;0.2000;0.1000
+nome-senza-stemming / TF-IDF / OR;A03;A;nome;"spider man";2;1;1;1.0000;0.5000;0.6667;0.5000;0.2000;0.1000
+nome-senza-stemming / TF-IDF / OR;A04;A;nome;marvel comics;9;15;8;0.8000;0.8889;0.8421;0.8889;1.0000;0.8000
+nome-senza-stemming / TF-IDF / OR;A05;A;nome;fumetto;9;13;3;0.3000;0.3333;0.3158;0.3333;0.6000;0.3000
+nome-senza-stemming / TF-IDF / OR;A06;A;contenuto;mutanti x-men;11;104;10;1.0000;0.9091;0.9524;0.9091;1.0000;1.0000
+nome-senza-stemming / TF-IDF / OR;A07;A;contenuto;"cavaliere oscuro";13;30;8;0.8000;0.6154;0.6957;0.7692;0.8000;0.8000
+nome-senza-stemming / TF-IDF / OR;A08;A;contenuto;miyazaki ghibli;4;10;4;0.4000;1.0000;0.5714;1.0000;0.8000;0.4000
+nome-senza-stemming / TF-IDF / OR;A09;A;contenuto;fumetto italiano bonelli;10;197;7;0.7000;0.7000;0.7000;0.7000;0.6000;0.7000
+nome-senza-stemming / TF-IDF / OR;A10;A;contenuto;nemici di batman;8;136;7;0.7000;0.8750;0.7778;0.6250;0.6000;0.7000
+nome-senza-stemming / TF-IDF / OR;A11;A;contenuto;manga giapponese shonen;13;72;5;0.5000;0.3846;0.4348;0.6154;0.6000;0.5000
+nome-senza-stemming / TF-IDF / OR;A12;A;contenuto;+marvel -spider;45;39;3;0.3000;0.0667;0.1091;0.0667;0.6000;0.3000
+nome-senza-stemming / TF-IDF / OR;B01;B;nome;"iron man";1;1;1;1.0000;1.0000;1.0000;1.0000;0.2000;0.1000
+nome-senza-stemming / TF-IDF / OR;B02;B;nome;lanterna verde;1;2;1;0.5000;1.0000;0.6667;1.0000;0.2000;0.1000
+nome-senza-stemming / TF-IDF / OR;B03;B;nome;dc comics;6;14;6;0.6000;1.0000;0.7500;0.8333;1.0000;0.6000
+nome-senza-stemming / TF-IDF / OR;B04;B;nome;walt disney;2;2;2;1.0000;1.0000;1.0000;1.0000;0.4000;0.2000
+nome-senza-stemming / TF-IDF / OR;B05;B;nome;capitan america;1;1;1;1.0000;1.0000;1.0000;1.0000;0.2000;0.1000
+nome-senza-stemming / TF-IDF / OR;B06;B;contenuto;"studio ghibli";4;6;4;0.6667;1.0000;0.8000;1.0000;0.8000;0.4000
+nome-senza-stemming / TF-IDF / OR;B07;B;contenuto;"guardiani della galassia";4;23;4;0.4000;1.0000;0.5714;1.0000;0.8000;0.4000
+nome-senza-stemming / TF-IDF / OR;B08;B;contenuto;paperino paperinik;2;15;2;0.2000;1.0000;0.3333;1.0000;0.4000;0.2000
+nome-senza-stemming / TF-IDF / OR;B09;B;contenuto;"tartarughe ninja";1;5;1;0.2000;1.0000;0.3333;1.0000;0.2000;0.1000
+nome-senza-stemming / TF-IDF / OR;B10;B;contenuto;simpson griffin futurama;3;21;3;0.3000;1.0000;0.4615;1.0000;0.6000;0.3000
+nome-senza-stemming / TF-IDF / OR;B11;B;contenuto;joker harley quinn;2;35;2;0.2000;1.0000;0.3333;1.0000;0.4000;0.2000
+nome-senza-stemming / TF-IDF / OR;B12;B;contenuto;superman kryptonite;3;56;3;0.3000;1.0000;0.4615;0.6667;0.6000;0.3000
+nome-senza-stemming / LM-Dirichlet / AND;A01;A;nome;batman;2;2;2;1.0000;1.0000;1.0000;1.0000;0.4000;0.2000
+nome-senza-stemming / LM-Dirichlet / AND;A02;A;nome;pokemon;1;1;1;1.0000;1.0000;1.0000;1.0000;0.2000;0.1000
+nome-senza-stemming / LM-Dirichlet / AND;A03;A;nome;"spider man";2;1;1;1.0000;0.5000;0.6667;0.5000;0.2000;0.1000
+nome-senza-stemming / LM-Dirichlet / AND;A04;A;nome;marvel comics;9;6;6;1.0000;0.6667;0.8000;0.6667;1.0000;0.6000
+nome-senza-stemming / LM-Dirichlet / AND;A05;A;nome;fumetto;9;13;3;0.3000;0.3333;0.3158;0.3333;0.6000;0.3000
+nome-senza-stemming / LM-Dirichlet / AND;A06;A;contenuto;mutanti x-men;11;39;10;1.0000;0.9091;0.9524;0.9091;1.0000;1.0000
+nome-senza-stemming / LM-Dirichlet / AND;A07;A;contenuto;"cavaliere oscuro";13;30;8;0.8000;0.6154;0.6957;0.8462;0.8000;0.8000
+nome-senza-stemming / LM-Dirichlet / AND;A08;A;contenuto;miyazaki ghibli;4;5;4;0.8000;1.0000;0.8889;1.0000;0.8000;0.4000
+nome-senza-stemming / LM-Dirichlet / AND;A09;A;contenuto;fumetto italiano bonelli;10;20;6;0.6000;0.6000;0.6000;0.6000;0.8000;0.6000
+nome-senza-stemming / LM-Dirichlet / AND;A10;A;contenuto;nemici di batman;8;37;7;0.7000;0.8750;0.7778;0.7500;0.6000;0.7000
+nome-senza-stemming / LM-Dirichlet / AND;A11;A;contenuto;manga giapponese shonen;13;23;7;0.7000;0.5385;0.6087;0.7692;0.8000;0.7000
+nome-senza-stemming / LM-Dirichlet / AND;A12;A;contenuto;+marvel -spider;45;39;3;0.3000;0.0667;0.1091;0.0667;0.6000;0.3000
+nome-senza-stemming / LM-Dirichlet / AND;B01;B;nome;"iron man";1;1;1;1.0000;1.0000;1.0000;1.0000;0.2000;0.1000
+nome-senza-stemming / LM-Dirichlet / AND;B02;B;nome;lanterna verde;1;1;1;1.0000;1.0000;1.0000;1.0000;0.2000;0.1000
+nome-senza-stemming / LM-Dirichlet / AND;B03;B;nome;dc comics;6;4;4;1.0000;0.6667;0.8000;0.6667;0.8000;0.4000
+nome-senza-stemming / LM-Dirichlet / AND;B04;B;nome;walt disney;2;2;2;1.0000;1.0000;1.0000;1.0000;0.4000;0.2000
+nome-senza-stemming / LM-Dirichlet / AND;B05;B;nome;capitan america;1;1;1;1.0000;1.0000;1.0000;1.0000;0.2000;0.1000
+nome-senza-stemming / LM-Dirichlet / AND;B06;B;contenuto;"studio ghibli";4;6;4;0.6667;1.0000;0.8000;1.0000;0.8000;0.4000
+nome-senza-stemming / LM-Dirichlet / AND;B07;B;contenuto;"guardiani della galassia";4;23;4;0.4000;1.0000;0.5714;1.0000;0.8000;0.4000
+nome-senza-stemming / LM-Dirichlet / AND;B08;B;contenuto;paperino paperinik;2;6;2;0.3333;1.0000;0.5000;1.0000;0.4000;0.2000
+nome-senza-stemming / LM-Dirichlet / AND;B09;B;contenuto;"tartarughe ninja";1;5;1;0.2000;1.0000;0.3333;1.0000;0.2000;0.1000
+nome-senza-stemming / LM-Dirichlet / AND;B10;B;contenuto;simpson griffin futurama;3;4;3;0.7500;1.0000;0.8571;1.0000;0.6000;0.3000
+nome-senza-stemming / LM-Dirichlet / AND;B11;B;contenuto;joker harley quinn;2;13;2;0.2000;1.0000;0.3333;1.0000;0.4000;0.2000
+nome-senza-stemming / LM-Dirichlet / AND;B12;B;contenuto;superman kryptonite;3;13;3;0.3000;1.0000;0.4615;0.6667;0.6000;0.3000
+nome-senza-stemming / LM-Dirichlet / OR;A01;A;nome;batman;2;2;2;1.0000;1.0000;1.0000;1.0000;0.4000;0.2000
+nome-senza-stemming / LM-Dirichlet / OR;A02;A;nome;pokemon;1;1;1;1.0000;1.0000;1.0000;1.0000;0.2000;0.1000
+nome-senza-stemming / LM-Dirichlet / OR;A03;A;nome;"spider man";2;1;1;1.0000;0.5000;0.6667;0.5000;0.2000;0.1000
+nome-senza-stemming / LM-Dirichlet / OR;A04;A;nome;marvel comics;9;15;9;0.9000;1.0000;0.9474;1.0000;1.0000;0.9000
+nome-senza-stemming / LM-Dirichlet / OR;A05;A;nome;fumetto;9;13;3;0.3000;0.3333;0.3158;0.3333;0.6000;0.3000
+nome-senza-stemming / LM-Dirichlet / OR;A06;A;contenuto;mutanti x-men;11;104;10;1.0000;0.9091;0.9524;0.9091;1.0000;1.0000
+nome-senza-stemming / LM-Dirichlet / OR;A07;A;contenuto;"cavaliere oscuro";13;30;8;0.8000;0.6154;0.6957;0.8462;0.8000;0.8000
+nome-senza-stemming / LM-Dirichlet / OR;A08;A;contenuto;miyazaki ghibli;4;10;4;0.4000;1.0000;0.5714;1.0000;0.8000;0.4000
+nome-senza-stemming / LM-Dirichlet / OR;A09;A;contenuto;fumetto italiano bonelli;10;197;6;0.6000;0.6000;0.6000;0.6000;0.8000;0.6000
+nome-senza-stemming / LM-Dirichlet / OR;A10;A;contenuto;nemici di batman;8;136;6;0.6000;0.7500;0.6667;0.6250;0.6000;0.6000
+nome-senza-stemming / LM-Dirichlet / OR;A11;A;contenuto;manga giapponese shonen;13;72;7;0.7000;0.5385;0.6087;0.7692;0.8000;0.7000
+nome-senza-stemming / LM-Dirichlet / OR;A12;A;contenuto;+marvel -spider;45;39;3;0.3000;0.0667;0.1091;0.0667;0.6000;0.3000
+nome-senza-stemming / LM-Dirichlet / OR;B01;B;nome;"iron man";1;1;1;1.0000;1.0000;1.0000;1.0000;0.2000;0.1000
+nome-senza-stemming / LM-Dirichlet / OR;B02;B;nome;lanterna verde;1;2;1;0.5000;1.0000;0.6667;1.0000;0.2000;0.1000
+nome-senza-stemming / LM-Dirichlet / OR;B03;B;nome;dc comics;6;14;6;0.6000;1.0000;0.7500;1.0000;1.0000;0.6000
+nome-senza-stemming / LM-Dirichlet / OR;B04;B;nome;walt disney;2;2;2;1.0000;1.0000;1.0000;1.0000;0.4000;0.2000
+nome-senza-stemming / LM-Dirichlet / OR;B05;B;nome;capitan america;1;1;1;1.0000;1.0000;1.0000;1.0000;0.2000;0.1000
+nome-senza-stemming / LM-Dirichlet / OR;B06;B;contenuto;"studio ghibli";4;6;4;0.6667;1.0000;0.8000;1.0000;0.8000;0.4000
+nome-senza-stemming / LM-Dirichlet / OR;B07;B;contenuto;"guardiani della galassia";4;23;4;0.4000;1.0000;0.5714;1.0000;0.8000;0.4000
+nome-senza-stemming / LM-Dirichlet / OR;B08;B;contenuto;paperino paperinik;2;15;2;0.2000;1.0000;0.3333;1.0000;0.4000;0.2000
+nome-senza-stemming / LM-Dirichlet / OR;B09;B;contenuto;"tartarughe ninja";1;5;1;0.2000;1.0000;0.3333;1.0000;0.2000;0.1000
+nome-senza-stemming / LM-Dirichlet / OR;B10;B;contenuto;simpson griffin futurama;3;21;3;0.3000;1.0000;0.4615;1.0000;0.6000;0.3000
+nome-senza-stemming / LM-Dirichlet / OR;B11;B;contenuto;joker harley quinn;2;35;2;0.2000;1.0000;0.3333;1.0000;0.4000;0.2000
+nome-senza-stemming / LM-Dirichlet / OR;B12;B;contenuto;superman kryptonite;3;56;3;0.3000;1.0000;0.4615;0.6667;0.6000;0.3000
+contenuto-senza-folding / BM25 / AND;A01;A;nome;batman;2;2;2;1.0000;1.0000;1.0000;1.0000;0.4000;0.2000
+contenuto-senza-folding / BM25 / AND;A02;A;nome;pokemon;1;1;1;1.0000;1.0000;1.0000;1.0000;0.2000;0.1000
+contenuto-senza-folding / BM25 / AND;A03;A;nome;"spider man";2;1;1;1.0000;0.5000;0.6667;0.5000;0.2000;0.1000
+contenuto-senza-folding / BM25 / AND;A04;A;nome;marvel comics;9;6;6;1.0000;0.6667;0.8000;0.6667;1.0000;0.6000
+contenuto-senza-folding / BM25 / AND;A05;A;nome;fumetto;9;14;4;0.4000;0.4444;0.4211;0.3333;0.6000;0.4000
+contenuto-senza-folding / BM25 / AND;A06;A;contenuto;mutanti x-men;11;39;10;1.0000;0.9091;0.9524;0.9091;1.0000;1.0000
+contenuto-senza-folding / BM25 / AND;A07;A;contenuto;"cavaliere oscuro";13;30;8;0.8000;0.6154;0.6957;0.8462;0.8000;0.8000
+contenuto-senza-folding / BM25 / AND;A08;A;contenuto;miyazaki ghibli;4;5;4;0.8000;1.0000;0.8889;1.0000;0.8000;0.4000
+contenuto-senza-folding / BM25 / AND;A09;A;contenuto;fumetto italiano bonelli;10;20;8;0.8000;0.8000;0.8000;0.8000;0.8000;0.8000
+contenuto-senza-folding / BM25 / AND;A10;A;contenuto;nemici di batman;8;37;6;0.6000;0.7500;0.6667;0.6250;0.6000;0.6000
+contenuto-senza-folding / BM25 / AND;A11;A;contenuto;manga giapponese shonen;13;8;5;0.6250;0.3846;0.4762;0.3846;0.4000;0.5000
+contenuto-senza-folding / BM25 / AND;A12;A;contenuto;+marvel -spider;45;39;3;0.3000;0.0667;0.1091;0.0667;0.6000;0.3000
+contenuto-senza-folding / BM25 / AND;B01;B;nome;"iron man";1;1;1;1.0000;1.0000;1.0000;1.0000;0.2000;0.1000
+contenuto-senza-folding / BM25 / AND;B02;B;nome;lanterna verde;1;1;1;1.0000;1.0000;1.0000;1.0000;0.2000;0.1000
+contenuto-senza-folding / BM25 / AND;B03;B;nome;dc comics;6;4;4;1.0000;0.6667;0.8000;0.6667;0.8000;0.4000
+contenuto-senza-folding / BM25 / AND;B04;B;nome;walt disney;2;2;2;1.0000;1.0000;1.0000;1.0000;0.4000;0.2000
+contenuto-senza-folding / BM25 / AND;B05;B;nome;capitan america;1;1;1;1.0000;1.0000;1.0000;1.0000;0.2000;0.1000
+contenuto-senza-folding / BM25 / AND;B06;B;contenuto;"studio ghibli";4;6;4;0.6667;1.0000;0.8000;1.0000;0.8000;0.4000
+contenuto-senza-folding / BM25 / AND;B07;B;contenuto;"guardiani della galassia";4;23;4;0.4000;1.0000;0.5714;1.0000;0.8000;0.4000
+contenuto-senza-folding / BM25 / AND;B08;B;contenuto;paperino paperinik;2;6;2;0.3333;1.0000;0.5000;1.0000;0.4000;0.2000
+contenuto-senza-folding / BM25 / AND;B09;B;contenuto;"tartarughe ninja";1;5;1;0.2000;1.0000;0.3333;1.0000;0.2000;0.1000
+contenuto-senza-folding / BM25 / AND;B10;B;contenuto;simpson griffin futurama;3;4;3;0.7500;1.0000;0.8571;1.0000;0.6000;0.3000
+contenuto-senza-folding / BM25 / AND;B11;B;contenuto;joker harley quinn;2;13;2;0.2000;1.0000;0.3333;1.0000;0.4000;0.2000
+contenuto-senza-folding / BM25 / AND;B12;B;contenuto;superman kryptonite;3;13;3;0.3000;1.0000;0.4615;0.6667;0.6000;0.3000
+contenuto-senza-folding / BM25 / OR;A01;A;nome;batman;2;2;2;1.0000;1.0000;1.0000;1.0000;0.4000;0.2000
+contenuto-senza-folding / BM25 / OR;A02;A;nome;pokemon;1;1;1;1.0000;1.0000;1.0000;1.0000;0.2000;0.1000
+contenuto-senza-folding / BM25 / OR;A03;A;nome;"spider man";2;1;1;1.0000;0.5000;0.6667;0.5000;0.2000;0.1000
+contenuto-senza-folding / BM25 / OR;A04;A;nome;marvel comics;9;15;8;0.8000;0.8889;0.8421;0.8889;1.0000;0.8000
+contenuto-senza-folding / BM25 / OR;A05;A;nome;fumetto;9;14;4;0.4000;0.4444;0.4211;0.3333;0.6000;0.4000
+contenuto-senza-folding / BM25 / OR;A06;A;contenuto;mutanti x-men;11;104;10;1.0000;0.9091;0.9524;0.9091;1.0000;1.0000
+contenuto-senza-folding / BM25 / OR;A07;A;contenuto;"cavaliere oscuro";13;30;8;0.8000;0.6154;0.6957;0.8462;0.8000;0.8000
+contenuto-senza-folding / BM25 / OR;A08;A;contenuto;miyazaki ghibli;4;10;4;0.4000;1.0000;0.5714;1.0000;0.8000;0.4000
+contenuto-senza-folding / BM25 / OR;A09;A;contenuto;fumetto italiano bonelli;10;197;8;0.8000;0.8000;0.8000;0.8000;0.8000;0.8000
+contenuto-senza-folding / BM25 / OR;A10;A;contenuto;nemici di batman;8;136;6;0.6000;0.7500;0.6667;0.6250;0.6000;0.6000
+contenuto-senza-folding / BM25 / OR;A11;A;contenuto;manga giapponese shonen;13;72;5;0.5000;0.3846;0.4348;0.5385;0.4000;0.5000
+contenuto-senza-folding / BM25 / OR;A12;A;contenuto;+marvel -spider;45;39;3;0.3000;0.0667;0.1091;0.0667;0.6000;0.3000
+contenuto-senza-folding / BM25 / OR;B01;B;nome;"iron man";1;1;1;1.0000;1.0000;1.0000;1.0000;0.2000;0.1000
+contenuto-senza-folding / BM25 / OR;B02;B;nome;lanterna verde;1;2;1;0.5000;1.0000;0.6667;1.0000;0.2000;0.1000
+contenuto-senza-folding / BM25 / OR;B03;B;nome;dc comics;6;14;6;0.6000;1.0000;0.7500;1.0000;1.0000;0.6000
+contenuto-senza-folding / BM25 / OR;B04;B;nome;walt disney;2;2;2;1.0000;1.0000;1.0000;1.0000;0.4000;0.2000
+contenuto-senza-folding / BM25 / OR;B05;B;nome;capitan america;1;1;1;1.0000;1.0000;1.0000;1.0000;0.2000;0.1000
+contenuto-senza-folding / BM25 / OR;B06;B;contenuto;"studio ghibli";4;6;4;0.6667;1.0000;0.8000;1.0000;0.8000;0.4000
+contenuto-senza-folding / BM25 / OR;B07;B;contenuto;"guardiani della galassia";4;23;4;0.4000;1.0000;0.5714;1.0000;0.8000;0.4000
+contenuto-senza-folding / BM25 / OR;B08;B;contenuto;paperino paperinik;2;15;2;0.2000;1.0000;0.3333;1.0000;0.4000;0.2000
+contenuto-senza-folding / BM25 / OR;B09;B;contenuto;"tartarughe ninja";1;5;1;0.2000;1.0000;0.3333;1.0000;0.2000;0.1000
+contenuto-senza-folding / BM25 / OR;B10;B;contenuto;simpson griffin futurama;3;21;3;0.3000;1.0000;0.4615;1.0000;0.6000;0.3000
+contenuto-senza-folding / BM25 / OR;B11;B;contenuto;joker harley quinn;2;35;2;0.2000;1.0000;0.3333;1.0000;0.4000;0.2000
+contenuto-senza-folding / BM25 / OR;B12;B;contenuto;superman kryptonite;3;56;3;0.3000;1.0000;0.4615;0.6667;0.6000;0.3000
+contenuto-senza-folding / TF-IDF / AND;A01;A;nome;batman;2;2;2;1.0000;1.0000;1.0000;1.0000;0.4000;0.2000
+contenuto-senza-folding / TF-IDF / AND;A02;A;nome;pokemon;1;1;1;1.0000;1.0000;1.0000;1.0000;0.2000;0.1000
+contenuto-senza-folding / TF-IDF / AND;A03;A;nome;"spider man";2;1;1;1.0000;0.5000;0.6667;0.5000;0.2000;0.1000
+contenuto-senza-folding / TF-IDF / AND;A04;A;nome;marvel comics;9;6;6;1.0000;0.6667;0.8000;0.6667;1.0000;0.6000
+contenuto-senza-folding / TF-IDF / AND;A05;A;nome;fumetto;9;14;4;0.4000;0.4444;0.4211;0.3333;0.6000;0.4000
+contenuto-senza-folding / TF-IDF / AND;A06;A;contenuto;mutanti x-men;11;39;10;1.0000;0.9091;0.9524;0.9091;1.0000;1.0000
+contenuto-senza-folding / TF-IDF / AND;A07;A;contenuto;"cavaliere oscuro";13;30;8;0.8000;0.6154;0.6957;0.7692;0.8000;0.8000
+contenuto-senza-folding / TF-IDF / AND;A08;A;contenuto;miyazaki ghibli;4;5;4;0.8000;1.0000;0.8889;1.0000;0.8000;0.4000
+contenuto-senza-folding / TF-IDF / AND;A09;A;contenuto;fumetto italiano bonelli;10;20;6;0.6000;0.6000;0.6000;0.6000;0.6000;0.6000
+contenuto-senza-folding / TF-IDF / AND;A10;A;contenuto;nemici di batman;8;37;7;0.7000;0.8750;0.7778;0.7500;0.8000;0.7000
+contenuto-senza-folding / TF-IDF / AND;A11;A;contenuto;manga giapponese shonen;13;8;5;0.6250;0.3846;0.4762;0.3846;0.4000;0.5000
+contenuto-senza-folding / TF-IDF / AND;A12;A;contenuto;+marvel -spider;45;39;3;0.3000;0.0667;0.1091;0.0667;0.6000;0.3000
+contenuto-senza-folding / TF-IDF / AND;B01;B;nome;"iron man";1;1;1;1.0000;1.0000;1.0000;1.0000;0.2000;0.1000
+contenuto-senza-folding / TF-IDF / AND;B02;B;nome;lanterna verde;1;1;1;1.0000;1.0000;1.0000;1.0000;0.2000;0.1000
+contenuto-senza-folding / TF-IDF / AND;B03;B;nome;dc comics;6;4;4;1.0000;0.6667;0.8000;0.6667;0.8000;0.4000
+contenuto-senza-folding / TF-IDF / AND;B04;B;nome;walt disney;2;2;2;1.0000;1.0000;1.0000;1.0000;0.4000;0.2000
+contenuto-senza-folding / TF-IDF / AND;B05;B;nome;capitan america;1;1;1;1.0000;1.0000;1.0000;1.0000;0.2000;0.1000
+contenuto-senza-folding / TF-IDF / AND;B06;B;contenuto;"studio ghibli";4;6;4;0.6667;1.0000;0.8000;1.0000;0.8000;0.4000
+contenuto-senza-folding / TF-IDF / AND;B07;B;contenuto;"guardiani della galassia";4;23;4;0.4000;1.0000;0.5714;1.0000;0.8000;0.4000
+contenuto-senza-folding / TF-IDF / AND;B08;B;contenuto;paperino paperinik;2;6;2;0.3333;1.0000;0.5000;1.0000;0.4000;0.2000
+contenuto-senza-folding / TF-IDF / AND;B09;B;contenuto;"tartarughe ninja";1;5;1;0.2000;1.0000;0.3333;1.0000;0.2000;0.1000
+contenuto-senza-folding / TF-IDF / AND;B10;B;contenuto;simpson griffin futurama;3;4;3;0.7500;1.0000;0.8571;1.0000;0.6000;0.3000
+contenuto-senza-folding / TF-IDF / AND;B11;B;contenuto;joker harley quinn;2;13;2;0.2000;1.0000;0.3333;1.0000;0.4000;0.2000
+contenuto-senza-folding / TF-IDF / AND;B12;B;contenuto;superman kryptonite;3;13;3;0.3000;1.0000;0.4615;0.6667;0.6000;0.3000
+contenuto-senza-folding / TF-IDF / OR;A01;A;nome;batman;2;2;2;1.0000;1.0000;1.0000;1.0000;0.4000;0.2000
+contenuto-senza-folding / TF-IDF / OR;A02;A;nome;pokemon;1;1;1;1.0000;1.0000;1.0000;1.0000;0.2000;0.1000
+contenuto-senza-folding / TF-IDF / OR;A03;A;nome;"spider man";2;1;1;1.0000;0.5000;0.6667;0.5000;0.2000;0.1000
+contenuto-senza-folding / TF-IDF / OR;A04;A;nome;marvel comics;9;15;8;0.8000;0.8889;0.8421;0.8889;1.0000;0.8000
+contenuto-senza-folding / TF-IDF / OR;A05;A;nome;fumetto;9;14;4;0.4000;0.4444;0.4211;0.3333;0.6000;0.4000
+contenuto-senza-folding / TF-IDF / OR;A06;A;contenuto;mutanti x-men;11;104;10;1.0000;0.9091;0.9524;0.9091;1.0000;1.0000
+contenuto-senza-folding / TF-IDF / OR;A07;A;contenuto;"cavaliere oscuro";13;30;8;0.8000;0.6154;0.6957;0.7692;0.8000;0.8000
+contenuto-senza-folding / TF-IDF / OR;A08;A;contenuto;miyazaki ghibli;4;10;4;0.4000;1.0000;0.5714;1.0000;0.8000;0.4000
+contenuto-senza-folding / TF-IDF / OR;A09;A;contenuto;fumetto italiano bonelli;10;197;7;0.7000;0.7000;0.7000;0.7000;0.6000;0.7000
+contenuto-senza-folding / TF-IDF / OR;A10;A;contenuto;nemici di batman;8;136;7;0.7000;0.8750;0.7778;0.6250;0.6000;0.7000
+contenuto-senza-folding / TF-IDF / OR;A11;A;contenuto;manga giapponese shonen;13;72;5;0.5000;0.3846;0.4348;0.4615;0.4000;0.5000
+contenuto-senza-folding / TF-IDF / OR;A12;A;contenuto;+marvel -spider;45;39;3;0.3000;0.0667;0.1091;0.0667;0.6000;0.3000
+contenuto-senza-folding / TF-IDF / OR;B01;B;nome;"iron man";1;1;1;1.0000;1.0000;1.0000;1.0000;0.2000;0.1000
+contenuto-senza-folding / TF-IDF / OR;B02;B;nome;lanterna verde;1;2;1;0.5000;1.0000;0.6667;1.0000;0.2000;0.1000
+contenuto-senza-folding / TF-IDF / OR;B03;B;nome;dc comics;6;14;6;0.6000;1.0000;0.7500;0.8333;1.0000;0.6000
+contenuto-senza-folding / TF-IDF / OR;B04;B;nome;walt disney;2;2;2;1.0000;1.0000;1.0000;1.0000;0.4000;0.2000
+contenuto-senza-folding / TF-IDF / OR;B05;B;nome;capitan america;1;1;1;1.0000;1.0000;1.0000;1.0000;0.2000;0.1000
+contenuto-senza-folding / TF-IDF / OR;B06;B;contenuto;"studio ghibli";4;6;4;0.6667;1.0000;0.8000;1.0000;0.8000;0.4000
+contenuto-senza-folding / TF-IDF / OR;B07;B;contenuto;"guardiani della galassia";4;23;4;0.4000;1.0000;0.5714;1.0000;0.8000;0.4000
+contenuto-senza-folding / TF-IDF / OR;B08;B;contenuto;paperino paperinik;2;15;2;0.2000;1.0000;0.3333;1.0000;0.4000;0.2000
+contenuto-senza-folding / TF-IDF / OR;B09;B;contenuto;"tartarughe ninja";1;5;1;0.2000;1.0000;0.3333;1.0000;0.2000;0.1000
+contenuto-senza-folding / TF-IDF / OR;B10;B;contenuto;simpson griffin futurama;3;21;3;0.3000;1.0000;0.4615;1.0000;0.6000;0.3000
+contenuto-senza-folding / TF-IDF / OR;B11;B;contenuto;joker harley quinn;2;35;2;0.2000;1.0000;0.3333;1.0000;0.4000;0.2000
+contenuto-senza-folding / TF-IDF / OR;B12;B;contenuto;superman kryptonite;3;56;3;0.3000;1.0000;0.4615;0.6667;0.6000;0.3000
+contenuto-senza-folding / LM-Dirichlet / AND;A01;A;nome;batman;2;2;2;1.0000;1.0000;1.0000;1.0000;0.4000;0.2000
+contenuto-senza-folding / LM-Dirichlet / AND;A02;A;nome;pokemon;1;1;1;1.0000;1.0000;1.0000;1.0000;0.2000;0.1000
+contenuto-senza-folding / LM-Dirichlet / AND;A03;A;nome;"spider man";2;1;1;1.0000;0.5000;0.6667;0.5000;0.2000;0.1000
+contenuto-senza-folding / LM-Dirichlet / AND;A04;A;nome;marvel comics;9;6;6;1.0000;0.6667;0.8000;0.6667;1.0000;0.6000
+contenuto-senza-folding / LM-Dirichlet / AND;A05;A;nome;fumetto;9;14;4;0.4000;0.4444;0.4211;0.3333;0.6000;0.4000
+contenuto-senza-folding / LM-Dirichlet / AND;A06;A;contenuto;mutanti x-men;11;39;10;1.0000;0.9091;0.9524;0.9091;1.0000;1.0000
+contenuto-senza-folding / LM-Dirichlet / AND;A07;A;contenuto;"cavaliere oscuro";13;30;8;0.8000;0.6154;0.6957;0.8462;0.8000;0.8000
+contenuto-senza-folding / LM-Dirichlet / AND;A08;A;contenuto;miyazaki ghibli;4;5;4;0.8000;1.0000;0.8889;1.0000;0.8000;0.4000
+contenuto-senza-folding / LM-Dirichlet / AND;A09;A;contenuto;fumetto italiano bonelli;10;20;6;0.6000;0.6000;0.6000;0.6000;0.8000;0.6000
+contenuto-senza-folding / LM-Dirichlet / AND;A10;A;contenuto;nemici di batman;8;37;7;0.7000;0.8750;0.7778;0.7500;0.6000;0.7000
+contenuto-senza-folding / LM-Dirichlet / AND;A11;A;contenuto;manga giapponese shonen;13;8;5;0.6250;0.3846;0.4762;0.3846;0.6000;0.5000
+contenuto-senza-folding / LM-Dirichlet / AND;A12;A;contenuto;+marvel -spider;45;39;3;0.3000;0.0667;0.1091;0.0667;0.6000;0.3000
+contenuto-senza-folding / LM-Dirichlet / AND;B01;B;nome;"iron man";1;1;1;1.0000;1.0000;1.0000;1.0000;0.2000;0.1000
+contenuto-senza-folding / LM-Dirichlet / AND;B02;B;nome;lanterna verde;1;1;1;1.0000;1.0000;1.0000;1.0000;0.2000;0.1000
+contenuto-senza-folding / LM-Dirichlet / AND;B03;B;nome;dc comics;6;4;4;1.0000;0.6667;0.8000;0.6667;0.8000;0.4000
+contenuto-senza-folding / LM-Dirichlet / AND;B04;B;nome;walt disney;2;2;2;1.0000;1.0000;1.0000;1.0000;0.4000;0.2000
+contenuto-senza-folding / LM-Dirichlet / AND;B05;B;nome;capitan america;1;1;1;1.0000;1.0000;1.0000;1.0000;0.2000;0.1000
+contenuto-senza-folding / LM-Dirichlet / AND;B06;B;contenuto;"studio ghibli";4;6;4;0.6667;1.0000;0.8000;1.0000;0.8000;0.4000
+contenuto-senza-folding / LM-Dirichlet / AND;B07;B;contenuto;"guardiani della galassia";4;23;4;0.4000;1.0000;0.5714;1.0000;0.8000;0.4000
+contenuto-senza-folding / LM-Dirichlet / AND;B08;B;contenuto;paperino paperinik;2;6;2;0.3333;1.0000;0.5000;1.0000;0.4000;0.2000
+contenuto-senza-folding / LM-Dirichlet / AND;B09;B;contenuto;"tartarughe ninja";1;5;1;0.2000;1.0000;0.3333;1.0000;0.2000;0.1000
+contenuto-senza-folding / LM-Dirichlet / AND;B10;B;contenuto;simpson griffin futurama;3;4;3;0.7500;1.0000;0.8571;1.0000;0.6000;0.3000
+contenuto-senza-folding / LM-Dirichlet / AND;B11;B;contenuto;joker harley quinn;2;13;2;0.2000;1.0000;0.3333;1.0000;0.4000;0.2000
+contenuto-senza-folding / LM-Dirichlet / AND;B12;B;contenuto;superman kryptonite;3;13;3;0.3000;1.0000;0.4615;0.6667;0.6000;0.3000
+contenuto-senza-folding / LM-Dirichlet / OR;A01;A;nome;batman;2;2;2;1.0000;1.0000;1.0000;1.0000;0.4000;0.2000
+contenuto-senza-folding / LM-Dirichlet / OR;A02;A;nome;pokemon;1;1;1;1.0000;1.0000;1.0000;1.0000;0.2000;0.1000
+contenuto-senza-folding / LM-Dirichlet / OR;A03;A;nome;"spider man";2;1;1;1.0000;0.5000;0.6667;0.5000;0.2000;0.1000
+contenuto-senza-folding / LM-Dirichlet / OR;A04;A;nome;marvel comics;9;15;9;0.9000;1.0000;0.9474;1.0000;1.0000;0.9000
+contenuto-senza-folding / LM-Dirichlet / OR;A05;A;nome;fumetto;9;14;4;0.4000;0.4444;0.4211;0.3333;0.6000;0.4000
+contenuto-senza-folding / LM-Dirichlet / OR;A06;A;contenuto;mutanti x-men;11;104;10;1.0000;0.9091;0.9524;0.9091;1.0000;1.0000
+contenuto-senza-folding / LM-Dirichlet / OR;A07;A;contenuto;"cavaliere oscuro";13;30;8;0.8000;0.6154;0.6957;0.8462;0.8000;0.8000
+contenuto-senza-folding / LM-Dirichlet / OR;A08;A;contenuto;miyazaki ghibli;4;10;4;0.4000;1.0000;0.5714;1.0000;0.8000;0.4000
+contenuto-senza-folding / LM-Dirichlet / OR;A09;A;contenuto;fumetto italiano bonelli;10;197;6;0.6000;0.6000;0.6000;0.6000;0.8000;0.6000
+contenuto-senza-folding / LM-Dirichlet / OR;A10;A;contenuto;nemici di batman;8;136;6;0.6000;0.7500;0.6667;0.6250;0.6000;0.6000
+contenuto-senza-folding / LM-Dirichlet / OR;A11;A;contenuto;manga giapponese shonen;13;72;6;0.6000;0.4615;0.5217;0.4615;0.6000;0.6000
+contenuto-senza-folding / LM-Dirichlet / OR;A12;A;contenuto;+marvel -spider;45;39;3;0.3000;0.0667;0.1091;0.0667;0.6000;0.3000
+contenuto-senza-folding / LM-Dirichlet / OR;B01;B;nome;"iron man";1;1;1;1.0000;1.0000;1.0000;1.0000;0.2000;0.1000
+contenuto-senza-folding / LM-Dirichlet / OR;B02;B;nome;lanterna verde;1;2;1;0.5000;1.0000;0.6667;1.0000;0.2000;0.1000
+contenuto-senza-folding / LM-Dirichlet / OR;B03;B;nome;dc comics;6;14;6;0.6000;1.0000;0.7500;1.0000;1.0000;0.6000
+contenuto-senza-folding / LM-Dirichlet / OR;B04;B;nome;walt disney;2;2;2;1.0000;1.0000;1.0000;1.0000;0.4000;0.2000
+contenuto-senza-folding / LM-Dirichlet / OR;B05;B;nome;capitan america;1;1;1;1.0000;1.0000;1.0000;1.0000;0.2000;0.1000
+contenuto-senza-folding / LM-Dirichlet / OR;B06;B;contenuto;"studio ghibli";4;6;4;0.6667;1.0000;0.8000;1.0000;0.8000;0.4000
+contenuto-senza-folding / LM-Dirichlet / OR;B07;B;contenuto;"guardiani della galassia";4;23;4;0.4000;1.0000;0.5714;1.0000;0.8000;0.4000
+contenuto-senza-folding / LM-Dirichlet / OR;B08;B;contenuto;paperino paperinik;2;15;2;0.2000;1.0000;0.3333;1.0000;0.4000;0.2000
+contenuto-senza-folding / LM-Dirichlet / OR;B09;B;contenuto;"tartarughe ninja";1;5;1;0.2000;1.0000;0.3333;1.0000;0.2000;0.1000
+contenuto-senza-folding / LM-Dirichlet / OR;B10;B;contenuto;simpson griffin futurama;3;21;3;0.3000;1.0000;0.4615;1.0000;0.6000;0.3000
+contenuto-senza-folding / LM-Dirichlet / OR;B11;B;contenuto;joker harley quinn;2;35;2;0.2000;1.0000;0.3333;1.0000;0.4000;0.2000
+contenuto-senza-folding / LM-Dirichlet / OR;B12;B;contenuto;superman kryptonite;3;56;3;0.3000;1.0000;0.4615;0.6667;0.6000;0.3000
+standard / BM25 / AND;A01;A;nome;batman;2;1;1;1.0000;0.5000;0.6667;0.5000;0.2000;0.1000
+standard / BM25 / AND;A02;A;nome;pokemon;1;0;0;0.0000;0.0000;0.0000;0.0000;0.0000;0.0000
+standard / BM25 / AND;A03;A;nome;"spider man";2;0;0;0.0000;0.0000;0.0000;0.0000;0.0000;0.0000
+standard / BM25 / AND;A04;A;nome;marvel comics;9;0;0;0.0000;0.0000;0.0000;0.0000;0.0000;0.0000
+standard / BM25 / AND;A05;A;nome;fumetto;9;1;1;1.0000;0.1111;0.2000;0.1111;0.2000;0.1000
+standard / BM25 / AND;A06;A;contenuto;mutanti x-men;11;34;9;0.9000;0.8182;0.8571;0.8182;1.0000;0.9000
+standard / BM25 / AND;A07;A;contenuto;"cavaliere oscuro";13;30;8;0.8000;0.6154;0.6957;0.7692;0.8000;0.8000
+standard / BM25 / AND;A08;A;contenuto;miyazaki ghibli;4;5;4;0.8000;1.0000;0.8889;1.0000;0.8000;0.4000
+standard / BM25 / AND;A09;A;contenuto;fumetto italiano bonelli;10;19;7;0.7000;0.7000;0.7000;0.7000;0.8000;0.7000
+standard / BM25 / AND;A10;A;contenuto;nemici di batman;8;29;5;0.5000;0.6250;0.5556;0.5000;0.6000;0.5000
+standard / BM25 / AND;A11;A;contenuto;manga giapponese shonen;13;8;5;0.6250;0.3846;0.4762;0.3846;0.4000;0.5000
+standard / BM25 / AND;A12;A;contenuto;+marvel -spider;45;39;3;0.3000;0.0667;0.1091;0.0667;0.6000;0.3000
+standard / BM25 / AND;B01;B;nome;"iron man";1;0;0;0.0000;0.0000;0.0000;0.0000;0.0000;0.0000
+standard / BM25 / AND;B02;B;nome;lanterna verde;1;0;0;0.0000;0.0000;0.0000;0.0000;0.0000;0.0000
+standard / BM25 / AND;B03;B;nome;dc comics;6;0;0;0.0000;0.0000;0.0000;0.0000;0.0000;0.0000
+standard / BM25 / AND;B04;B;nome;walt disney;2;0;0;0.0000;0.0000;0.0000;0.0000;0.0000;0.0000
+standard / BM25 / AND;B05;B;nome;capitan america;1;0;0;0.0000;0.0000;0.0000;0.0000;0.0000;0.0000
+standard / BM25 / AND;B06;B;contenuto;"studio ghibli";4;6;4;0.6667;1.0000;0.8000;1.0000;0.8000;0.4000
+standard / BM25 / AND;B07;B;contenuto;"guardiani della galassia";4;23;4;0.4000;1.0000;0.5714;1.0000;0.8000;0.4000
+standard / BM25 / AND;B08;B;contenuto;paperino paperinik;2;6;2;0.3333;1.0000;0.5000;1.0000;0.4000;0.2000
+standard / BM25 / AND;B09;B;contenuto;"tartarughe ninja";1;5;1;0.2000;1.0000;0.3333;1.0000;0.2000;0.1000
+standard / BM25 / AND;B10;B;contenuto;simpson griffin futurama;3;4;3;0.7500;1.0000;0.8571;1.0000;0.6000;0.3000
+standard / BM25 / AND;B11;B;contenuto;joker harley quinn;2;13;2;0.2000;1.0000;0.3333;1.0000;0.4000;0.2000
+standard / BM25 / AND;B12;B;contenuto;superman kryptonite;3;13;3;0.3000;1.0000;0.4615;0.6667;0.6000;0.3000
+standard / BM25 / OR;A01;A;nome;batman;2;1;1;1.0000;0.5000;0.6667;0.5000;0.2000;0.1000
+standard / BM25 / OR;A02;A;nome;pokemon;1;0;0;0.0000;0.0000;0.0000;0.0000;0.0000;0.0000
+standard / BM25 / OR;A03;A;nome;"spider man";2;0;0;0.0000;0.0000;0.0000;0.0000;0.0000;0.0000
+standard / BM25 / OR;A04;A;nome;marvel comics;9;0;0;0.0000;0.0000;0.0000;0.0000;0.0000;0.0000
+standard / BM25 / OR;A05;A;nome;fumetto;9;1;1;1.0000;0.1111;0.2000;0.1111;0.2000;0.1000
+standard / BM25 / OR;A06;A;contenuto;mutanti x-men;11;97;9;0.9000;0.8182;0.8571;0.8182;1.0000;0.9000
+standard / BM25 / OR;A07;A;contenuto;"cavaliere oscuro";13;30;8;0.8000;0.6154;0.6957;0.7692;0.8000;0.8000
+standard / BM25 / OR;A08;A;contenuto;miyazaki ghibli;4;10;4;0.4000;1.0000;0.5714;1.0000;0.8000;0.4000
+standard / BM25 / OR;A09;A;contenuto;fumetto italiano bonelli;10;156;7;0.7000;0.7000;0.7000;0.7000;0.8000;0.7000
+standard / BM25 / OR;A10;A;contenuto;nemici di batman;8;200;5;0.5000;0.6250;0.5556;0.5000;0.6000;0.5000
+standard / BM25 / OR;A11;A;contenuto;manga giapponese shonen;13;69;5;0.5000;0.3846;0.4348;0.4615;0.4000;0.5000
+standard / BM25 / OR;A12;A;contenuto;+marvel -spider;45;39;3;0.3000;0.0667;0.1091;0.0667;0.6000;0.3000
+standard / BM25 / OR;B01;B;nome;"iron man";1;0;0;0.0000;0.0000;0.0000;0.0000;0.0000;0.0000
+standard / BM25 / OR;B02;B;nome;lanterna verde;1;0;0;0.0000;0.0000;0.0000;0.0000;0.0000;0.0000
+standard / BM25 / OR;B03;B;nome;dc comics;6;0;0;0.0000;0.0000;0.0000;0.0000;0.0000;0.0000
+standard / BM25 / OR;B04;B;nome;walt disney;2;0;0;0.0000;0.0000;0.0000;0.0000;0.0000;0.0000
+standard / BM25 / OR;B05;B;nome;capitan america;1;0;0;0.0000;0.0000;0.0000;0.0000;0.0000;0.0000
+standard / BM25 / OR;B06;B;contenuto;"studio ghibli";4;6;4;0.6667;1.0000;0.8000;1.0000;0.8000;0.4000
+standard / BM25 / OR;B07;B;contenuto;"guardiani della galassia";4;23;4;0.4000;1.0000;0.5714;1.0000;0.8000;0.4000
+standard / BM25 / OR;B08;B;contenuto;paperino paperinik;2;14;2;0.2000;1.0000;0.3333;1.0000;0.4000;0.2000
+standard / BM25 / OR;B09;B;contenuto;"tartarughe ninja";1;5;1;0.2000;1.0000;0.3333;1.0000;0.2000;0.1000
+standard / BM25 / OR;B10;B;contenuto;simpson griffin futurama;3;21;3;0.3000;1.0000;0.4615;1.0000;0.6000;0.3000
+standard / BM25 / OR;B11;B;contenuto;joker harley quinn;2;35;2;0.2000;1.0000;0.3333;1.0000;0.4000;0.2000
+standard / BM25 / OR;B12;B;contenuto;superman kryptonite;3;56;3;0.3000;1.0000;0.4615;0.6667;0.6000;0.3000
+standard / TF-IDF / AND;A01;A;nome;batman;2;1;1;1.0000;0.5000;0.6667;0.5000;0.2000;0.1000
+standard / TF-IDF / AND;A02;A;nome;pokemon;1;0;0;0.0000;0.0000;0.0000;0.0000;0.0000;0.0000
+standard / TF-IDF / AND;A03;A;nome;"spider man";2;0;0;0.0000;0.0000;0.0000;0.0000;0.0000;0.0000
+standard / TF-IDF / AND;A04;A;nome;marvel comics;9;0;0;0.0000;0.0000;0.0000;0.0000;0.0000;0.0000
+standard / TF-IDF / AND;A05;A;nome;fumetto;9;1;1;1.0000;0.1111;0.2000;0.1111;0.2000;0.1000
+standard / TF-IDF / AND;A06;A;contenuto;mutanti x-men;11;34;10;1.0000;0.9091;0.9524;0.9091;1.0000;1.0000
+standard / TF-IDF / AND;A07;A;contenuto;"cavaliere oscuro";13;30;8;0.8000;0.6154;0.6957;0.7692;0.8000;0.8000
+standard / TF-IDF / AND;A08;A;contenuto;miyazaki ghibli;4;5;4;0.8000;1.0000;0.8889;1.0000;0.8000;0.4000
+standard / TF-IDF / AND;A09;A;contenuto;fumetto italiano bonelli;10;19;7;0.7000;0.7000;0.7000;0.7000;0.8000;0.7000
+standard / TF-IDF / AND;A10;A;contenuto;nemici di batman;8;29;5;0.5000;0.6250;0.5556;0.6250;0.8000;0.5000
+standard / TF-IDF / AND;A11;A;contenuto;manga giapponese shonen;13;8;5;0.6250;0.3846;0.4762;0.3846;0.4000;0.5000
+standard / TF-IDF / AND;A12;A;contenuto;+marvel -spider;45;39;3;0.3000;0.0667;0.1091;0.0667;0.6000;0.3000
+standard / TF-IDF / AND;B01;B;nome;"iron man";1;0;0;0.0000;0.0000;0.0000;0.0000;0.0000;0.0000
+standard / TF-IDF / AND;B02;B;nome;lanterna verde;1;0;0;0.0000;0.0000;0.0000;0.0000;0.0000;0.0000
+standard / TF-IDF / AND;B03;B;nome;dc comics;6;0;0;0.0000;0.0000;0.0000;0.0000;0.0000;0.0000
+standard / TF-IDF / AND;B04;B;nome;walt disney;2;0;0;0.0000;0.0000;0.0000;0.0000;0.0000;0.0000
+standard / TF-IDF / AND;B05;B;nome;capitan america;1;0;0;0.0000;0.0000;0.0000;0.0000;0.0000;0.0000
+standard / TF-IDF / AND;B06;B;contenuto;"studio ghibli";4;6;4;0.6667;1.0000;0.8000;1.0000;0.8000;0.4000
+standard / TF-IDF / AND;B07;B;contenuto;"guardiani della galassia";4;23;4;0.4000;1.0000;0.5714;1.0000;0.8000;0.4000
+standard / TF-IDF / AND;B08;B;contenuto;paperino paperinik;2;6;2;0.3333;1.0000;0.5000;1.0000;0.4000;0.2000
+standard / TF-IDF / AND;B09;B;contenuto;"tartarughe ninja";1;5;1;0.2000;1.0000;0.3333;1.0000;0.2000;0.1000
+standard / TF-IDF / AND;B10;B;contenuto;simpson griffin futurama;3;4;3;0.7500;1.0000;0.8571;1.0000;0.6000;0.3000
+standard / TF-IDF / AND;B11;B;contenuto;joker harley quinn;2;13;2;0.2000;1.0000;0.3333;1.0000;0.4000;0.2000
+standard / TF-IDF / AND;B12;B;contenuto;superman kryptonite;3;13;3;0.3000;1.0000;0.4615;0.6667;0.6000;0.3000
+standard / TF-IDF / OR;A01;A;nome;batman;2;1;1;1.0000;0.5000;0.6667;0.5000;0.2000;0.1000
+standard / TF-IDF / OR;A02;A;nome;pokemon;1;0;0;0.0000;0.0000;0.0000;0.0000;0.0000;0.0000
+standard / TF-IDF / OR;A03;A;nome;"spider man";2;0;0;0.0000;0.0000;0.0000;0.0000;0.0000;0.0000
+standard / TF-IDF / OR;A04;A;nome;marvel comics;9;0;0;0.0000;0.0000;0.0000;0.0000;0.0000;0.0000
+standard / TF-IDF / OR;A05;A;nome;fumetto;9;1;1;1.0000;0.1111;0.2000;0.1111;0.2000;0.1000
+standard / TF-IDF / OR;A06;A;contenuto;mutanti x-men;11;97;10;1.0000;0.9091;0.9524;0.9091;1.0000;1.0000
+standard / TF-IDF / OR;A07;A;contenuto;"cavaliere oscuro";13;30;8;0.8000;0.6154;0.6957;0.7692;0.8000;0.8000
+standard / TF-IDF / OR;A08;A;contenuto;miyazaki ghibli;4;10;4;0.4000;1.0000;0.5714;1.0000;0.8000;0.4000
+standard / TF-IDF / OR;A09;A;contenuto;fumetto italiano bonelli;10;156;7;0.7000;0.7000;0.7000;0.7000;0.8000;0.7000
+standard / TF-IDF / OR;A10;A;contenuto;nemici di batman;8;200;6;0.6000;0.7500;0.6667;0.6250;0.6000;0.6000
+standard / TF-IDF / OR;A11;A;contenuto;manga giapponese shonen;13;69;5;0.5000;0.3846;0.4348;0.5385;0.6000;0.5000
+standard / TF-IDF / OR;A12;A;contenuto;+marvel -spider;45;39;3;0.3000;0.0667;0.1091;0.0667;0.6000;0.3000
+standard / TF-IDF / OR;B01;B;nome;"iron man";1;0;0;0.0000;0.0000;0.0000;0.0000;0.0000;0.0000
+standard / TF-IDF / OR;B02;B;nome;lanterna verde;1;0;0;0.0000;0.0000;0.0000;0.0000;0.0000;0.0000
+standard / TF-IDF / OR;B03;B;nome;dc comics;6;0;0;0.0000;0.0000;0.0000;0.0000;0.0000;0.0000
+standard / TF-IDF / OR;B04;B;nome;walt disney;2;0;0;0.0000;0.0000;0.0000;0.0000;0.0000;0.0000
+standard / TF-IDF / OR;B05;B;nome;capitan america;1;0;0;0.0000;0.0000;0.0000;0.0000;0.0000;0.0000
+standard / TF-IDF / OR;B06;B;contenuto;"studio ghibli";4;6;4;0.6667;1.0000;0.8000;1.0000;0.8000;0.4000
+standard / TF-IDF / OR;B07;B;contenuto;"guardiani della galassia";4;23;4;0.4000;1.0000;0.5714;1.0000;0.8000;0.4000
+standard / TF-IDF / OR;B08;B;contenuto;paperino paperinik;2;14;2;0.2000;1.0000;0.3333;1.0000;0.4000;0.2000
+standard / TF-IDF / OR;B09;B;contenuto;"tartarughe ninja";1;5;1;0.2000;1.0000;0.3333;1.0000;0.2000;0.1000
+standard / TF-IDF / OR;B10;B;contenuto;simpson griffin futurama;3;21;3;0.3000;1.0000;0.4615;1.0000;0.6000;0.3000
+standard / TF-IDF / OR;B11;B;contenuto;joker harley quinn;2;35;2;0.2000;1.0000;0.3333;1.0000;0.4000;0.2000
+standard / TF-IDF / OR;B12;B;contenuto;superman kryptonite;3;56;3;0.3000;1.0000;0.4615;0.6667;0.6000;0.3000
+standard / LM-Dirichlet / AND;A01;A;nome;batman;2;1;1;1.0000;0.5000;0.6667;0.5000;0.2000;0.1000
+standard / LM-Dirichlet / AND;A02;A;nome;pokemon;1;0;0;0.0000;0.0000;0.0000;0.0000;0.0000;0.0000
+standard / LM-Dirichlet / AND;A03;A;nome;"spider man";2;0;0;0.0000;0.0000;0.0000;0.0000;0.0000;0.0000
+standard / LM-Dirichlet / AND;A04;A;nome;marvel comics;9;0;0;0.0000;0.0000;0.0000;0.0000;0.0000;0.0000
+standard / LM-Dirichlet / AND;A05;A;nome;fumetto;9;1;1;1.0000;0.1111;0.2000;0.1111;0.2000;0.1000
+standard / LM-Dirichlet / AND;A06;A;contenuto;mutanti x-men;11;34;10;1.0000;0.9091;0.9524;0.9091;1.0000;1.0000
+standard / LM-Dirichlet / AND;A07;A;contenuto;"cavaliere oscuro";13;30;8;0.8000;0.6154;0.6957;0.7692;0.8000;0.8000
+standard / LM-Dirichlet / AND;A08;A;contenuto;miyazaki ghibli;4;5;4;0.8000;1.0000;0.8889;1.0000;0.8000;0.4000
+standard / LM-Dirichlet / AND;A09;A;contenuto;fumetto italiano bonelli;10;19;4;0.4000;0.4000;0.4000;0.4000;0.8000;0.4000
+standard / LM-Dirichlet / AND;A10;A;contenuto;nemici di batman;8;29;5;0.5000;0.6250;0.5556;0.6250;0.8000;0.5000
+standard / LM-Dirichlet / AND;A11;A;contenuto;manga giapponese shonen;13;8;5;0.6250;0.3846;0.4762;0.3846;0.6000;0.5000
+standard / LM-Dirichlet / AND;A12;A;contenuto;+marvel -spider;45;39;3;0.3000;0.0667;0.1091;0.0667;0.6000;0.3000
+standard / LM-Dirichlet / AND;B01;B;nome;"iron man";1;0;0;0.0000;0.0000;0.0000;0.0000;0.0000;0.0000
+standard / LM-Dirichlet / AND;B02;B;nome;lanterna verde;1;0;0;0.0000;0.0000;0.0000;0.0000;0.0000;0.0000
+standard / LM-Dirichlet / AND;B03;B;nome;dc comics;6;0;0;0.0000;0.0000;0.0000;0.0000;0.0000;0.0000
+standard / LM-Dirichlet / AND;B04;B;nome;walt disney;2;0;0;0.0000;0.0000;0.0000;0.0000;0.0000;0.0000
+standard / LM-Dirichlet / AND;B05;B;nome;capitan america;1;0;0;0.0000;0.0000;0.0000;0.0000;0.0000;0.0000
+standard / LM-Dirichlet / AND;B06;B;contenuto;"studio ghibli";4;6;4;0.6667;1.0000;0.8000;1.0000;0.8000;0.4000
+standard / LM-Dirichlet / AND;B07;B;contenuto;"guardiani della galassia";4;23;4;0.4000;1.0000;0.5714;1.0000;0.8000;0.4000
+standard / LM-Dirichlet / AND;B08;B;contenuto;paperino paperinik;2;6;2;0.3333;1.0000;0.5000;1.0000;0.4000;0.2000
+standard / LM-Dirichlet / AND;B09;B;contenuto;"tartarughe ninja";1;5;1;0.2000;1.0000;0.3333;1.0000;0.2000;0.1000
+standard / LM-Dirichlet / AND;B10;B;contenuto;simpson griffin futurama;3;4;3;0.7500;1.0000;0.8571;1.0000;0.6000;0.3000
+standard / LM-Dirichlet / AND;B11;B;contenuto;joker harley quinn;2;13;2;0.2000;1.0000;0.3333;1.0000;0.4000;0.2000
+standard / LM-Dirichlet / AND;B12;B;contenuto;superman kryptonite;3;13;3;0.3000;1.0000;0.4615;0.6667;0.6000;0.3000
+standard / LM-Dirichlet / OR;A01;A;nome;batman;2;1;1;1.0000;0.5000;0.6667;0.5000;0.2000;0.1000
+standard / LM-Dirichlet / OR;A02;A;nome;pokemon;1;0;0;0.0000;0.0000;0.0000;0.0000;0.0000;0.0000
+standard / LM-Dirichlet / OR;A03;A;nome;"spider man";2;0;0;0.0000;0.0000;0.0000;0.0000;0.0000;0.0000
+standard / LM-Dirichlet / OR;A04;A;nome;marvel comics;9;0;0;0.0000;0.0000;0.0000;0.0000;0.0000;0.0000
+standard / LM-Dirichlet / OR;A05;A;nome;fumetto;9;1;1;1.0000;0.1111;0.2000;0.1111;0.2000;0.1000
+standard / LM-Dirichlet / OR;A06;A;contenuto;mutanti x-men;11;97;10;1.0000;0.9091;0.9524;0.9091;1.0000;1.0000
+standard / LM-Dirichlet / OR;A07;A;contenuto;"cavaliere oscuro";13;30;8;0.8000;0.6154;0.6957;0.7692;0.8000;0.8000
+standard / LM-Dirichlet / OR;A08;A;contenuto;miyazaki ghibli;4;10;4;0.4000;1.0000;0.5714;1.0000;0.8000;0.4000
+standard / LM-Dirichlet / OR;A09;A;contenuto;fumetto italiano bonelli;10;156;4;0.4000;0.4000;0.4000;0.4000;0.8000;0.4000
+standard / LM-Dirichlet / OR;A10;A;contenuto;nemici di batman;8;200;7;0.7000;0.8750;0.7778;0.7500;0.6000;0.7000
+standard / LM-Dirichlet / OR;A11;A;contenuto;manga giapponese shonen;13;69;6;0.6000;0.4615;0.5217;0.5385;0.6000;0.6000
+standard / LM-Dirichlet / OR;A12;A;contenuto;+marvel -spider;45;39;3;0.3000;0.0667;0.1091;0.0667;0.6000;0.3000
+standard / LM-Dirichlet / OR;B01;B;nome;"iron man";1;0;0;0.0000;0.0000;0.0000;0.0000;0.0000;0.0000
+standard / LM-Dirichlet / OR;B02;B;nome;lanterna verde;1;0;0;0.0000;0.0000;0.0000;0.0000;0.0000;0.0000
+standard / LM-Dirichlet / OR;B03;B;nome;dc comics;6;0;0;0.0000;0.0000;0.0000;0.0000;0.0000;0.0000
+standard / LM-Dirichlet / OR;B04;B;nome;walt disney;2;0;0;0.0000;0.0000;0.0000;0.0000;0.0000;0.0000
+standard / LM-Dirichlet / OR;B05;B;nome;capitan america;1;0;0;0.0000;0.0000;0.0000;0.0000;0.0000;0.0000
+standard / LM-Dirichlet / OR;B06;B;contenuto;"studio ghibli";4;6;4;0.6667;1.0000;0.8000;1.0000;0.8000;0.4000
+standard / LM-Dirichlet / OR;B07;B;contenuto;"guardiani della galassia";4;23;4;0.4000;1.0000;0.5714;1.0000;0.8000;0.4000
+standard / LM-Dirichlet / OR;B08;B;contenuto;paperino paperinik;2;14;2;0.2000;1.0000;0.3333;1.0000;0.4000;0.2000
+standard / LM-Dirichlet / OR;B09;B;contenuto;"tartarughe ninja";1;5;1;0.2000;1.0000;0.3333;1.0000;0.2000;0.1000
+standard / LM-Dirichlet / OR;B10;B;contenuto;simpson griffin futurama;3;21;3;0.3000;1.0000;0.4615;1.0000;0.6000;0.3000
+standard / LM-Dirichlet / OR;B11;B;contenuto;joker harley quinn;2;35;2;0.2000;1.0000;0.3333;1.0000;0.4000;0.2000
+standard / LM-Dirichlet / OR;B12;B;contenuto;superman kryptonite;3;56;3;0.3000;1.0000;0.4615;0.6667;0.6000;0.3000

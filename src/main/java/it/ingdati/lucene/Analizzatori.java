@@ -12,6 +12,7 @@ import org.apache.lucene.analysis.StopFilter;
 import org.apache.lucene.analysis.TokenStream;
 import org.apache.lucene.analysis.Tokenizer;
 import org.apache.lucene.analysis.it.ItalianLightStemFilter;
+import org.apache.lucene.analysis.it.ItalianLightStemFilterFactory;
 import org.apache.lucene.analysis.miscellaneous.ASCIIFoldingFilter;
 import org.apache.lucene.analysis.standard.StandardTokenizer;
 import org.apache.lucene.analysis.util.ElisionFilter;
@@ -51,17 +52,28 @@ public final class Analizzatori {
      *  - flattenGraph        : richiesto a indicizzazione dopo un filtro "Graph"
      *  - asciiFolding        : toglie gli accenti (Pokémon -> Pokemon, Eiichirō -> Eiichiro)
      *  - lowercase           : maiuscole e minuscole non contano
-     * Niente stopword né stemming: in un nome ogni parola conta ed è già "in forma base".
+     *  - italianLightStem    : stemming leggero (fumetti -> fumett), aggiunto dopo la valutazione
+     * Niente stopword: in un nome ogni parola conta (anche "dei" in "Corriere_dei_Piccoli" è parte del titolo).
      */
     public static Analyzer analyzerNome() {
+        return analyzerNome(true);
+    }
+
+    /**
+     * @param stemming se true aggiunge ItalianLightStemFilter (fumetto / fumetti -> fumett): i nomi delle
+     *                 voci sono in italiano e possono essere al singolare o al plurale ("Romanzo_a_fumetti").
+     *                 La versione senza stemming serve solo al confronto nel Valutatore.
+     */
+    public static Analyzer analyzerNome(boolean stemming) {
         try {
-            return CustomAnalyzer.builder()
+            CustomAnalyzer.Builder b = CustomAnalyzer.builder()
                     .withTokenizer(WhitespaceTokenizerFactory.class)
                     .addTokenFilter(WordDelimiterGraphFilterFactory.class)
                     .addTokenFilter(FlattenGraphFilterFactory.class)
                     .addTokenFilter(ASCIIFoldingFilterFactory.class)
-                    .addTokenFilter(LowerCaseFilterFactory.class)
-                    .build();
+                    .addTokenFilter(LowerCaseFilterFactory.class);
+            if (stemming) b.addTokenFilter(ItalianLightStemFilterFactory.class);
+            return b.build();
         } catch (IOException e) {
             throw new UncheckedIOException(e);
         }
